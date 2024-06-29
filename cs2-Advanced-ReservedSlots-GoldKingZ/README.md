@@ -16,7 +16,8 @@ After Paying Will Will Receive Only Compiled Plugin (Not Open Source) + Key To A
 
 # [CS2] Advanced-ReservedSlots-GoldKingZ (1.0.0)  
 
-### Dynamic Kick Reserved Slots Depend Group Priority
+### Dynamic Kick Reserved Slots Depend Group Priority 
+### it random kick first normal people when group_1 or 2 or 3 joined then if no normal people in game it random kick Group_1 and so on...
 
 ![image](https://github.com/oqyh/cs2-Private-Plugins/assets/48490385/c7eea100-f571-40e9-880c-ef2414e055d6)
 
@@ -59,7 +60,6 @@ After Paying Will Will Receive Only Compiled Plugin (Not Open Source) + Key To A
 ```json
 
 {
-//it random kick first normal people when group_1 or 2 or 3 joined then if no normal people in game it random kick Group_1 and so on...
   "Group_1": {
     "GROUP_NAME": "VIPS", //Group Name
     "FLAGS": "@css/vip,#css/vip"
