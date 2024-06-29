@@ -4,7 +4,7 @@
 https://discord.com/invite/U7AuQhu
 
 
-### Payment Rules
+### .:[ Payment Rules ]:. 
 
 Link Payment: https://www.paypal.com/paypalme/oQYh
 
