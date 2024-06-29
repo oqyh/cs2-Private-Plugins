@@ -10,6 +10,8 @@ example of Same Prefix Server (GKZ is prefix)
 GKZ | Retake Server 
 GKZ | 1v1 Server 
 GKZ | surf Server
+
+After Paying Will Will Receive Only Compiled Plugin (Not Open Source) + Key To Active Plugin
 ```
 
 # [CS2] Advanced-ReservedSlots-GoldKingZ (1.0.0)  
