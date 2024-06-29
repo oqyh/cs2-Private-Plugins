@@ -32,7 +32,7 @@ After Paying Will Will Receive Only Compiled Plugin (Not Open Source) + Key To A
 ## .:[ Configuration ]:.
 
 > [!CAUTION]
-> Weapon Config Located In ..\addons\counterstrikesharp\plugins\Advanced-ReservedSlots-GoldKingZ\config\config.json                                         
+> Config Located In ..\addons\counterstrikesharp\plugins\Advanced-ReservedSlots-GoldKingZ\config\config.json                                         
 
 ```json
 
@@ -55,7 +55,7 @@ After Paying Will Will Receive Only Compiled Plugin (Not Open Source) + Key To A
 ## .:[ Configuration ReservedSlots ]:.
 
 > [!CAUTION]
-> Weapon Config Located In ..\addons\counterstrikesharp\plugins\Advanced-ReservedSlots-GoldKingZ\config\ReservedSlots_Settings.json                                         
+> ReservedSlots Config Located In ..\addons\counterstrikesharp\plugins\Advanced-ReservedSlots-GoldKingZ\config\ReservedSlots_Settings.json                                         
 ```json
 
 {
