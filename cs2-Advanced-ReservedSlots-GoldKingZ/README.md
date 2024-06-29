@@ -1,17 +1,7 @@
 
-## .:[ Price ]:.
+## .:[ Price ]:. [(Payment Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/main/README.md#payment-rules)
 ```diff
 + PRICE 10$ [Lifetime ( One Time Payment )] 
-+ If You Have Multiple Servers And You Want Plugin To All Your Servers
-+ Rule 1: Must Be Same Prefix Server Name Otherwise You Will Be 10$ Again
-+ Rule 2: If Moderator Found Before Paying Was Same Prefix Server Name After Paying Changed Without Telling Them Or Using Tricky Way You Will Be Banned And Your Key Will Removed 
-
-example of Same Prefix Server (GKZ is prefix)
-GKZ | Retake Server 
-GKZ | 1v1 Server 
-GKZ | surf Server
-
-After Paying Will Will Receive Only Compiled Plugin (Not Open Source) + Key To Active Plugin
 ```
 
 # [CS2] Advanced-ReservedSlots-GoldKingZ (1.0.0)  
