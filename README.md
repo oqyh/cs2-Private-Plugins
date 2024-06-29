@@ -24,3 +24,5 @@ example of Same Prefix Server (XPLAY.GG is prefix)
 
 ![XPLAY GG](https://github.com/oqyh/cs2-Private-Plugins/assets/48490385/6f5ba285-d687-4f65-94ff-af7da7b4e459)
 
+
+### Also If Donate, Donors will have priority. To get requests or ideas to enhance private plugins
