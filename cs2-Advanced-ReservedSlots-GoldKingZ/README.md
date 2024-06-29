@@ -21,6 +21,8 @@ After Paying Will Will Receive Only Compiled Plugin (Not Open Source) + Key To A
 
 ![image](https://github.com/oqyh/cs2-Private-Plugins/assets/48490385/c7eea100-f571-40e9-880c-ef2414e055d6)
 
+![serverfull](https://github.com/oqyh/cs2-Private-Plugins/assets/48490385/789259bd-a31c-40b5-a140-5ddf26c04bbf)
+
 
 ## .:[ Dependencies ]:.
 [Metamod:Source (2.x)](https://www.sourcemm.net/downloads.php/?branch=master)
