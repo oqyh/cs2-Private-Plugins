@@ -76,6 +76,27 @@ After Paying Will Will Receive Only Compiled Plugin (Not Open Source) + Key To A
 
 ```
 
+## .:[ Language ]:.
+```json
+{
+	//==========================
+	//        Colors
+	//==========================
+	//{Yellow} {Gold} {Silver} {Blue} {DarkBlue} {BlueGrey} {Magenta} {LightRed}
+	//{LightBlue} {Olive} {Lime} {Red} {Purple} {Grey}
+	//{Default} {White} {Darkred} {Green} {LightYellow}
+	//==========================
+	//        Other
+	//==========================
+	//{nextline} = Print On Next Line
+	//==========================
+
+	"player.kicked.full.delay": "{red}------------------------------------------ {nextline} {green}[AdvancedReservedSlots] {red}Server is full {grey}This Slot Reserved For {lime}Vips Only {nextline} {red}------------------------------------------",
+	"player.kicked.full.replaced": "{red}------------------------------------------ {nextline} {green}[AdvancedReservedSlots] {grey}You Will Be Kicked {nextline} {green}[AdvancedReservedSlots] {grey}Reason: {lime}[ {purple}{0} {grey}/ {gold}{1} {lime}] {grey}Took Your Spot {nextline} {red}------------------------------------------",
+	"random.kick.announcement": "{green}[AdvancedReservedSlots] {lime}[ {purple}{0} {grey}/ {gold}{1} {lime}] {grey}Joinned {nextline} {green}[AdvancedReservedSlots] {grey}Random Kick Choosed {red}{2}"
+}
+```
+
 ## .:[ Change Log ]:.
 ```
 (1.0.0)
