@@ -3,7 +3,7 @@
 ```diff
 + PRICE 10$ [Lifetime ( One Time Payment )] 
 + If You Have Multiple Servers And You Want Plugin To All Your Servers
-+ Rule 1: Must Be Same Prefix Server Name Otherwise You Will Be 5$ Again
++ Rule 1: Must Be Same Prefix Server Name Otherwise You Will Be 10$ Again
 + Rule 2: If Moderator Found Before Paying Was Same Prefix Server Name After Paying Changed Without Telling Them Or Using Tricky Way You Will Be Banned And Your Key Will Removed 
 
 example of Same Prefix Server (GKZ is prefix)
