@@ -26,7 +26,7 @@ example of Same Prefix Server (XPLAY.GG is prefix)
 
 ### .:[ Free Private Rules ]:. 
 
-**No Need Payment** You Need To Open Ticket Ask For Plugin And Send Server Ips That You Want Plugin In It
+**No Need Payment** You Need To Create Ticket (https://discord.com/channels/651838917687115806/971439767269015564) Ask For Free Plugin That You Want it And Send Server Ips That You Want Plugin In It
 You Will Receive Only Compiled Plugin (Not Open Source) + Key To Active Plugin
 
 **Rule 1**: If You Leave From Our Discord (GKZ Discord) **Your Key Will Removed** 
