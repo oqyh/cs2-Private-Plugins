@@ -1,5 +1,5 @@
 
-## .:[ Price ]:. [(Free Private Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/6d0a9c0c5b27b80e0db613f478416b34e0af3def/README.md?plain=1#L27)
+## .:[ Price ]:. [(Free Private Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/11b92dc04067753a390d796dbba39d789f270aab/README.md?plain=1#L27)
 ```diff
 + PRICE FREE [Only Discord Members] 
 ```
