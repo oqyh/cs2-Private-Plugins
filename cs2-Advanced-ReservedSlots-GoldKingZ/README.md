@@ -1,5 +1,5 @@
 
-## .:[ Price ]:. [(Payment Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/6d0a9c0c5b27b80e0db613f478416b34e0af3def/README.md?plain=1#L7)
+## .:[ Price ]:. [(Payment Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/8040379022008134dde7d34cf08f7a611c750862/README.md?plain=1#L7)
 ```diff
 + PRICE 10$ [Lifetime ( One Time Payment )] 
 ```
