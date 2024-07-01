@@ -1,6 +1,6 @@
 # Private Plugins For CounterStrikeSharp cssharp cs2
 
-### For Purchase Join Our Discord 
+### Join Our Discord First
 https://discord.com/invite/U7AuQhu
 
 
