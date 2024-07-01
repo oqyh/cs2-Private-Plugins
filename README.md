@@ -24,5 +24,11 @@ example of Same Prefix Server (XPLAY.GG is prefix)
 
 ![XPLAY GG](https://github.com/oqyh/cs2-Private-Plugins/assets/48490385/6f5ba285-d687-4f65-94ff-af7da7b4e459)
 
+### .:[ Free Private Rules ]:. 
+
+**No Need Payment** You Need To Open Ticket Ask For Plugin And Send Server Ips That You Want Plugin In It
+You Will Receive Only Compiled Plugin (Not Open Source) + Key To Active Plugin
+
+**Rule 1**: If You Leave From Our Discord (GKZ Discord) **Your Key Will Removed** 
 
 ### Also If Donate, Donors will have priority. To get requests or ideas to enhance private plugins
