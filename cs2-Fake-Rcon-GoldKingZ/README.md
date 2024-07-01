@@ -113,11 +113,11 @@
 
 {
   "Group_1": {
-    "ALLOW_THESE_ONLY": "sv_alltalk,sv_allow_votes", // These Groups Only Have These sv_alltalk,sv_allow_votes
+    "ALLOW_THESE_ONLY": "sv_alltalk,sv_allow_votes", // This Group Only Have These sv_alltalk,sv_allow_votes
     "FLAGS": "@css/vip,#css/vip"
   },
   "Group_2": {
-    "ALLOW_ANY_EXCEPT_THESE": "sv_cheats,mp_respawn_on_death_t,mp_respawn_on_death_ct", // These Groups Have ANY Execpt These sv_cheats,mp_respawn_on_death_t,mp_respawn_on_death_ct
+    "ALLOW_ANY_EXCEPT_THESE": "sv_cheats,mp_respawn_on_death_t,mp_respawn_on_death_ct", // This Group Have ANY Execpt These sv_cheats,mp_respawn_on_death_t,mp_respawn_on_death_ct
     "FLAGS": "@css/mods,#css/mods"
   },
   "Group_3": { // ANY Convars
