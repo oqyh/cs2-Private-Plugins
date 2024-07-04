@@ -2,7 +2,7 @@
 
 ### Join Our Discord First
 
-![Discord Banner 2](https://discord.com/api/guilds/651838917687115806/widget.png?style=banner2)
+<a href="https://discord.com/invite/U7AuQhu"><img src="https://discord.com/api/guilds/651838917687115806/widget.png?style=banner2"></a>
 
 ***
 
