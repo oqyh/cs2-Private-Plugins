@@ -1,7 +1,11 @@
 # Private Plugins For CounterStrikeSharp cssharp cs2
 
 ### Join Our Discord First
-https://discord.com/invite/U7AuQhu
+
+![Discord Banner 2](https://discord.com/api/guilds/651838917687115806/widget.png?style=banner2)
+
+***
+
 
 
 ### .:[ Payment Rules ]:. 
