@@ -1,7 +1,7 @@
 
 ## .:[ Price ]:. [(Payment Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/8040379022008134dde7d34cf08f7a611c750862/README.md?plain=1#L7)
 ```diff
-+ PRICE 10$ [Lifetime ( One Time Payment )] 
++ PRICE 10$ + FREE Multiple Servers [Lifetime ( One Time Payment )] 
 ```
 
 # [CS2] Say-Sound-GoldKingZ (1.0.0)  
