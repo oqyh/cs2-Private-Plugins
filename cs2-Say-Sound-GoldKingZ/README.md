@@ -4,7 +4,7 @@
 + PRICE 10$ + FREE Multiple Servers [Lifetime ( One Time Payment )] 
 ```
 
-# [CS2] Say-Sound-GoldKingZ (1.0.0)  
+# [CS2] Say-Sound-GoldKingZ (1.0.1)  
 
 ### Let Players Convert Chat/Radio To Say Sound With Radius
 
@@ -38,6 +38,9 @@
 
   //Hide Default Chat Message If Toggle Say Sound By Chat?
   "HideDefaultChatAfterSaySound": true,
+
+  //Override Plugins Controls Chat Hook
+  "Override_These_Plugins": "CS2-Tags,Plugin2,Plugin3",
 }
 
 ```
@@ -46,14 +49,17 @@
 ## .:[ Configuration Say Sound ]:.
 
 > [!CAUTION]
-> ReservedSlots Config Located In ..\addons\counterstrikesharp\plugins\Say-Sound-GoldKingZ\config\SaySound_Settings.json                                         
+> SaySound Config Located In ..\addons\counterstrikesharp\plugins\Say-Sound-GoldKingZ\config\SaySound_Settings.json                                         
 ```json
 
 {
   "clap": //This Will Be Hooked To Lang  "saysound.chat.clap" 
 	{
 	  "SOUND_NAME": "Clapping", //Sound Name To Use In Lang {1} If Needed
+	  "MAKE_SOUND_3D": true, //true = Sound will Play As 3d With Ridus || false = Will Play Locally Direct To Players
+
 	  "ONLY_FOR_FLAGS": "@css/admin,#css/root", //Only These Flags Have Access To This Say Sound (Empty OR Not Using It = Anyone Can Use It)
+
 	  "HOOK_RADIO": "cheer", //Hook Radio cheer
 	  "TOGGLE_SOUND_IN_CHAT": "clap,claping,clapping", //Toggle This Sound By Chat
 	  
@@ -111,6 +117,12 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.1)
+-Fix Some Bugs
+-Added gkz_plugins To check status of gkz plugins
+-Added MAKE_SOUND_3D
+-Added Override_These_Plugins
+
 (1.0.0)
 -Initial Release
 ```
