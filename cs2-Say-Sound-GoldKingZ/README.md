@@ -90,8 +90,8 @@
 	//{nextline} = Print On Next Line
 	//==========================
 	
-	"player.not.allowed": "{green}[SaySound] {grey}You Are Not Allowed, This For {lime}VIPS Only",
-	"player.cooldown": "{green}[SaySound] {grey}You Need To Wait {darkred}{0} Secs {grey}Cooldown",
+	"player.not.allowed": "{green}[SaySound] {grey}You Are Not Allowed, This For {lime}VIPS Only", //make it empty string "" message will not show
+	"player.cooldown": "{green}[SaySound] {grey}You Need To Wait {darkred}{0} Secs {grey}Cooldown", //make it empty string "" message will not show
 	
 	//==========================
 	//{0} = Player Name Who Say Sound
