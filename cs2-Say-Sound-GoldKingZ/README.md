@@ -4,7 +4,7 @@
 + PRICE 10$ + FREE Multiple Servers [Lifetime ( One Time Payment )] 
 ```
 
-# [CS2] Say-Sound-GoldKingZ (1.0.1)  
+# [CS2] Say-Sound-GoldKingZ (1.0.2)  
 
 ### Let Players Convert Chat/Radio To Say Sound With Radius
 
@@ -49,9 +49,9 @@
 ## .:[ Configuration Say Sound ]:.
 
 > [!CAUTION]
-> SaySound Config Located In ..\addons\counterstrikesharp\plugins\Say-Sound-GoldKingZ\config\SaySound_Settings.json                                         
+> SaySound Config Located In ..\addons\counterstrikesharp\plugins\Say-Sound-GoldKingZ\config\SaySound_Settings.json               
+                          
 ```json
-
 {
   "clap": //This Will Be Hooked To Lang  "saysound.chat.clap" 
 	{
@@ -117,6 +117,9 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.2)
+-Added AllowDeadPlayersToSaySound
+
 (1.0.1)
 -Fix Some Bugs
 -Added gkz_plugins To check status of gkz plugins
