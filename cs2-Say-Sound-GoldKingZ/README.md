@@ -33,6 +33,9 @@
   //Key To Active Plugin
   "KEY": "",
 
+  //Allow Dead Players To Toggle Say Sound?
+  "AllowDeadPlayersToSaySound": false,
+
   //Hide Default Radio Message If Toggle Say Sound By Radio?
   "HideDefaultRadioAfterSaySound": true,
 
