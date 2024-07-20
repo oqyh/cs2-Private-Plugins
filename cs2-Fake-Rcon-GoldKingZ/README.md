@@ -108,7 +108,7 @@
 ## .:[ Configuration FakeRcon ]:.
 
 > [!CAUTION]
-> ReservedSlots Config Located In ..\addons\counterstrikesharp\plugins\Fake-Rcon-GoldKingZ\config\FakeRcon_Settings.json                                         
+> FakeRcon Config Located In ..\addons\counterstrikesharp\plugins\Fake-Rcon-GoldKingZ\config\FakeRcon_Settings.json                                         
 ```json
 
 {
