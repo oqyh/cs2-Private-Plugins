@@ -8,6 +8,7 @@
 
 ### Send Ads , Auto Translate , Toggle On Off Ads , Server Logo , And More
 
+![adplugin](https://github.com/user-attachments/assets/249d6046-b8aa-4210-af32-ee988f39738d)
 
 
 ## .:[ Dependencies ]:.
