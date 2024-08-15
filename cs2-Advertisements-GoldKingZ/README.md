@@ -82,6 +82,8 @@
 	//After Test Wall Text Remove It In X Sec
 	"Test_WallText_DeleteTimeInXSec": 10,
 	
+
+
 	//Allow These Groups Only To Wall Logo (Make It Empty "" To Let AnyOne)
 	"Test_WallLogo_Flags": "@css/vip,#css/vip",
 	
@@ -91,6 +93,8 @@
 	//After Test Wall Logo Remove It In X Sec
 	"Test_WallLogo_DeleteTimeInXSec": 10,
 	
+
+
 	//Allow These Groups Only To Player Text (Make It Empty "" To Let AnyOne)
 	"Test_PlayerText_Flags": "@css/vip,#css/vip",
 	
@@ -100,6 +104,9 @@
 	//After Test Player Text Remove It In X Sec
 	"Test_PlayerText_DeleteTimeInXSec": 10,
 	
+
+
+
 	//Allow These Groups Only To Player Logo (Make It Empty "" To Let AnyOne)
 	"Test_PlayerLogo_Flags": "@css/vip,#css/vip",
 	
@@ -131,16 +138,16 @@
 	//==========================
 	//        Other
 	//==========================
-	//{nextline} = Print On Next Line
-	//{SERVERIP} = Print Server Ip Without Port
-	//{SERVERIPANDPORT} = Print Server Ip With Port
-	// "Mode" : 0 Or Not Used 		 = Print Chat
-	// 			1             		 = Print Middle HTML HUD
-	// 			2             		 = Print Bottom HUD
-	// 			3             		 = Print Print ALERT HUD
-	// "ShowHudMessageForXSecs"		 = Show HUD Time In Secs
-	// "DontShowThisADToTheseGroups" = Skip Showing This Ads To These Groups
-	// "ShowThisADToTheseGroupsOnly" = Show This Ads To These Groups Only
+	//{nextline}                                     = Print On Next Line
+	//{SERVERIP}                                     = Print Server Ip Without Port
+	//{SERVERIPANDPORT}                              = Print Server Ip With Port
+	// "Mode" : 0 Or Not Used                        = Print Chat
+	// 			1                        = Print Middle HTML HUD
+	// 			2                        = Print Bottom HUD
+	// 			3                        = Print Print ALERT HUD
+	// "ShowHudMessageForXSecs"                      = Show HUD Time In Secs
+	// "DontShowThisADToTheseGroups"                 = Skip Showing This Ads To These Groups
+	// "ShowThisADToTheseGroupsOnly"                 = Show This Ads To These Groups Only
 	//==========================
 	
 	"WallText.NotAllowed": "{green}Gold KingZ {grey}| {darkred}You Are Not Allowed To Use This Command. (WallText)",
