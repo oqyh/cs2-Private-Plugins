@@ -30,92 +30,90 @@
 
 {
 
-  //Key To Active Plugin
-  "KEY": "",
-  
-  //-----------------------------------------------------------------------------------
-  
-  //Enable MySql? Located In Advertisements-GoldKingZ/config/MySql_Settings.json
-  Enable_MySql = false,
-  
-  //Default Server Language Uses In Advertisements-GoldKingZ/lang/en.json
-  DefaultServerLanguage = "en",
+	//Key To Active Plugin
+	"KEY": "",
+	
+	//-----------------------------------------------------------------------------------
+	
+	//Enable MySql? Located In Advertisements-GoldKingZ/config/MySql_Settings.json
+	"Enable_MySql": false,
+	
+	//Default Server Language Uses In Advertisements-GoldKingZ/lang/en.json
+	"DefaultServerLanguage": "en",
+	
+	//Allow These Groups Only To Change Lang (Make It Empty "" To Let AnyOne)
+	"ChangeLangFlags": "@css/vip,#css/vip",
+	
+	//Commands In Game To Change Lang
+	"ChangeLangCommandsInGame": "!langs,!lang",
+	
+	//Allow These Groups Only To Toggle On/Off Client Side Lang (Make It Empty "" To Let AnyOne)
+	"ToggleAdsFlags": "@css/vvip,#css/vvip",
+	
+	//Commands In Game To Toggle On/Off Client Side
+	"ToggleAdsCommandsInGame": "!ad,!ads",
+	
+	//Auto Translate Depend Where Client From Depend Country Lang Mapping Located In Advertisements-GoldKingZ/config/Language_Settings.json
+	//false = Server Owner Should Add Many Lang In Advertisements-GoldKingZ/lang/ To Let Client Change Their Ad Lang (ChangeLangCommandsInGame) If Not Found Will Go Back To DefaultServerLanguage 
+	//true = Will Get DefaultServerLanguage And Auto Translate Depend (Language_Settings.json) But If Client ChangeLangCommandsInGame This Will Get Skipped And Auto Translate To What Language He Want
+	"AutoTranslateDefaultServerToClientCountry": false,
+	
+	//Send Message Every X Mins
+	"SendMessageEveryXMins": 5,
+	
+	//true = Send Random Messages But Not Duplicated
+	//false = Send From Top To Bottom Messages Order
+	"SendRandomMessages": false,
+	
+	//Auto Remove Player Cookie Older Than X Days (Inactive Players)
+	"AutoRemovePlayerCookieOlderThanXDays": 7,
+	
+	//Auto Remove Player MySql Older Than X Days (Inactive Players)
+	"AutoRemovePlayerMySqlOlderThanXDays": 7,
+	
+	//-----------------------------------------------------------------------------------
+	
+	//Allow These Groups Only To Wall Text (Make It Empty "" To Let AnyOne)
+	"Test_WallText_Flags": "@css/vip,#css/vip",
+	
+	//Commands In Game To Wall Text
+	"Test_WallText_CommandsInGame": "!walltext,!wt",
+	
+	//After Test Wall Text Remove It In X Sec
+	"Test_WallText_DeleteTimeInXSec": 10,
+	
+	//Allow These Groups Only To Wall Logo (Make It Empty "" To Let AnyOne)
+	"Test_WallLogo_Flags": "@css/vip,#css/vip",
+	
+	//Commands In Game To Wall Logo
+	"Test_WallLogo_CommandsInGame": "!walllogo,!wl",
+	
+	//After Test Wall Logo Remove It In X Sec
+	"Test_WallLogo_DeleteTimeInXSec": 10,
+	
+	//Allow These Groups Only To Player Text (Make It Empty "" To Let AnyOne)
+	"Test_PlayerText_Flags": "@css/vip,#css/vip",
+	
+	//Commands In Game To Player Text
+	"Test_PlayerText_CommandsInGame": "!playertext,!pt",
+	
+	//After Test Player Text Remove It In X Sec
+	"Test_PlayerText_DeleteTimeInXSec": 10,
+	
+	//Allow These Groups Only To Player Logo (Make It Empty "" To Let AnyOne)
+	"Test_PlayerLogo_Flags": "@css/vip,#css/vip",
+	
+	//Commands In Game To Player Logo
+	"Test_PlayerLogo_CommandsInGame": "!playerlogo,!pl",
+	
+	//After Test Player Logo Remove It In X Sec
+	"Test_PlayerLogo_DeleteTimeInXSec": 10,
+	
+	//-----------------------------------------------------------------------------------
+	
+	//Enable Debug Will Print Server Console If You Face Any Issue
+	"EnableDebug": false,
 
-  //Allow These Groups Only To Change Lang (Make It Empty "" To Let AnyOne)
-  ChangeLangFlags  = "@css/vip,#css/vip",
-  
-  //Commands In Game To Change Lang
-  ChangeLangCommandsInGame = "!langs,!lang",
-  
-  //Allow These Groups Only To Toggle On/Off Client Side Lang (Make It Empty "" To Let AnyOne)
-  ToggleAdsFlags = "@css/vvip,#css/vvip",
-  
-  //Commands In Game To Toggle On/Off Client Side
-  ToggleAdsCommandsInGame  = "!ad,!ads",
-  
-  //Auto Translate Depend Where Client From Depend Country Lang Mapping Located In Advertisements-GoldKingZ/config/Language_Settings.json
-  //false = Server Owner Should Add Many Lang In Advertisements-GoldKingZ/lang/ To Let Client Change Their Ad Lang (ChangeLangCommandsInGame) If Not Found Will Go Back To DefaultServerLanguage 
-  //true = Will Get DefaultServerLanguage And Auto Translate Depend (Language_Settings.json) But If Client ChangeLangCommandsInGame This Will Get Skipped And Auto Translate To What Language He Want
-  AutoTranslateDefaultServerToClientCountry = false,
-  
-  //Send Message Every X Mins
-  SendMessageEveryXMins = 5,
-  
-  //true = Send Random Messages But Not Duplicated
-  //false = Send From Top To Bottom Messages Order
-  SendRandomMessages = false,
-  
-  //Auto Remove Player Cookie Older Than X Days (Inactive Players)
-  AutoRemovePlayerCookieOlderThanXDays = 7,
-  
-  //Auto Remove Player MySql Older Than X Days (Inactive Players)
-  AutoRemovePlayerMySqlOlderThanXDays = 7,
-  
-  //-----------------------------------------------------------------------------------
-  
-  //Allow These Groups Only To Wall Text (Make It Empty "" To Let AnyOne)
-  Test_WallText_Flags  = "@css/vip,#css/vip",
-  
-  //Commands In Game To Wall Text
-  Test_WallText_CommandsInGame  = "!walltext,!wt",
-  
-  //After Test Wall Text Remove It In X Sec
-  Test_WallText_DeleteTimeInXSec  = 10,
-  
-  
-  //Allow These Groups Only To Wall Logo (Make It Empty "" To Let AnyOne)
-  Test_WallLogo_Flags  = "@css/vip,#css/vip",
-  
-  //Commands In Game To Wall Logo
-  Test_WallLogo_CommandsInGame  = "!walllogo,!wl",
-  
-  //After Test Wall Logo Remove It In X Sec
-  Test_WallLogo_DeleteTimeInXSec  = 10,
-  
-  
-  //Allow These Groups Only To Player Text (Make It Empty "" To Let AnyOne)
-  Test_PlayerText_Flags  = "@css/vip,#css/vip",
-  
-  //Commands In Game To Player Text
-  Test_PlayerText_CommandsInGame  = "!playertext,!pt",
-  
-  //After Test Player Text Remove It In X Sec
-  Test_PlayerText_DeleteTimeInXSec  = 10,
-  
-  
-  //Allow These Groups Only To Player Logo (Make It Empty "" To Let AnyOne)
-  Test_PlayerLogo_Flags  = "@css/vip,#css/vip",
-  
-  //Commands In Game To Player Logo
-  Test_PlayerLogo_CommandsInGame  = "!playerlogo,!pl",
-  
-  //After Test Player Logo Logo Remove It In X Sec
-  Test_PlayerLogo_DeleteTimeInXSec  = 10,
-  
-  //-----------------------------------------------------------------------------------
-  
-  //Enable Debug Will Print Server Console If You Face Any Issue
-  EnableDebug = false,
 }
 
 ```
