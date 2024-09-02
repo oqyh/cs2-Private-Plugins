@@ -40,44 +40,44 @@
   //Emote View?
   //true = ThirdPerson View
   //false = FirstPerson View
-  "Emote_Thirdperson_View" = true;
+  "Emote_Thirdperson_View": true;
 
   //Freeze If Player Emote?
-  "Emote_Freeze" = true;
+  "Emote_Freeze": true;
 
   //Give Cooldown X Secs After Emote
-  "Emote_CooldownInXSecs" = 25;
+  "Emote_CooldownInXSecs": 25;
 
   //Cancel Player Emote On Pressing
   // ( w , a , s , d , jump , crouch , scoreboard)
-  "Emote_CancelPlayersAnimationOnPressing" = "w,s,jump,crouch";
+  "Emote_CancelPlayersAnimationOnPressing": "w,s,jump,crouch";
 
   // Do You Want Emote_CancelPlayersAnimationOnPressing Works While Player On WASD Menu
-  "Emote_DoCancelPlayersAnimationWhileMenuWASDIsOn" = false;
+  "Emote_DoCancelPlayersAnimationWhileMenuWASDIsOn": false;
 
   // Emote Menu Mode
   // 1 = Chat Menu
   // 2 = Center Menu
   // 3 = WASD Menu (You Can Add Menu And SubMenu)
-  "OpenMenu_Mode" = 3;
+  "OpenMenu_Mode": 3;
 
   // Allow These Groups Only To Open Emote Menu (Make It Empty "" To Let AnyOne)  [Example:@css/root,@css/admin,@css/vip,#css/admin,#css/vip]
-  "OpenMenu_Flags" = "";
+  "OpenMenu_Flags": "";
 
   //Commands In Game To Open Emote Menu
-  "OpenMenu_CommandsInGame" = "!emotes,!emote,!dances,!dance";
+  "OpenMenu_CommandsInGame": "!emotes,!emote,!dances,!dance";
 
   //Close Menu After Select Emote
-  "OpenMenu_CloseMenuAfterSelectItem" = false;
+  "OpenMenu_CloseMenuAfterSelectItem": false;
 
 //------------------------------[Advanced WASD Menu Settings Mode 3]--------------------------------------
 
   //If OpenMenu_Mode 3 Freeze Player When Menu Open
-  "MenuWASD_FreezePlayerOnMenuOpen" = true;
+  "MenuWASD_FreezePlayerOnMenuOpen": true;
 
   //If OpenMenu_Mode 3 Close Player Menu On Pressing
   // ( w , a , s , d , jump , crouch , scoreboard)
-  "MenuWASD_ExitMenuOnPressing" = "jump,scoreboard,crouch";
+  "MenuWASD_ExitMenuOnPressing": "jump,scoreboard,crouch";
 
 //-----------------------------------------------------------------------------------------
 
