@@ -8,7 +8,8 @@
 
 ### Fortnite Dance Emote Animation 
 
-![EmotePlugin](https://github.com/user-attachments/assets/a5e80fff-33d3-4a2c-9b52-8dfa4158230c)
+
+![EmotePlugin](https://github.com/user-attachments/assets/1d8bcb3b-6eb4-4f87-ae18-b3c31cad9e56)
 
 
 
