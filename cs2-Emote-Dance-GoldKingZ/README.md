@@ -88,7 +88,7 @@
 ```
 
 
-## .:[ Configuration FakeRcon ]:.
+## .:[ Configuration Emote ]:.
 
 > [!CAUTION]
 > Emote Config Located In ..\addons\counterstrikesharp\plugins\Emote-Dance-GoldKingZ\config\Emote_Settings.json                                       
