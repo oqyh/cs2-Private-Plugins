@@ -10,6 +10,12 @@
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/GWZRZuL20QA/0.jpg)](https://www.youtube.com/watch?v=GWZRZuL20QA)
 
+![mode1](https://github.com/user-attachments/assets/9a1a1524-a752-4808-8f61-ccfeab800afd)
+![mode2](https://github.com/user-attachments/assets/2b63a3ef-0d50-489c-b7f1-0c21603a2b79)
+![mode3](https://github.com/user-attachments/assets/0a5f692e-3854-4c3d-a08c-3762046e9b2a)
+
+
+
 
 ## .:[ Dependencies ]:.
 
