@@ -4,7 +4,7 @@
 + PRICE 10$ + FREE Multiple Servers [Lifetime ( One Time Payment )] 
 ```
 
-# [CS2] Say-Sound-GoldKingZ (1.0.2)  
+# [CS2] Say-Sound-GoldKingZ (1.0.3)  
 
 ### Let Players Convert Chat/Radio To Say Sound With Radius
 
@@ -33,17 +33,73 @@
   //Key To Active Plugin
   "KEY": "",
 
+  //Change Check IpAdress To WebSite
+  "ChangeCheckIpAdressToWebSite": "XXXXXXXXX.YYY",
+
+//----------------------------[ ↓ Say Sound Config ↓ ]----------------------------
+
   //Allow Dead Players To Toggle Say Sound?
   "AllowDeadPlayersToSaySound": false,
 
   //Hide Default Radio Message If Toggle Say Sound By Radio?
-  "HideDefaultRadioAfterSaySound": true,
+  "HideDefaultRadioMessageAfterSaySound": true,
 
   //Hide Default Chat Message If Toggle Say Sound By Chat?
-  "HideDefaultChatAfterSaySound": true,
+  "HideDefaultChatMessageAfterToggleShortCutSaySound": true,
 
   //Override Plugins Controls Chat Hook
   "Override_These_Plugins": "CS2-Tags,Plugin2,Plugin3",
+
+  //Open Menu Mode:
+  // 0 = Disable Menu
+  // 1 = Custom Chat Menu By GoldKingZ
+  // 2 = Custom Chat Menu By GoldKingZ
+  // 3 = WASD Menu By GoldKingZ
+  "OpenMenu_Mode": 3,
+
+  //Allow These Groups Only To OpenMenu_Mode (Make It Empty "" To Let AnyOne)  [Example:@css/root,@css/admin,@css/vip,#css/admin,#css/vip]
+  "OpenMenu_Flags": "",
+
+  //Commands In Game To Open Menu
+  "OpenMenu_CommandsInGame": "!ssmenu,!saysoundmenu,!saysoundsmenu",
+
+  //Close Menu After Select Emote
+  "OpenMenu_CloseMenuAfterSelectItem": false;
+
+  //Allow These Groups Only To Toggle On / Off SaySound  (Make It Empty "" To Let AnyOne)  [Example:@css/root,@css/admin,@css/vip,#css/admin,#css/vip]
+  "Toggle_DisableSaySoundsFlags": "@css/root,@css/admin,@css/vip,#css/admin,#css/vip",
+
+  //Commands In Game To Toggle On / Off SaySound
+  "Toggle_DisableSaySoundsCommandsInGame": "!ss,!saysound,!saysounds",
+
+  //Auto Remove Player Cookie Older Than X Days (Inactive Players)
+  "Toggle_AutoRemovePlayerCookieOlderThanXDays": 7,
+
+//----------------------------[ ↓ Advanced WASD Menu Mode 3 Settings ↓ ]----------------------------
+
+  //If OpenMenu_Mode 3 Freeze Player When Menu Open
+  "MenuWASD_FreezePlayerOnMenuOpen": true,
+
+  //If OpenMenu_Mode 3 Close Player Menu On Pressing
+  // ( w , a , s , d , jump , crouch , scoreboard , leftclick , rightclick , attack3)
+  "MenuWASD_ExitMenuOnPressing": "jump,scoreboard,crouch,leftclick,rightclick,attack3",
+
+//----------------------------[ ↓ MySql Connections ↓ ]----------------------------
+
+  //MySql Settings
+  "Enable_UseMySql": false,
+  "MySqlHost": "MySql_Host",
+  "MySqlDatabase": "MySql_Database",
+  "MySqlUsername": "MySql_Username",
+  "MySqlPassword": "MySql_Password",
+  "MySqlPort": 3306,
+
+  //Auto Remove Player MySql Older Than X Days (Inactive Players)
+  "Toggle_AutoRemovePlayerMySqlOlderThanXDays": 7,
+
+//----------------------------[ ↓ Debug ↓ ]----------------------------
+  //Enable Debug Will Print Server Console If You Face Any Issue
+  "EnableDebug": false,
 }
 
 ```
@@ -56,24 +112,44 @@
                           
 ```json
 {
-  "clap": //This Will Be Hooked To Lang  "saysound.chat.clap" 
+	//==========================
+	//        Menu Settings
+	//==========================
+	//Menu. = To Make Menu With SubMenu
+	//NoMenu. = To Make Only Item Show WithOut SubMenu
+	//SubMenu.Status. = Will Show + Toggle On / Off SaySound But With SubMenu
+	//NoMenu.Status. = Will Show + Toggle On / Off SaySound But Without SubMenu
+	//==========================
+	//        Options
+	//==========================
+	// "Flags": "@css/root,@css/vip" //Only These Can Access The Emote
+	// "Sound_Name": "Hi :D" //This Will Be {1} Used ShortCut In Lang
+	// "Hook_Radio": "cheer", //Hook This Sound Into Player Radio [Example: coverme,takepoint,holdpos,regroup,followme,takingfire,go,fallback,sticktog,getinpos,stormfront,report,roger,enemyspot,needbackup,sectorclear,inposition,reportingin,getout,negative,enemydown,sorry,cheer,compliment,thanks,go_a,go_b,needrop,deathcry]
+	// "Toggle_Sound_In_Chat": "hi,hello", //Toggle In Chat ShortCut By hi Or hello You Can Add As Many As You Like
+	// "Print_To_Chat": true, //True = Show Message || false = Dont Show Message 
+	// "Give_Cooldown_After_This_InXSecs": 5, //Give Cooldown After This 5 Secs
+	// "Sound_Path_1": "hi" // Using sounds/saysound/hi.vsnd Will Be Not 3d Radius || Using hi Only Will Be 3d Radius (Note: You Can Add Sound_Path_2 Sound_Path_3 For Multiple Sounds)
+	//==========================
+
+	"Menu.SaySound Settings": // (SaySound Settings) Is Then Display Menu Name
 	{
-	  "SOUND_NAME": "Clapping", //Sound Name To Use In Lang {1} If Needed
-	  "MAKE_SOUND_3D": true, //true = Sound will Play As 3d With Ridus || false = Will Play Locally Direct To Players
-
-	  "ONLY_FOR_FLAGS": "@css/admin,#css/root", //Only These Flags Have Access To This Say Sound (Empty OR Not Using It = Anyone Can Use It)
-
-	  "HOOK_RADIO": "cheer", //Hook Radio cheer
-	  "TOGGLE_SOUND_IN_CHAT": "clap,claping,clapping", //Toggle This Sound By Chat
-	  
-	  "PRINT_IN_CHAT": true, //Make Print Ingame Chat "saysound.chat.clap"?
-	  
-	  "GIVE_COOLDOWN_AFTER_THIS_INSECS": 5, //Give Cooldown After This X Secs
-	  
-	  "SOUNDPATH_1": "", //Sound Path You Can Add As Many As You Like Its Random Play
-	  "SOUNDPATH_2": "",
-	  "SOUNDPATH_3": ""
+		"SubMenu.Status.Sounds":{} (Sounds)  Will Toggle On / Off Say Sounds 
+	},
+	"Menu.(Free) SaySounds":
+	{
+		"SubMenu.Hi":
+		{
+			"Flags": "@css/root,@css/vip",
+			"Sound_Name": "Hi :D",
+			"Hook_Radio": "cheer",
+			"Toggle_Sound_In_Chat": "hi,hello",
+			"Print_To_Chat": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Path_1": "hi"
+		}
+		//..Add Many As You Like For More Submenus
 	}
+	//..Add Many As You Like For More Menus
 }
 
 ```
@@ -92,34 +168,86 @@
 	//==========================
 	//{nextline} = Print On Next Line
 	//==========================
-	
-	"player.not.allowed": "{green}[SaySound] {grey}You Are Not Allowed, This For {lime}VIPS Only", //make it empty string "" message will not show
-	"player.cooldown": "{green}[SaySound] {grey}You Need To Wait {darkred}{0} Secs {grey}Cooldown", //make it empty string "" message will not show
-	
-	//==========================
-	//{0} = Player Name Who Say Sound
-	//{1} = SOUND_NAME 
-	//==========================
-	"saysound.chat.clap": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.cry": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.fart": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.gg": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.haha": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.handsome": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.lightweight": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.mama": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.nicework": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.rizz": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.stop": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.suka": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.whistle": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.wtf": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}",
-	"saysound.chat.yeah": "{green}[SaySound] {purple}{0} {grey}: {yellow}{1}"
+
+	"PrintToChat.SaySound.Menu.Disabled": "{green}Gold KingZ {grey}| {darkred}Say Sound Menu Is {darkred}Disabled By The Server",
+	"PrintToChat.SaySound.Menu.Player.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}Say Sound Menu Is For {lime}VIPS {darkred}Only",
+	"PrintToChat.Player.Not.Allowed.SaySound": "{green}Gold KingZ {grey}| You Are Not Allowed To Used This Say Sound Its For {lime}VIPS Only",
+	"PrintToChat.Player.Not.Allowed.SaySound.Dead": "{green}Gold KingZ {grey}| You Are Not Allowed To Say Sound While You Are {darkred}Dead",
+	"PrintToChat.Player.Not.Allowed.Toggle": "{green}Gold KingZ {grey}| You Are Not Allowed To Toggle Off/On Say Sounds Its For {lime}VIPS Only",
+	"PrintToChat.Player.On.Cooldown": "{green}Gold KingZ {grey}| You Need To Wait {darkred}{0} {grey}Cooldown",
+	"PrintToChat.SaySound.Enabled": "{green}Gold KingZ {grey}| Say Sound Is {lime}Enabled",
+	"PrintToChat.SaySound.Disabled": "{green}Gold KingZ {grey}| Say Sound Is {darkred}Disabled",
+	"PrintToChatToAll.SaySound": "{green}Gold KingZ {grey}| {purple}{0} {grey}Saying.... {yellow}{1}", //If Not Found Custom Sound Message Plugin Will Use This Message By Default
+
+	// .:[Custom Sound Messages]:.
+	//SubMenu.Hi By Removing SubMenu. And Making PrintToChatToAll.SaySound.xxx To PrintToChatToAll.SaySound.Hi Plugin Will Automatic Will Use Custom Sound Message Not PrintToChatToAll.SaySound 
+
+	"PrintToChatToAll.SaySound.Hi": "{green}Gold KingZ {grey}| {purple}{0} {grey}: Hi :))))", 
+	"PrintToChatToAll.SaySound.Wake Up (Not 3d Sound)": "{green}Gold KingZ {grey}| {darkred}[ADMIN] {purple}{0} {yellow}{1}",
+
+
+	"Menu.Mode_1.Title.MainMenu": "{yellow}.:[ Say Sound Menu ]:.",
+	"Menu.Mode_1.Title.SubMenu": "{gold} {0}",
+	"Menu.Mode_1.BreakLine": "{Blue}-----------",
+	"Menu.Mode_1.Numbers.Color": "{green}",
+	"Menu.Mode_1.Status.Enabled": "{orange}: {lime}Enabled",
+	"Menu.Mode_1.Status.Disabled": "{orange}: {red}Disabled",
+	"Menu.Mode_1.SubMenu.Indicator": "",
+	"Menu.Mode_1.BackToMainMenu": "{purple}!6 {grey}<- Back to Main Menu",
+	"Menu.Mode_1.PreviousPage": "{yellow}!7 {grey}<- Back",
+	"Menu.Mode_1.NextPage": "{yellow}!8 {grey}-> Next",
+	"Menu.Mode_1.Close": "{red}!9 {grey}-> Close Menu",
+	"Menu.Mode_1.MenuClosed": "{green}Gold KingZ {grey}| {red}Menu Closed",
+
+
+
+	"Menu.Mode_2.Title.MainMenu": "<font class='fontSize-M' color='yellow'> .:[ Say Sound Menu ]:. </font>",
+	"Menu.Mode_2.Title.SubMenu": "<font class='fontSize-M' color='gold'> {0} </font>",
+	"Menu.Mode_2.Numbers.Color": "green",
+	"Menu.Mode_2.Status.Enabled": " <font color='orange'>:</font> <font color='lime'> Enabled </font>",
+	"Menu.Mode_2.Status.Disabled": " <font color='orange'>:</font> <font color='red'> Disabled </font>",
+	"Menu.Mode_2.SubMenu.Indicator": "",
+	"Menu.Mode_2.BackToMainMenu": "<font color='purple'>!6</font> &#60;- Back to Main Menu",
+	"Menu.Mode_2.PreviousPage": "<font color='yellow'>!7</font> &#60;- Back",
+	"Menu.Mode_2.NextPage": "<font color='yellow'>!8</font> -> Next",
+	"Menu.Mode_2.Close": "<font color='red'>!9</font> -> Close Menu",
+
+
+	"Menu.Mode_3.Title.MainMenu": "<font class='fontSize-M' color='yellow'> .:[ Say Sound Menu ]:. </font>",
+	"Menu.Mode_3.Title.SubMenu": "<font class='fontSize-M' color='Gold'> {0} </font>",
+	"Menu.Mode_3.Highlighted_Line.Color": "orange",
+	"Menu.Mode_3.NOT_Highlighted_Line.Color": "white",
+	"Menu.Mode_3.Highlighted_Line.LeftSide": "<font class='fontSize-L' color='darkred'> ►[ </font>",
+	"Menu.Mode_3.Highlighted_Line.RightSide": "<font class='fontSize-L' color='darkred'> ]◄ </font>",
+	"Menu.Mode_3.Highlighted_Line.SubMenu.Indicator": "",
+	"Menu.Mode_3.Status.Enabled": " <font color='orange'>:</font> <font color='lime'> Enabled </font>",
+	"Menu.Mode_3.Status.Disabled": " <font color='orange'>:</font> <font color='red'> Disabled </font>",
+	"Menu.Mode_3.SubMenu.Indicator": "",
+	"Menu.Mode_3.MoreItemsBlow.Indicator": "<img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/refs/heads/main/Resources/arrow.gif' class=''> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/refs/heads/main/Resources/arrow.gif' class=''> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/refs/heads/main/Resources/arrow.gif' class=''>",
+	"Menu.Mode_3.Bottom.Info": "<font color='cyan'>[ WASD - To Native ]</font> <br><font color='purple'>[ <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/refs/heads/main/Resources/tab.gif' class=''> - To Exit ]<br>"
 }
 ```
 
 ## .:[ Change Log ]:.
 ```
+(1.0.3)
+-Added ChangeCheckIpAdressToWebSite
+-Added OpenMenu_Mode 3 Custom Menu Chat Center WASD Works With Menu And SubMenus
+-Added OpenMenu_Flags 
+-Added OpenMenu_CommandsInGame 
+-Added OpenMenu_CloseMenuAfterSelectItem 
+-Added Toggle_DisableSaySoundsFlags 
+-Added Toggle_DisableSaySoundsCommandsInGame
+-Added Toggle_AutoRemovePlayerCookieOlderThanXDays
+-Added MenuWASD_FreezePlayerOnMenuOpen
+-Added MenuWASD_ExitMenuOnPressing 
+-Added Enable_UseMySql 
+-Added MySqlHost 
+-Added MySqlDatabase
+-Added MySqlUsername 
+-Added MySqlPassword
+-Added MySqlPort
+
 (1.0.2)
 -Added AllowDeadPlayersToSaySound
 
