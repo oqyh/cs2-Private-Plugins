@@ -10,6 +10,10 @@
 
 ![adplugin](https://github.com/user-attachments/assets/249d6046-b8aa-4210-af32-ee988f39738d)
 
+![mode1](https://github.com/user-attachments/assets/ad4eaf93-9503-4a77-a62f-8e20d57f48bb)
+![mode2](https://github.com/user-attachments/assets/0bbb19cb-4ebe-4a0e-b0a0-db963cce6e4c)
+![mode3](https://github.com/user-attachments/assets/1e7b1f9e-8353-46ae-b18a-be6ed33b6900)
+
 
 ## .:[ Dependencies ]:.
 
