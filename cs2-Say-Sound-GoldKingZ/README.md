@@ -4,7 +4,7 @@
 + PRICE 10$ + FREE Multiple Servers [Lifetime ( One Time Payment )] 
 ```
 
-# [CS2] Say-Sound-GoldKingZ (1.0.3)  
+# [CS2] Say-Sound-GoldKingZ (1.0.4)  
 
 ### Let Players Convert Chat/Radio To Say Sound With Radius
 
@@ -21,11 +21,14 @@
 
 [Metamod:Source (2.x)](https://www.sourcemm.net/downloads.php/?branch=master)
 
+[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager)
+
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases)
 
 [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
 
 [MySqlConnector](https://www.nuget.org/packages/MySqlConnector)
+
 
 ## .:[ Configuration ]:.
 
@@ -52,6 +55,9 @@
 
   //Hide Default Chat Message If Toggle Say Sound By Chat?
   "HideDefaultChatMessageAfterToggleShortCutSaySound": true,
+
+  //Skip Cooldown For These Flags
+  "ImmunityFromCooldownFlags": "@css/root,@css/admin,#css/root,#css/admin",
 
   //Override Plugins Controls Chat Hook
   "Override_These_Plugins": "CS2-Tags,Plugin2,Plugin3",
@@ -128,6 +134,7 @@
 	//==========================
 	//        Options
 	//==========================
+	// "Hide_It_And_ShowThisOnlyForFlags": "@css/root,@css/vip" //Only These Flags Show Menu/NoMenu OR SubMenu 
 	// "Flags": "@css/root,@css/vip" //Only These Can Access The Emote
 	// "Sound_Name": "Hi :D" //This Will Be {1} Used ShortCut In Lang
 	// "Hook_Radio": "cheer", //Hook This Sound Into Player Radio [Example: coverme,takepoint,holdpos,regroup,followme,takingfire,go,fallback,sticktog,getinpos,stormfront,report,roger,enemyspot,needbackup,sectorclear,inposition,reportingin,getout,negative,enemydown,sorry,cheer,compliment,thanks,go_a,go_b,needrop,deathcry]
@@ -141,10 +148,13 @@
 	{
 		"SubMenu.Status.Sounds":{} (Sounds)  Will Toggle On / Off Say Sounds 
 	},
-	"Menu.(Free) SaySounds":
+	"Menu.(Free) SaySounds":// ((Free) SaySounds) Is Then Display Menu Name
 	{
-		"SubMenu.Hi":
+		"Hide_It_And_ShowThisOnlyForFlags": "@css/root,@css/admin,#css/root,#css/admin", //Hide `Menu.(Free) SaySounds` Only Show It To These Flags
+		"SubMenu.Hi":// (Hi) Is Then Display SubMenu Name
 		{
+			"Hide_It_And_ShowThisOnlyForFlags": "@css/root,@css/admin,#css/root,#css/admin", //Hide `SubMenu.Hi` Only Show It To These Flags
+
 			"Flags": "@css/root,@css/vip",
 			"Sound_Name": "Hi :D",
 			"Hook_Radio": "cheer",
@@ -183,15 +193,16 @@
 	"PrintToChat.Player.On.Cooldown": "{green}Gold KingZ {grey}| You Need To Wait {darkred}{0} {grey}Cooldown",
 	"PrintToChat.SaySound.Enabled": "{green}Gold KingZ {grey}| Say Sound Is {lime}Enabled",
 	"PrintToChat.SaySound.Disabled": "{green}Gold KingZ {grey}| Say Sound Is {darkred}Disabled",
+
 	"PrintToChatToAll.SaySound": "{green}Gold KingZ {grey}| {purple}{0} {grey}Saying.... {yellow}{1}", //If Not Found Custom Sound Message Plugin Will Use This Message By Default
 
 	// .:[Custom Sound Messages]:.
 	//SubMenu.Hi By Removing SubMenu. And Making PrintToChatToAll.SaySound.xxx To PrintToChatToAll.SaySound.Hi Plugin Will Automatic Will Use Custom Sound Message Not PrintToChatToAll.SaySound 
 
-	"PrintToChatToAll.SaySound.Hi": "{green}Gold KingZ {grey}| {purple}{0} {grey}: Hi :))))", 
-	"PrintToChatToAll.SaySound.Wake Up (Not 3d Sound)": "{green}Gold KingZ {grey}| {darkred}[ADMIN] {purple}{0} {yellow}{1}",
+	"PrintToChatToAll.SaySound.Hi": "{green}Gold KingZ {grey}| {purple}{0} {grey}: Hi :))))", //{0} = Player Name || {1} = Sound_Name
+	"PrintToChatToAll.SaySound.Wake Up (Not 3d Sound)": "{green}Gold KingZ {grey}| {darkred}[ADMIN] {purple}{0} {yellow}{1}", //{0} = Player Name || {1} = Sound_Name
 
-
+	// .:[Menu Settings]:.
 	"Menu.Mode_1.Title.MainMenu": "{yellow}.:[ Say Sound Menu ]:.",
 	"Menu.Mode_1.Title.SubMenu": "{gold} {0}",
 	"Menu.Mode_1.BreakLine": "{Blue}-----------",
@@ -236,6 +247,11 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.4)
+-Fix Some Bugs
+-Added Hide_It_And_ShowThisOnlyForFlags In SaySound_Settings
+-Added ImmunityFromCooldownFlags In Configs
+
 (1.0.3)
 -Added ChangeCheckIpAdressToWebSite
 -Added OpenMenu_Mode 3 Custom Menu Chat Center WASD Works With Menu And SubMenus
