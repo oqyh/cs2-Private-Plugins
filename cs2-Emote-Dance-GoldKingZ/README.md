@@ -36,7 +36,7 @@
 {
 
   //Key To Active Plugin
-  KEY = "";
+  "KEY": "",
 
   //Change Check IpAdress To WebSite
   "ChangeCheckIpAdressToWebSite": "XXXXXXXXX.YYY",
@@ -46,56 +46,56 @@
   //Emote View?
   //true = ThirdPerson View
   //false = FirstPerson View
-  "Emote_Thirdperson_View": true;
+  "Emote_Thirdperson_View": true,
 
   //Freeze If Player Emote?
-  "Emote_Freeze": true;
+  "Emote_Freeze": true,
 
   //Check If Player Was Freezed Before Giving (Emote_Freeze OR MenuWASD_FreezePlayerOnMenuOpen) And Dont Unfreeze Him?
   //true = Yes
   //false = No Dont Check
-  "Emote_AutoDetectIfPlayerWasFreezedDontUnFreezeHim": true;
+  "Emote_AutoDetectIfPlayerWasFreezedDontUnFreezeHim": true,
 
   //Cancel Emote If Player Get Damaged
-  "Emote_CancelAnimationIfGettingDamaged": true;
+  "Emote_CancelAnimationIfGettingDamaged": true,
 
   //Hide Default Chat Message If Toggle Emote By Chat?
   "Emote_HideDefaultChatMessageAfterToggleShortCut": true,
 
   //Skip Cooldown For These Flags
-  "Emote_ImmunityFromCooldownFlags": "@css/root,@css/admin,#css/root,#css/admin";
+  "Emote_ImmunityFromCooldownFlags": "@css/root,@css/admin,#css/root,#css/admin",
 
   //Cancel Player Emote On Pressing
   //( w , a , s , d , jump , crouch , scoreboard , leftclick , rightclick , attack3)
-  "Emote_CancelPlayersAnimationOnPressing": "w,s,jump,crouch,leftclick";
+  "Emote_CancelPlayersAnimationOnPressing": "w,s,jump,crouch,leftclick",
 
   //Open Menu Mode:
   //0 = Disable Menu
   //1 = Custom Chat Menu By GoldKingZ
   //2 = Custom Chat Menu By GoldKingZ
   //3 = WASD Menu By GoldKingZ
-  "OpenMenu_Mode": 3;
+  "OpenMenu_Mode": 3,
 
   //Allow These Groups Only To Open Emote Menu (Make It Empty "" To Let AnyOne)  [Example:@css/root,@css/admin,@css/vip,#css/admin,#css/vip]
-  "OpenMenu_Flags": "";
+  "OpenMenu_Flags": "",
 
   //Commands In Game To Open Emote Menu
-  "OpenMenu_CommandsInGame": "!emotes,!emote,!dances,!dance";
+  "OpenMenu_CommandsInGame": "!emotes,!emote,!dances,!dance",
 
   //Close Menu After Select Emote
-  "OpenMenu_CloseMenuAfterSelectItem": false;
+  "OpenMenu_CloseMenuAfterSelectItem": false,
 
 //----------------------------[ ↓ Advanced WASD Menu Mode 3 Settings ↓ ]----------------------------
 
   //If OpenMenu_Mode 3 Freeze Player When Menu Open
-  "MenuWASD_FreezePlayerOnMenuOpen": true;
+  "MenuWASD_FreezePlayerOnMenuOpen": true,
   
   //Do You Want Emote_CancelPlayersAnimationOnPressing Works While Player On WASD Menu
-  "Emote_DoCancelPlayersAnimationWhileMenuWASDIsOn": false;
+  "Emote_DoCancelPlayersAnimationWhileMenuWASDIsOn": false,
   
   //If OpenMenu_Mode 3 Close Player Menu On Pressing
   //(jump , crouch , scoreboard , leftclick , rightclick , attack3)
-  "MenuWASD_ExitMenuOnPressing": "jump,scoreboard,crouch";
+  "MenuWASD_ExitMenuOnPressing": "jump,scoreboard,crouch",
 
 //----------------------------[ ↓ Debug ↓ ]----------------------------
 
