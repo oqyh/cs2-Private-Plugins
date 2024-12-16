@@ -1,12 +1,15 @@
 
-## .:[ Price ]:. [(Payment Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/8040379022008134dde7d34cf08f7a611c750862/README.md?plain=1#L7)
+## .:[ Price ]:. [(Free Private Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/11b92dc04067753a390d796dbba39d789f270aab/README.md?plain=1#L27)
 ```diff
-+ PRICE 10$ + FREE Multiple Servers [Lifetime ( One Time Payment )] 
++ PRICE FREE [Only Discord Members] +Its Only Included With GKZ Plugins
 ```
 
 # [CS2] Menu-API-GoldKingZ (1.0.0)  
 
+
 ### Custom Menu Api
+
+![menuapi](https://github.com/user-attachments/assets/703e9007-0b2d-4cc3-ab5d-a01c03d18906)
 
 
 ## .:[ Dependencies ]:.
