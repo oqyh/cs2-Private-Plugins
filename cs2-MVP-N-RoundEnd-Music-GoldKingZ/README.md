@@ -176,6 +176,8 @@
 // "Hide_It_And_Show_Only_ForFlags": "@css/root,@css/vip" //Hide Menu/SubMenu And Only These Flags Can See It
 // "Only_These_Flags_Can_Access_It": "@css/root,@css/vip" //Only These Can Access Menu/SubMenuz
 // "Only_These_Flags_Can_Vol.0": "@css/vip,#css/vip" //Only These Can Access To Toggle Volume 0 As Example To (SubMenu.STATUS.MVPVOL. OR SubMenu.STATUS.RESCHAT.)
+// "SubMenu.STATUS.MVPSELECTED.xxxxxxxxxxx:":{} //Show Client His Current Selected MVP
+// "SubMenu.STATUS.MVPNONSELECTED.xxxxxxxxxxx:":{} //Ability To Disable Cusotm MVP
 // "SubMenu.STATUS.MVPVOL.xxxxxxxxxxx:":{} //Show Client His Current MVP Volume
 // "SubMenu.STATUS.MVPCHAT.xxxxxxxxxxx:":{} //Show Client His Current MVP Show Chat
 // "SubMenu.STATUS.MVPCENTER.xxxxxxxxxxx:":{} //Show Client His Current MVP Center
