@@ -226,6 +226,18 @@
 ```json
 
 {
+	//==========================
+	//        Colors
+	//==========================
+	//{Yellow} {Gold} {Silver} {Blue} {DarkBlue} {BlueGrey} {Magenta} {LightRed}
+	//{LightBlue} {Olive} {Lime} {Red} {Purple} {Grey}
+	//{Default} {White} {Darkred} {Green} {LightYellow}
+	//==========================
+	//        Other
+	//==========================
+	//{nextline} = Print On Next Line
+	//==========================
+	
 	"PrintChatToPlayer.Menu.Disabled": "{green}Gold KingZ {grey}| {darkred}MVP/RES Menu Is {darkred}Disabled By The Server",
 	"PrintChatToPlayer.Menu.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}MVP/RES Menu Is For {lime}VIPS {darkred}Only",
 	"PrintChatToPlayer.ReloadJson.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This",
@@ -250,6 +262,12 @@
 	"PrintChatToPlayer.Selected.RESCENTERBOTTOM.Enabled": "{green}Gold KingZ {grey}| RES Center Bottom Set To: {lime}Enabled",
 	"PrintChatToPlayer.Selected.RESCENTERBOTTOM.Disabled": "{green}Gold KingZ {grey}| RES Center Bottom Set To: {darkred}Disabled",
 	
+	//==========================
+	//        MVP Music
+	//==========================
+	//{0} = Player Name Of Who MVP Of The Match
+	//{1} = Selected Name Of MVP
+	//==========================
 	
 	"MVP.ShowChat": "{green}Gold KingZ {grey}| {lightblue}{0} {grey}Is MVP Of The Match! {nextline}{green}Gold KingZ {grey}| Now Playing {purple}{1}",
 	"MVP.ShowCenter": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <br> <font color='white'>Playing <font color='green'>{1}",
@@ -274,6 +292,13 @@
 	"MVP.ShowCenter.Ratatatataa": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/ratata.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
 	"MVP.ShowCenter.Misha Xramovi - B экстазе": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/ecstasy.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
 	"MVP.ShowCenter_Bottom": "{0} Is MVP Of The Match! Playing {1}",
+	
+	
+	//==========================
+	//        Round End Music 
+	//==========================
+	//{0} = Name Of Round End Music 
+	//==========================
 	
 	"RES.ShowChat": "{green}Gold KingZ {grey}| Now Playing {purple}{0}",
 	"RES.ShowCenter": "<font color='white'>Playing <font color='green'>{0}",
