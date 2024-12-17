@@ -224,6 +224,7 @@
 
 ## .:[ Language ]:.
 ```json
+
 {
 	"PrintChatToPlayer.Menu.Disabled": "{green}Gold KingZ {grey}| {darkred}MVP/RES Menu Is {darkred}Disabled By The Server",
 	"PrintChatToPlayer.Menu.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}MVP/RES Menu Is For {lime}VIPS {darkred}Only",
@@ -252,35 +253,35 @@
 	
 	"MVP.ShowChat": "{green}Gold KingZ {grey}| {lightblue}{0} {grey}Is MVP Of The Match! {nextline}{green}Gold KingZ {grey}| Now Playing {purple}{1}",
 	"MVP.ShowCenter": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.9MM - Memphis Cult": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/9mm.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.дурной вкус - пластинки": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/badtaste.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.Playboi Carti - Beef": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/beef.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.BigXthaPlug - Change Me": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/change.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.Ur Final Message": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/finalmessage.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.GoHardHuh": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/skull1.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.History": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/history.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.OT - Johnny Dang": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/johnny.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.A$AP - Lord Pretty Flacko": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/lordprettyflacko.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.Tommy - Million Dollar Baby": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/million.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.Xavier Wulf - Psycho Pass": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/psycho.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.If We Being Real": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/real.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.Separate Ways": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/separate.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.My Soldiers Rage": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/soldiers.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.I Dont Care About You": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/skull2.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.Xcho - Ты и Я": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/meandyou.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.9MM - Memphis Cult": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/9mm.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.дурной вкус - пластинки": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/badtaste.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Playboi Carti - Beef": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/beef.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.BigXthaPlug - Change Me": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/change.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Ur Final Message": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/finalmessage.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.GoHardHuh": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/skull1.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.History": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/history.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.OT - Johnny Dang": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/johnny.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.A$AP - Lord Pretty Flacko": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/lordprettyflacko.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Tommy - Million Dollar Baby": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/million.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Xavier Wulf - Psycho Pass": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/psycho.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.If We Being Real": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/real.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Separate Ways": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/separate.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.My Soldiers Rage": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/soldiers.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.I Dont Care About You": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/skull2.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Xcho - Ты и Я": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/meandyou.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
 	
-	"MVP.ShowCenter.Hanumankind - Big Dawgs": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/bigdaw.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.Ratatatataa": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/ratata.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
-	"MVP.ShowCenter.Misha Xramovi - B экстазе": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/ecstasy.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Hanumankind - Big Dawgs": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/bigdaw.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Ratatatataa": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/ratata.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
+	"MVP.ShowCenter.Misha Xramovi - B экстазе": "<font color='purple'>{0} <font color='white'>Is MVP Of The Match! <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/ecstasy.gif' class=''> <br> <br> <font color='white'>Playing <font color='green'>{1}",
 	"MVP.ShowCenter_Bottom": "{0} Is MVP Of The Match! Playing {1}",
 	
 	"RES.ShowChat": "{green}Gold KingZ {grey}| Now Playing {purple}{0}",
 	"RES.ShowCenter": "<font color='white'>Playing <font color='green'>{0}",
-	"RES.ShowCenter.Lithe - Hold Out": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/holdout.gif' class=''> <br>",
-	"RES.ShowCenter.What Is That Melody": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/melody.gif' class=''> <br>",
-	"RES.ShowCenter.Two Twelve Subwoofer": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/twotwelvesubwoofer.gif' class=''> <br>",
-	"RES.ShowCenter.Untitled #13 - Glwzbll": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/untitled13.gif' class=''> <br>",
-	"RES.ShowCenter.NXCRE & The Villains - USURPER": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-MVP-N-RoundEnd-Music-GoldKingZ/main/Resources/usurper.gif' class=''> <br>",
+	"RES.ShowCenter.Lithe - Hold Out": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/holdout.gif' class=''> <br>",
+	"RES.ShowCenter.What Is That Melody": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/melody.gif' class=''> <br>",
+	"RES.ShowCenter.Two Twelve Subwoofer": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/twotwelvesubwoofer.gif' class=''> <br>",
+	"RES.ShowCenter.Untitled #13 - Glwzbll": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/untitled13.gif' class=''> <br>",
+	"RES.ShowCenter.NXCRE & The Villains - USURPER": "<font color='white'>Playing <font color='green'>{0} <br> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/cs2-MVP-N-RoundEnd-Music-GoldKingZ/Resources/usurper.gif' class=''> <br>",
 	"RES.ShowCenter_Bottom": "Now Playing {0}",
 	
 	
@@ -370,6 +371,7 @@
 	"Mode_3.STATUS.RESCENTERBOTTOM.Enabled": "<font color='#0cff00'> ✔",
 	"Mode_3.STATUS.RESCENTERBOTTOM.Disabled": "<font color='#ff2d00'> ✖"
 }
+
 ```
 
 ## .:[ Change Log ]:.
