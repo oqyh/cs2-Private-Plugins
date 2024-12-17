@@ -188,6 +188,9 @@
 // "SubMenu.STATUS.RESCENTERBOTTOM.xxxxxxxxxxx:":{} //Show Client His Current Round End Center Bottom
 // "Unique_Name": "9mm", //Unique Name To Let Plugin Search For It
 // "Make_It_Previewable": true, //true = Make Music Previewable Before Select It //false OR Not Used = Wil Be Disabled
+// "ShowChat": true, // Show Message In Chat? //false OR Not Used = Wil Be Disabled
+// "ShowCenter": 10, // How Much In Secs Duration Show Center Not Using It Will Be Disabled It
+// "ShowCenter_Bottom": 10, // How Much In Secs Duration Show Center Bottom Not Using It Will Be Disabled It
 // "Sound_Paths": // Sound Path Of Music Added As Many Music As You Like
 //==========================
 
