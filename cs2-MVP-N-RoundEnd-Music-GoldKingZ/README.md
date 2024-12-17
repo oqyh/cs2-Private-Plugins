@@ -167,7 +167,7 @@
 ## .:[ Configuration MVP_N_RES_Settings ]:.
 
 > [!CAUTION]
-> ReservedSlots Config Located In ..\addons\counterstrikesharp\plugins\MVP-N-RoundEnd-Music-GoldKingZ\config\MVP_N_RES_Settings.json                                                        
+> Config Located In ..\addons\counterstrikesharp\plugins\MVP-N-RoundEnd-Music-GoldKingZ\config\MVP_N_RES_Settings.json                                                        
 
 ```json
 //==========================
