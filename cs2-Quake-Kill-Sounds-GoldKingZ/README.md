@@ -15,6 +15,7 @@
 * Custom Quake Events (Suicide, Revenge, FirstBlood, RoundStart, RoundPrepare, LastManStanding, RageQuit) Sound
 * Custom Dink / Hit / Kill Sounds
 * Multiple Packs Male,Female,... 
+* Volume Quake Sound Client Side
 * Volume Kill Sound Client Side
 * Toggle Kill Chat / Center / Center Bottom Client Side
 * Save Client Preferences MySql/Local Cookies Cross Servers
