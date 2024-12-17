@@ -1,7 +1,7 @@
 
 ## .:[ Price ]:. [(Free Private Rules)](https://github.com/oqyh/cs2-Private-Plugins/blob/11b92dc04067753a390d796dbba39d789f270aab/README.md?plain=1#L27)
 ```diff
-+ PRICE FREE [Only Discord Members] 
++ PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
 # [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.0)  
