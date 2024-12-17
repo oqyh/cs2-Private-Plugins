@@ -25,6 +25,8 @@
 
 [Metamod:Source (2.x)](https://www.sourcemm.net/downloads.php/?branch=master)
 
+[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager)
+
 [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases)
 
 [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
