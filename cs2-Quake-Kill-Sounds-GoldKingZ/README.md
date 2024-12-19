@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
-# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.0)  
+# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.1)  
 
 ## Video ShowCase Of Plugin
 
@@ -152,7 +152,7 @@
   //Auto Delete Inactive Players Older Than X Days In MySql
   "MySql_AutoRemovePlayersOlderThanXDays": 7,
 
-//----------------------------[ ↓ Debug ↓ ]----------------------------------------------
+//----------------------------[ ↓ Utilities ↓ ]----------------------------------------------
 
   //Enable Debug Will Print Server Console If You Face Any Issue
   "EnableDebug": false,
@@ -413,6 +413,12 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.1)
+-Fix Bugs
+-Fix Enable_Cookies
+-Fix Enable_MySql
+-Fix On Plugin Load Will Create MySql Table
+
 (1.0.0)
 -Initial Release
 ```
