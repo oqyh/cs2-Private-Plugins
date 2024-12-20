@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
-# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.1)  
+# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.2)  
 
 ## Video ShowCase Of Plugin
 
@@ -413,6 +413,14 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.2)
+-Fix Bugs
+-Fix MenuApi jump,space On Dead/Spec Players
+-Fix MenuApi walk,shift
+-Added MenuApi inspect
+-Added MenuApi reload
+-Added MenuApi +Use
+
 (1.0.1)
 -Fix Bugs
 -Fix Enable_Cookies
