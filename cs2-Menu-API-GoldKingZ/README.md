@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] +Its Only Included With GKZ Plugins
 ```
 
-# [CS2] Menu-API-GoldKingZ (1.0.0)  
+# [CS2] Menu-API-GoldKingZ (1.0.1)  
 
 
 ### Custom Menu Api
@@ -79,9 +79,9 @@
 	"WASD_AutoDetectIfPlayerWasFreezedDontUnFreezeHim": true,
 	
 	//Keys Available
-	//(jump): When Player Jumps
+	//(jump,space): When Player Jumps/Space
 	//(attack3): attack3
-	//(walk): When Walk
+	//(walk,shift): When Walk
 	//(scoreboard,tab): When Player Open Scoreboard
 	//(crouch,duck): When Player Duck
 	//(leftclick,attack): When Player Left Click/attack
@@ -90,7 +90,9 @@
 	//(s,movebackward): When Player Move Backward
 	//(d,moveright): When Player Move Right Side
 	//(a,moveleft): When Player Move Left Side
-	//(sprint,speed): When Player Speed
+	//(inspect): When Player inspect Weapon
+	//(reload,r): When Player Reload
+	//(use,e): When Player +Use
 	
 	//Scroll Down Menu
 	"WASD_ScrollDownMenuOnPressing": "movebackward",
@@ -138,6 +140,13 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.1)
+-Fix jump,space On Dead/Spec Players
+-Fix walk,shift
+-Added inspect
+-Added reload
+-Added +Use
+
 (1.0.0)
 -Initial Release
 ```
