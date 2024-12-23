@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] Fake-Rcon-GoldKingZ (1.0.1)  
+# [CS2] Fake-Rcon-GoldKingZ (1.0.2)  
 
 ### Dynamic Fake Rcon Depend FakeRcon_Settings.json
 ### Setup Each Group's Limits With Logs
@@ -168,17 +168,26 @@
 ## .:[ Language ]:.
 ```json
 {
-  "PrintConsoleToPlayer.Notallowed": "You Are Not Allowed To Use Fake Rcon",
-  "PrintConsoleToPlayer.Notallowed.This.Command": "This Command [{0}] is not allowed for you", //{0} = Command Entered
-  "PrintConsoleToPlayer.Banned": "You Reached Password Tries Limit You On CoolDown For {0}", //{0} = Cooldown In Mins
-  "PrintConsoleToPlayer.Password.Wrong": "Password Is Wrong You Have {0} Tries Left", //{0} = Tries Left
-  "PrintConsoleToPlayer.Access.Group": "You Have Accese To [{0}]", //{0} = Group Name
-  "PrintConsoleToPlayer.Send.Fakercon": "Sending: {0}" //{0} = Command Entered
+	//==========================
+	//        Other
+	//==========================
+	//{nextline} = Print On Next Line
+	//==========================
+	
+	"PrintConsoleToPlayer.Notallowed": "You Are Not Allowed To Use Fake Rcon",
+	"PrintConsoleToPlayer.Notallowed.This.Command": "This Command [{0}] is not allowed for you",
+	"PrintConsoleToPlayer.Banned": "You Reached Password Tries Limit You On CoolDown For {0}",
+	"PrintConsoleToPlayer.Password.Wrong": "Password Is Wrong You Have {0} Tries Left",
+	"PrintConsoleToPlayer.Access.Group": "You Have Accese To [{0}]",
+	"PrintConsoleToPlayer.Send.Fakercon": "Sending: {0}"
 }
 ```
 
 ## .:[ Change Log ]:.
 ```
+(1.0.2)
+-Fix Server Will Crash on Capital letter Send Commands (fake_rcon MAP DE_DUST2)
+
 (1.0.1)
 -Reword Plugin
 -Fix Some Bugs
