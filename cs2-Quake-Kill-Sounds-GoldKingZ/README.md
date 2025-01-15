@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
-# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.2)  
+# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.3)  
 
 ## Video ShowCase Of Plugin
 
@@ -41,12 +41,6 @@
 ```json
 
 {
-  //Key To Active Plugin
-  "KEY": "",
-
-  //Change Check IpAdress To WebSite
-  "ChangeCheckIpAdressToWebSite": "XXXXXXXXX.YYY",
-
 //----------------------------[ ↓ Main Configs ↓ ]-------------------------------
 
   //Open Menu Mode:
@@ -413,6 +407,13 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.3)
+-Fix Bugs
+-Fix GKZ Api
+-Remove Port Restricted
+-Remove Key No Needed
+-Remove ChangeCheckIpAdressToWebSite
+
 (1.0.2)
 -Fix Bugs
 -Fix MenuApi jump,space On Dead/Spec Players
