@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
-# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.2)  
+# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.3)  
 
 ## Video ShowCase Of Plugin
 
@@ -41,12 +41,6 @@
 ```json
 
 {
-  //Key To Active Plugin
-  "KEY": "",
-
-  //Change Check IpAdress To WebSite
-  "ChangeCheckIpAdressToWebSite": "XXXXXXXXX.YYY",
-
 //----------------------------[ ↓ Main Configs ↓ ]-------------------------------
 
   //Disable Default MVP Music?
@@ -410,6 +404,15 @@
 ## .:[ Change Log ]:.
 ```
 (1.0.3)
+-Fix Bugs
+-Fix Error invoking callback
+-Fix GKZ Api
+-Remove Port Restricted
+-Remove Key No Needed
+-Remove ChangeCheckIpAdressToWebSite
+
+
+(1.0.2)
 -Fix Bugs
 -Fix When Enable_Custom_MVP Disabled Default MVP Not Turned Off On RES
 -Fix MenuApi jump,space On Dead/Spec Players
