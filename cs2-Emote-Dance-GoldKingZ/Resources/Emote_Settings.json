@@ -1,0 +1,859 @@
+{
+	"Menu.Dances": {
+		"SubMenu.Dance Moves 1": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "DanceMoves",
+			"MusicEmote": "DanceMoves1",
+			"Toggle_Emote_In_Chat": "dance,ninja",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteAfterXFrames": 204,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Dance Moves 2": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "DanceMoves",
+			"MusicEmote": "DanceMoves2",
+			"Toggle_Emote_In_Chat": "dance2,ninja2",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteAfterXFrames": 204,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Electro Shuffle": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "ElectroShuffle",
+			"MusicEmote": "ElectroShuffle",
+			"Toggle_Emote_In_Chat": "Shuffle,Electro,ElectroShuffle",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 7.557687,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Aerobic Champ": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_AerobicChamp",
+			"MusicEmote": "Emote_AerobicChamp",
+			"Toggle_Emote_In_Chat": "Aerobic,Champ,AerobicChamp",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 12.598435,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Band Of The Fort": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_BandOfTheFort",
+			"MusicEmote": "Emote_BandOfTheFort",
+			"Toggle_Emote_In_Chat": "Band,BandFort",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 8.891791,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Bendy": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Bendy",
+			"MusicEmote": "Emote_Bendy",
+			"Toggle_Emote_In_Chat": "Bendy",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 9.142858,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Charleston": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Charleston",
+			"MusicEmote": "Emote_Charleston",
+			"Toggle_Emote_In_Chat": "Charleston",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 7.384626,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Breakdance": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_Breakdance",
+			"MusicEmote": "Emote_Dance_Breakdance",
+			"Toggle_Emote_In_Chat": "Breakdance",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteAfterXFrames": 257,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Disco": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_Disco_T3",
+			"MusicEmote": "Emote_Dance_Disco_T3",
+			"Toggle_Emote_In_Chat": "Disco",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 8.542018,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Take The L": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_Loser",
+			"MusicEmote": "Emote_Dance_Loser",
+			"Toggle_Emote_In_Chat": "loser,takethel",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 12.631587,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.BoneLess": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_NoBones",
+			"MusicEmote": "Emote_Dance_NoBones",
+			"Toggle_Emote_In_Chat": "BoneLess",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 15.36,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Pump": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_Pump",
+			"MusicEmote": "Emote_Dance_Pump",
+			"Toggle_Emote_In_Chat": "Pump",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 13.847165,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Ride The Pony": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_RideThePony",
+			"MusicEmote": "Emote_Dance_RideThePony",
+			"Toggle_Emote_In_Chat": "Pony,ride",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 1.75,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Shoot": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_Shoot",
+			"MusicEmote": "Emote_Dance_Shoot",
+			"Toggle_Emote_In_Chat": "Shoot",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 13.430975,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Swipe It": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_SwipeIt",
+			"MusicEmote": "Emote_Dance_SwipeIt",
+			"Toggle_Emote_In_Chat": "Swipe,Swipeit",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 13.241384,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Worm": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dance_Worm",
+			"MusicEmote": "Emote_Dance_Worm",
+			"Toggle_Emote_In_Chat": "Worm",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 6.857143,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Boogie Bomb": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_DG_Disco",
+			"MusicEmote": "Emote_DG_Disco",
+			"Toggle_Emote_In_Chat": "Boogie,BoogieBomb",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 7.386848,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Eastern Bloc": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_EasternBloc_Start",
+			"AnimationName2": "Emote_EasternBloc",
+			"MusicEmote": "Emote_EasternBloc",
+			"Toggle_Emote_In_Chat": "Bloc,EasternBloc",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 14.317959,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Fancy Feet": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_FancyFeet",
+			"MusicEmote": "Emote_FancyFeet",
+			"Toggle_Emote_In_Chat": "FancyFeet",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 16.84211,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Floss": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_FlossDance",
+			"MusicEmote": "Emote_FlossDance",
+			"Toggle_Emote_In_Chat": "Floss",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 8.346168,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Fresh": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Fresh",
+			"MusicEmote": "Emote_Fresh",
+			"Toggle_Emote_In_Chat": "Fresh",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 5.05288,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.GrooveJam": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_GrooveJam",
+			"MusicEmote": "Emote_GrooveJam",
+			"Toggle_Emote_In_Chat": "GrooveJam,Groove",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 15.118118,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Breakdown": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Hip_Hop",
+			"MusicEmote": "Emote_Hip_Hop",
+			"Toggle_Emote_In_Chat": "Breakdown",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 14.545465,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Freestylin": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Hiphop_01",
+			"MusicEmote": "Emote_Hiphop_01",
+			"Toggle_Emote_In_Chat": "Freestye,Freestylin",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 18.932766,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Hula": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Hula_Start",
+			"AnimationName2": "Emote_Hula",
+			"MusicEmote": "Emote_Hula",
+			"Toggle_Emote_In_Chat": "Hula",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 14.117664,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Infinite Dab": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_InfiniDab_Intro",
+			"AnimationName2": "Emote_InfiniDab_Loop",
+			"MusicEmote": "Emote_InfiniDab",
+			"Toggle_Emote_In_Chat": "InfiniteDab,infdab",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 15.459229,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Intensity": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Intensity_Start",
+			"AnimationName2": "Emote_Intensity_Loop",
+			"MusicEmote": "Emote_Intensity_Loop",
+			"Toggle_Emote_In_Chat": "Intensity",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 35.301926,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.IrishJig": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_IrishJig_Start",
+			"AnimationName2": "Emote_IrishJig",
+			"MusicEmote": "Emote_IrishJig",
+			"Toggle_Emote_In_Chat": "IrishJig",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 12.065488,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Korean Eagle": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_KoreanEagle",
+			"MusicEmote": "Emote_KoreanEagle",
+			"Toggle_Emote_In_Chat": "KoreanEagle",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 18.640793,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.KPOP": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Kpop_02",
+			"MusicEmote": "Emote_Kpop_02",
+			"Toggle_Emote_In_Chat": "KPOP",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 7.667075,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Living Large": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_LivingLarge",
+			"MusicEmote": "Emote_LivingLarge",
+			"Toggle_Emote_In_Chat": "LivingLarge",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 12.432967,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Shake It Up": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Maracas",
+			"MusicEmote": "Emote_Maracas",
+			"Toggle_Emote_In_Chat": "Maracas,ShakeItUp,ShakeIt",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 8.135601,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Orange Justice": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Mask_Off_Intro",
+			"AnimationName2": "Emote_Mask_Off_Loop",
+			"MusicEmote": "Emote_Mask_Off_Loop",
+			"Toggle_Emote_In_Chat": "Justice,OrangeJustice",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 18.93508,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Pop Lock": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_PopLock",
+			"MusicEmote": "Emote_PopLock",
+			"Toggle_Emote_In_Chat": "PopLock",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 16.617756,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Star Power": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_PopRock",
+			"MusicEmote": "Emote_PopRock",
+			"Toggle_Emote_In_Chat": "StarPower,poprock",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 16,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Robot": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_RobotDance",
+			"MusicEmote": "Emote_RobotDance",
+			"Toggle_Emote_In_Chat": "Robot",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 19.793833,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Smooth Ride": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_SmoothDrive",
+			"MusicEmote": "Emote_SmoothDrive",
+			"Toggle_Emote_In_Chat": "SmoothRide,SmoothDrive",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 20.869593,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Techno Zombie": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_TechnoZombie",
+			"MusicEmote": "Emote_TechnoZombie",
+			"Toggle_Emote_In_Chat": "TechnoZombie",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 9.6,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Twist": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Twist",
+			"MusicEmote": "Emote_Twist",
+			"Toggle_Emote_In_Chat": "Twist",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 11.162789,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Dance Therapy": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_WarehouseDance_Start",
+			"AnimationName2": "Emote_WarehouseDance_Loop",
+			"MusicEmote": "Emote_WarehouseDance_Loop",
+			"Toggle_Emote_In_Chat": "DanceTherapy,Therapy,Warehouse",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 31.765057,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Wiggle": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Wiggle",
+			"MusicEmote": "Emote_Wiggle",
+			"Toggle_Emote_In_Chat": "Wiggle",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 5.161293,
+			"Give_Cooldown_After_This_InXSecs": 25
+		},
+		"SubMenu.Rambunctious": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Zippy_Dance",
+			"MusicEmote": "Emote_Zippy_Dance",
+			"Toggle_Emote_In_Chat": "Rambunctious,Zippy",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 7.333333,
+			"Give_Cooldown_After_This_InXSecs": 25
+		}
+	},
+	"Menu.Emotes": {
+		"SubMenu.Blow Kiss": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_BlowKiss",
+			"MusicEmote": "Emote_BlowKiss",
+			"Toggle_Emote_In_Chat": "Kiss",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Bring It On": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Bring_It_On",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Bring",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Calculated": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Calculated",
+			"MusicEmote": "Emote_Calculated",
+			"Toggle_Emote_In_Chat": "Calculated,Calculate,cal",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Celebration": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Celebration_Loop",
+			"MusicEmote": "Emote_Celebration_Loop",
+			"Toggle_Emote_In_Chat": "Celebration",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 3.134694,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Chicken": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Chicken",
+			"MusicEmote": "Emote_Chicken",
+			"Toggle_Emote_In_Chat": "Chicken",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 3.667007,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Chug": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Chug",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Chug",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Confused": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Confused",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Confused",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Cry": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Cry",
+			"MusicEmote": "Emote_Cry",
+			"Toggle_Emote_In_Chat": "Cry,sad",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 7.833991,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Dab": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Dab",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dab",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Dusting Off Hands": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_DustingOffHands",
+			"MusicEmote": "Emote_DustingOffHands",
+			"Toggle_Emote_In_Chat": "dusthand,hand,dusthands,hands",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Dust Off Shoulders": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_DustOffShoulders",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "dustshoulder,shoulder,dustshoulders,shoulders",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Facepalm": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Facepalm",
+			"MusicEmote": "Emote_Facepalm",
+			"Toggle_Emote_In_Chat": "Facepalm",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Fishing": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Fishing",
+			"MusicEmote": "Emote_Fishing",
+			"Toggle_Emote_In_Chat": "Fishing",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Gun Show": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Flex",
+			"MusicEmote": "Emote_Flex",
+			"Toggle_Emote_In_Chat": "flex,GunShow",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Flippn Sexy": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_FlippnSexy",
+			"MusicEmote": "Emote_FlippnSexy",
+			"Toggle_Emote_In_Chat": "flip,flipsexy",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Finger Guns": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Fonzie_Pistol",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "FingerGuns,FingerGun",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Slow Clap": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_golfclap",
+			"MusicEmote": "Emote_golfclap",
+			"Toggle_Emote_In_Chat": "SlowClap,sclap,clap",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 3.841066,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Guitar": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_guitar",
+			"MusicEmote": "Emote_guitar",
+			"Toggle_Emote_In_Chat": "Guitar",
+			"LoopAnimation": true,
+			"PrintChatToAll": true,
+			"If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 10.137823,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Hand Signals": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_HandSignals",
+			"MusicEmote": "Emote_HandSignals",
+			"Toggle_Emote_In_Chat": "HandSignals,HandSignal,Signal",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Hot Stuff": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Hotstuff",
+			"MusicEmote": "Emote_Hotstuff",
+			"Toggle_Emote_In_Chat": "HotStuff",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Break Heart": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_IBreakYou",
+			"MusicEmote": "Emote_IBreakYou",
+			"Toggle_Emote_In_Chat": "BreakHeart",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Love Heart": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_IHeartYou",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "LoveHeart",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Laugh": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Laugh",
+			"MusicEmote": "Emote_Laugh",
+			"Toggle_Emote_In_Chat": "Laugh",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Luchador": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Luchador",
+			"MusicEmote": "Emote_Luchador",
+			"Toggle_Emote_In_Chat": "Luchador",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Make It Rain": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Make_It_Rain",
+			"MusicEmote": "Emote_Make_It_Rain",
+			"Toggle_Emote_In_Chat": "MakeItRain",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Not Today": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_NotToday",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "NotToday",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Rock Paper Scissor (Random)": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"RandomAnimationName_1": "Emote_RockPaperScissor_Paper",
+			"RandomAnimationName_2": "Emote_RockPaperScissor_Rock",
+			"RandomAnimationName_3": "Emote_RockPaperScissor_Scissor",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "RockPaperScissor",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Rock Paper Scissor (Paper)": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_RockPaperScissor_Paper",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Paper",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Rock Paper Scissor (Rock)": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_RockPaperScissor_Rock",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Rock",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Rock Paper Scissor (Scissor)": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_RockPaperScissor_Scissor",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Scissor",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Salt": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Salt",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Salt",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Salute": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Salute",
+			"MusicEmote": "Emote_Salute",
+			"Toggle_Emote_In_Chat": "Salute",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Snap": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Snap",
+			"MusicEmote": "Emote_Snap",
+			"Toggle_Emote_In_Chat": "Snap",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Gentlemans Dab": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_StageBow",
+			"MusicEmote": "Emote_StageBow",
+			"Toggle_Emote_In_Chat": "GDab,GentlemanDab,GentlemansDab",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Thumbs Down": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_ThumbsDown",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "ThumbsDown,ThumbDown",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Thumbs Up": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_ThumbsUp",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "ThumbsUp,ThumbUp",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Wave": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Wave2",
+			"MusicEmote": "Emote_Wave2",
+			"Toggle_Emote_In_Chat": "Wave",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		},
+		"SubMenu.Youre Awesome": {
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "Emote_Youre_Awesome",
+			"MusicEmote": "Emote_Youre_Awesome",
+			"Toggle_Emote_In_Chat": "YoureAwesome,urAwesome",
+			"LoopAnimation": false,
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 10
+		}
+	},
+	"Menu.Other (Vips)": {
+		"SubMenu.Dance 1": {
+			"Only_These_Flags_Can_Access_It": "@css/root,@css/admin,@css/vip,#css/root,#css/admin,#css/vip",
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "adeepmentality",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dance1",
+			"LoopAnimation": false,
+			"PrintChatToAll": true
+		},
+		"SubMenu.Dance 2": {
+			"Only_These_Flags_Can_Access_It": "@css/root,@css/admin,@css/vip,#css/root,#css/admin,#css/vip",
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "adj",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dance2",
+			"LoopAnimation": false,
+			"PrintChatToAll": true
+		},
+		"SubMenu.Dance 3": {
+			"Only_These_Flags_Can_Access_It": "@css/root,@css/admin,@css/vip,#css/root,#css/admin,#css/vip",
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "badapple",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dance3",
+			"LoopAnimation": false,
+			"PrintChatToAll": true
+		},
+		"SubMenu.Dance 4": {
+			"Only_These_Flags_Can_Access_It": "@css/root,@css/admin,@css/vip,#css/root,#css/admin,#css/vip",
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "badbadwater",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dance4",
+			"LoopAnimation": false,
+			"PrintChatToAll": true
+		},
+		"SubMenu.Dance 5": {
+			"Only_These_Flags_Can_Access_It": "@css/root,@css/admin,@css/vip,#css/root,#css/admin,#css/vip",
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "calisthenics",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dance5",
+			"LoopAnimation": false,
+			"PrintChatToAll": true
+		}
+	},
+	"Menu.Other (Admins)": {
+		"Hide_It_And_Show_Only_ForFlags": "@css/admin,#css/admin",
+		"SubMenu.Dance 6": {
+			"Only_These_Flags_Can_Access_It": "@css/admin,#css/admin",
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "caramell_dansen",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dance6",
+			"LoopAnimation": false,
+			"PrintChatToAll": true
+		},
+		"SubMenu.Dance 7": {
+			"Only_These_Flags_Can_Access_It": "@css/admin,#css/admin",
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "ch4nge",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dance7",
+			"LoopAnimation": false,
+			"PrintChatToAll": true
+		},
+		"SubMenu.Dance 8": {
+			"Only_These_Flags_Can_Access_It": "@css/admin,#css/admin",
+			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+			"AnimationName": "conqueror",
+			"MusicEmote": "",
+			"Toggle_Emote_In_Chat": "Dance8",
+			"LoopAnimation": false,
+			"PrintChatToAll": true
+		}
+	}
+}
