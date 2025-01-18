@@ -670,9 +670,11 @@
 		},
 		"SubMenu.Rock Paper Scissor (Random)": {
 			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
-			"RandomAnimationName_1": "Emote_RockPaperScissor_Paper",
-			"RandomAnimationName_2": "Emote_RockPaperScissor_Rock",
-			"RandomAnimationName_3": "Emote_RockPaperScissor_Scissor",
+			"RandomAnimationName": [
+				"Emote_RockPaperScissor_Paper",
+				"Emote_RockPaperScissor_Rock",
+				"Emote_RockPaperScissor_Scissor"
+			],
 			"MusicEmote": "",
 			"Toggle_Emote_In_Chat": "RockPaperScissor",
 			"LoopAnimation": false,
