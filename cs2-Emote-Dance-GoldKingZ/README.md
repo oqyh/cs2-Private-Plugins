@@ -124,7 +124,7 @@
 // "ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl" //Model That Has Animation
 // "RandomAnimationName": ["Animation_1","Animation_2","Animation_3"], //Random Animation
 // "AnimationName": "Emote_EasternBloc_Start" //Name Of The Animation
-// "AnimationName2": "Emote_EasternBloc" //If Yo Have Continuous Animation Added Here Will Be Looped If Dont Have Make It Empty Or Dont Use It
+// "AnimationName2": "Emote_EasternBloc" //If Yo Have Continuous Animation Added Here
 // "MusicEmote": "Emote_EasternBloc" //Music Name If Dont Have Make It Empty Or Dont Use It
 // "Toggle_Emote_In_Chat": "Bloc,EasternBloc" //Toggle Emote In Chat Add As Many As You Like
 // "LoopAnimation": true //true = Will Loop AnimationName Or AnimationName2 If Exist  //false OR Not Used = Will Play AnimationName One Time And AnimationName2 If Exist
