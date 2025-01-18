@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] Emote-Dance-GoldKingZ (1.0.1)  
+# [CS2] Emote-Dance-GoldKingZ (1.0.2)  
 
 ### Fortnite Dance Emote Animation 
 
@@ -24,7 +24,6 @@
 
 [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
 
-[MySqlConnector](https://www.nuget.org/packages/MySqlConnector)
 
 ## .:[ Configuration ]:.
 
@@ -34,14 +33,28 @@
 ```json
 
 {
+//----------------------------[ ↓ Main Config ↓ ]----------------------------
 
-  //Key To Active Plugin
-  "KEY": "",
+  //Open Menu Mode:
+  //0 = Disable Menu
+  //1 = Custom Chat Menu By GoldKingZ
+  //2 = Custom Chat Menu By GoldKingZ
+  //3 = WASD Menu By GoldKingZ
+  "OpenMenu_Mode": 3,
 
-  //Change Check IpAdress To WebSite
-  "ChangeCheckIpAdressToWebSite": "XXXXXXXXX.YYY",
+  //Allow These Groups Only To Open Emote (Make It Empty "" To Let AnyOne)  [Example:@css/root,@css/admin,@css/vip,#css/admin,#css/vip]
+  "OpenMenu_Flags": "",
 
-//----------------------------[ ↓ Emote Dance Config ↓ ]----------------------------
+  //Commands In Game To Open Emote Menu
+  "OpenMenu_CommandsInGame": "!emotes,!emote,!dances,!dance",
+
+  //Allow These Groups Only To Reload Json
+  "Reload_Json_Flags": "@css/root,@css/admin,#css/root,#css/admin",
+
+  //Commands In Game To Reload Json
+  "Reload_Json_CommandsInGame": "!reloademote,!reloaddance",
+
+//----------------------------[ ↓ Emote/Dance Config ↓ ]----------------------------
 
   //Emote View?
   //true = ThirdPerson View
@@ -49,9 +62,9 @@
   "Emote_Thirdperson_View": true,
 
   //Freeze If Player Emote?
-  "Emote_Freeze": true,
+  "Emote_FreezePlayerWhenEmote": true,
 
-  //Check If Player Was Freezed Before Giving (Emote_Freeze OR MenuWASD_FreezePlayerOnMenuOpen) And Dont Unfreeze Him?
+  //Check If Player Was Freezed Before Giving (Emote_FreezePlayerWhenEmote) And Dont Unfreeze Him?
   //true = Yes
   //false = No Dont Check
   "Emote_AutoDetectIfPlayerWasFreezedDontUnFreezeHim": true,
@@ -62,45 +75,36 @@
   //Hide Default Chat Message If Toggle Emote By Chat?
   "Emote_HideDefaultChatMessageAfterToggleShortCut": true,
 
+  //Do You Want Emote_CancelPlayersAnimationOnPressing Works While Player On WASD Menu
+  "Emote_DoCancelPlayersAnimationWhileMenuWASDIsOn": false,
+
+  //Cancel Player Emote On Pressing
+  //(jump,space): When Player Jumps/Space
+  //(attack3): attack3
+  //(walk,shift): When Walk
+  //(scoreboard,tab): When Player Open Scoreboard
+  //(crouch,duck): When Player Duck
+  //(leftclick,attack): When Player Left Click/attack
+  //(rightclick,attack2): When Player Right Click/attack2
+  //(w,moveforward): When Player Move Forward
+  //(s,movebackward): When Player Move Backward
+  //(d,moveright): When Player Move Right Side
+  //(a,moveleft): When Player Move Left Side
+  //(inspect): When Player inspect Weapon
+  //(reload,r): When Player Reload
+  //(use,e): When Player +Use
+  "Emote_CancelPlayersAnimationOnPressing": "walk,moveforward,movebackward,moveright,moveleft,jump,crouch,leftclick",
+
   //Skip Cooldown For These Flags
   "Emote_ImmunityFromCooldownFlags": "@css/root,@css/admin,#css/root,#css/admin",
 
-  //Cancel Player Emote On Pressing
-  //( w , a , s , d , jump , crouch , scoreboard , leftclick , rightclick , attack3)
-  "Emote_CancelPlayersAnimationOnPressing": "w,s,jump,crouch,leftclick",
+//----------------------------[ ↓ Utilities ↓ ]----------------------------
 
-  //Open Menu Mode:
-  //0 = Disable Menu
-  //1 = Custom Chat Menu By GoldKingZ
-  //2 = Custom Chat Menu By GoldKingZ
-  //3 = WASD Menu By GoldKingZ
-  "OpenMenu_Mode": 3,
-
-  //Allow These Groups Only To Open Emote Menu (Make It Empty "" To Let AnyOne)  [Example:@css/root,@css/admin,@css/vip,#css/admin,#css/vip]
-  "OpenMenu_Flags": "",
-
-  //Commands In Game To Open Emote Menu
-  "OpenMenu_CommandsInGame": "!emotes,!emote,!dances,!dance",
-
-  //Close Menu After Select Emote
-  "OpenMenu_CloseMenuAfterSelectItem": false,
-
-//----------------------------[ ↓ Advanced WASD Menu Mode 3 Settings ↓ ]----------------------------
-
-  //If OpenMenu_Mode 3 Freeze Player When Menu Open
-  "MenuWASD_FreezePlayerOnMenuOpen": true,
-  
-  //Do You Want Emote_CancelPlayersAnimationOnPressing Works While Player On WASD Menu
-  "Emote_DoCancelPlayersAnimationWhileMenuWASDIsOn": false,
-  
-  //If OpenMenu_Mode 3 Close Player Menu On Pressing
-  //(jump , crouch , scoreboard , leftclick , rightclick , attack3)
-  "MenuWASD_ExitMenuOnPressing": "jump,scoreboard,crouch",
-
-//----------------------------[ ↓ Debug ↓ ]----------------------------
+  //Auto Update Signatures
+  "AutoUpdateSignatures": true,
 
   //Enable Debug Will Print Server Console If You Face Any Issue
-  "EnableDebug": false,
+  "EnableDebug": false
 }
 
 ```
@@ -116,21 +120,16 @@
 //        Options
 //==========================
 // "Hide_It_And_ShowThisOnlyForFlags": "@css/root,@css/vip" //Only These Flags Show Menu/NoMenu OR SubMenu 
-// "Flags": "@css/root,@css/vip" //Only These Can Access The Emote
+// "Only_These_Flags_Can_Access_It": "@css/root,@css/vip" //Only These Can Access The Emote
 // "ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl" //Model That Has Animation
-// "RandomAnimationName_X": "Emote_RockPaperScissor_Paper" //Name Of The Animations Add As Many As You Like Change X to Numbers It Will Pick One Random If Dont Have Make It Empty Or Dont Use It
+// "RandomAnimationName": ["Animation_1","Animation_2","Animation_3"], //Random Animation
 // "AnimationName": "Emote_EasternBloc_Start" //Name Of The Animation
 // "AnimationName2": "Emote_EasternBloc" //If Yo Have Continuous Animation Added Here Will Be Looped If Dont Have Make It Empty Or Dont Use It
-// "AnimationName2EnterByTimerInXSecs": 89 //Time In Secs To Exit From AnimationName And Enter AnimationName2 If AnimationName2 Used
-// "AnimationName2EnterByFrames": 89 //By Frames To Exit From AnimationName And Enter AnimationName2 If AnimationName2 Used
 // "MusicEmote": "Emote_EasternBloc" //Music Name If Dont Have Make It Empty Or Dont Use It
-// "EmoteName": "Eastern Bloc" //Name Of The Emote To Use In Lang
 // "Toggle_Emote_In_Chat": "Bloc,EasternBloc" //Toggle Emote In Chat Add As Many As You Like
-// "LoopAnimation": true //Loop Emote?
-// "PrintChatToAll": true //Print To Chat All Players In The Server?
-// "PrintChatToPlayer": false //Print To Chat Locally To The Player Only?
-// "If_LoopAnimation_False_KillAnimationByTimerInXSecs": 78 //If LoopAnimation false Kill Animation After Time In Secs 
-// "If_LoopAnimation_False_KillAnimationByFrames": 78 //if LoopAnimation false Kill Animation By End Of Frames
+// "LoopAnimation": true //true = Will Loop AnimationName Or AnimationName2 If Exist  //false OR Not Used = Will Play AnimationName One Time And AnimationName2 If Exist
+// "PrintChatToAll": true //true = Print To All Who Emote //false OR Not Used = Wil Be Disabled
+// "PrintChatToPlayer": false //true = Print To Player Who Emote //false OR Not Used = Wil Be Disabled
 // "If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 3.134694 //If LoopAnimation true Repeat Music On Every Time In Secs
 // "If_LoopAnimation_True_RepeatMusicEmoteAfterXFrames": 3.134694 //If LoopAnimation true Repeat Music On End Of Frames
 // "Give_Cooldown_After_This_InXSecs": 25, //Give Cooldown After This 25 Secs
@@ -144,11 +143,9 @@
 			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
 			"AnimationName": "DanceMoves",
 			"MusicEmote": "DanceMoves1",
-			"EmoteName": "Dance Ninja",
 			"Toggle_Emote_In_Chat": "dance,ninja",
 			"LoopAnimation": true,
 			"PrintChatToAll": true,
-			"PrintChatToPlayer": false,
 			"If_LoopAnimation_True_RepeatMusicEmoteAfterXFrames": 204
 		}
 		//..Add Many As You Like For More Submenus
@@ -157,6 +154,8 @@
 }
 
 ```
+
+![329846165-ba02c700-8e0b-4ebe-bc28-103b796c0b2e](https://github.com/oqyh/cs2-Game-Manager/assets/48490385/3df7caa9-34a7-47da-94aa-8d682f59e85d)
 
 ## .:[ Language ]:.
 ```json
@@ -173,73 +172,78 @@
 	//{nextline} = Print On Next Line
 	//==========================
 
-	"PrintChatToPlayer.EmoteMenu.Disabled": "{green}Gold KingZ {grey}| {darkred}Emote Menu Is {darkred}Disabled By The Server",
-	"PrintChatToPlayer.EmoteMenu.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}Emote Menu Is For {lime}VIPS {darkred}Only",
-	"PrintChatToPlayer.Emote.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}This Emote Is For {lime}VIPS {darkred}Only", //If Not Found Custom Not Allowed Message (PrintChatToPlayer.Emote.Not.Allowed.XXXXX) Plugin Will Use This Message By Default 
-	"PrintChatToPlayer.Emote.Not.Allowed.Dance 8 (Admin)": "{green}Gold KingZ {grey}| {darkred}This Emote Is For {lime}ADMINS {darkred}Only", //Use Custom Not Allowed Message On (SubMenu.Dance 8 (Admin))
-	"PrintChatToPlayer.Emote.While.He.Is.Dead": "{green}Gold KingZ {grey}| You cant Emote While You Dead",
-	"PrintChatToPlayer.Emote.While.He.Is.OnBot": "{green}Gold KingZ {grey}| You cant Emote While You As Bot",
-	"PrintChatToPlayer.Emote.While.He.Is.NotOnTheGround": "{green}Gold KingZ {grey}| You cant Emote While You On Air ",
-	"PrintChatToPlayer.Emote.While.He.Is.OnCooldown": "{green}Gold KingZ {grey}| You On Cooldown Please Wait {yellow}{0} Secs",
+	"PrintChatToPlayer.ReloadJson.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This",
+	"PrintChatToPlayer.Menu.Disabled": "{green}Gold KingZ {grey}| {darkred}Emote Menu Is {darkred}Disabled By The Server",
+	"PrintChatToPlayer.Menu.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}Emote Menu Is For {lime}VIPS {darkred}Only",
+	"PrintChatToPlayer.Emote.While.He.Is.Dead": "{green}Gold KingZ {grey}| You Cant Emote When You Are Dead",
+	"PrintChatToPlayer.Emote.While.He.Is.OnBot": "{green}Gold KingZ {grey}| You Cant Emote While You Are a Bot",
+	"PrintChatToPlayer.Emote.While.He.Is.NotOnTheGround": "{green}Gold KingZ {grey}| You Cant Emote While You Are on Air",
+	"PrintChatToPlayer.Emote.While.He.Is.OnCooldown": "{green}Gold KingZ {grey}| You Are On Cooldown. Please Wait {yellow}{0} Seconds.",
 
-	//==========================
-	//     Emote Messages
-	//==========================
-	//PrintChatToPlayer = Print To Chat Locally To The Player Only (If PrintChatToPlayer True In Emote_Settings.json)
-	//PrintChatToAll = Print To Chat All Players In The Server (If PrintChatToAll True In Emote_Settings.json)
-	//{0} = Player Name
-	//{1} = EmoteName
-	//==========================
+	//Default Message Emote On Not Allowed (If Not Found Custom Message)
+	"PrintChatToPlayer.Selected.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This",
 
-	"PrintChatToPlayer.Emote": "{green}Gold KingZ {grey}| You Played Emote {yellow}{1}",//If Not Found Custom Message (PrintChatToPlayer.Emote.XXXXX) Plugin Will Use This Message By Default
-	"PrintChatToAll.Emote": "{green}Gold KingZ {grey}| {purple}{0} {grey}Played Emote {yellow}{1}",//If Not Found Custom Message (PrintChatToAll.Emote.XXXXX) Plugin Will Use This Message By Default
+	//Custom Message For Specific Emote On Not Allowed
+	"PrintChatToPlayer.Selected.Not.Allowed.Dance 1": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
+	"PrintChatToPlayer.Selected.Not.Allowed.Dance 2": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
+	"PrintChatToPlayer.Selected.Not.Allowed.Dance 3": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
+	"PrintChatToPlayer.Selected.Not.Allowed.Dance 4": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
+	"PrintChatToPlayer.Selected.Not.Allowed.Dance 5": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
+	"PrintChatToPlayer.Selected.Not.Allowed.Dance 6": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}ADMINS Only",
+	"PrintChatToPlayer.Selected.Not.Allowed.Dance 7": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}ADMINS Only",
+	"PrintChatToPlayer.Selected.Not.Allowed.Dance 8": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}ADMINS Only",
 
-	// .:[Custom Emote Messages]:.
-	"PrintChatToAll.Emote.Dance 1 (Vip)": "{green}Gold KingZ {grey}| {blue}[VIP] {purple}{0} {grey}Played Emote {yellow}{1}", //Use Custom Message On (SubMenu.Dance 1 (Vip))
-	"PrintChatToAll.Emote.Dance 8 (Admin)": "{green}Gold KingZ {grey}| {darkred}[ADMIN] {purple}{0} {grey}Played Emote {yellow}{1}", //Use Custom Message On (SubMenu.Dance 8 (Admin))
+	//Default Message On Start Emote (If Not Found Custom Message)
+	"PrintChatToPlayer.Emote": "{green}Gold KingZ {grey}| You Played Emote {yellow}{0}", //{0} = Dance Name 
+	"PrintChatToAll.Emote": "{green}Gold KingZ {grey}| {purple}{0} {grey}Played Emote {yellow}{1}", //{0} = Player Name || {1} = Dance Name
 
-
-	// .:[Menu Settings]:.
-	"Menu.Mode_1.Title.MainMenu": "{yellow}.:[ Emote Menu ]:.",
-	"Menu.Mode_1.Title.SubMenu": "{gold} {0}",
-	"Menu.Mode_1.BreakLine": "{Blue}-----------",
-	"Menu.Mode_1.Numbers.Color": "{green}",
-	"Menu.Mode_1.SubMenu.Indicator": "",
-	"Menu.Mode_1.BackToMainMenu": "{purple}!6 {grey}<- Back to Main Menu",
-	"Menu.Mode_1.PreviousPage": "{yellow}!7 {grey}<- Back",
-	"Menu.Mode_1.NextPage": "{yellow}!8 {grey}-> Next",
-	"Menu.Mode_1.Close": "{red}!9 {grey}-> Close Menu",
-	"Menu.Mode_1.MenuClosed": "{green}Gold KingZ {grey}| {red}Menu Closed",
+	//Custom Message For Specific Emote On Start Emote
+	"PrintChatToAll.Emote.Dance 1": "{green}Gold KingZ {grey}| {blue}[VIP] {purple}{0} {grey}Played Emote {yellow}{1}",
+	"PrintChatToAll.Emote.Dance 6": "{green}Gold KingZ {grey}| {darkred}[ADMIN] {purple}{0} {grey}Played Emote {yellow}{1}",
 
 
+	//Menus Style
+	"Mode_1.MainMenu.Title": "{Magenta} Emote Menu",
+	"Mode_1.SubMenu.Title": "{Purple} .:[ {0} ]:.", //{0} = SubMenu Name
 
-	"Menu.Mode_2.Title.MainMenu": "<font class='fontSize-M' color='yellow'> .:[ Emote Menu ]:. </font>",
-	"Menu.Mode_2.Title.SubMenu": "<font class='fontSize-M' color='gold'> {0} </font>",
-	"Menu.Mode_2.Numbers.Color": "green",
-	"Menu.Mode_2.SubMenu.Indicator": "",
-	"Menu.Mode_2.BackToMainMenu": "<font color='purple'>!6</font> &#60;- Back to Main Menu",
-	"Menu.Mode_2.PreviousPage": "<font color='yellow'>!7</font> &#60;- Back",
-	"Menu.Mode_2.NextPage": "<font color='yellow'>!8</font> -> Next",
-	"Menu.Mode_2.Close": "<font color='red'>!9</font> -> Close Menu",
+	"Mode_2.MainMenu.Title": "<font class='fontSize-M' color='#b74eae'> Emote Menu</font>",
+	"Mode_2.SubMenu.Title": "<font class='fontSize-M' color='#f809e6'> .:[ {0} ]:. </font>", //{0} = SubMenu Name
 
-
-	"Menu.Mode_3.Title.MainMenu": "<font class='fontSize-M' color='yellow'> .:[ Emote Menu ]:. </font>",
-	"Menu.Mode_3.Title.SubMenu": "<font class='fontSize-M' color='Gold'> {0} </font>",
-	"Menu.Mode_3.Highlighted_Line.Color": "orange",
-	"Menu.Mode_3.NOT_Highlighted_Line.Color": "white",
-	"Menu.Mode_3.Highlighted_Line.LeftSide": "<font class='fontSize-L' color='darkred'> ►[ </font>",
-	"Menu.Mode_3.Highlighted_Line.RightSide": "<font class='fontSize-L' color='darkred'> ]◄ </font>",
-	"Menu.Mode_3.Highlighted_Line.SubMenu.Indicator": "",
-	"Menu.Mode_3.SubMenu.Indicator": "",
-	"Menu.Mode_3.MoreItemsBlow.Indicator": "<img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/refs/heads/main/Resources/arrow.gif' class=''> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/refs/heads/main/Resources/arrow.gif' class=''> <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/refs/heads/main/Resources/arrow.gif' class=''>",
-	"Menu.Mode_3.Bottom.Info": "<font color='cyan'>[ WASD - To Native ]</font> <br><font color='purple'>[ <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/refs/heads/main/Resources/tab.gif' class=''> - To Exit ]<br>"
+	"Mode_3.MainMenu.Title": "<font class='fontSize-M' color='#b74eae'> Emote Menu</font>",
+	"Mode_3.SubMenu.Title": "<font class='fontSize-M' color='#f809e6'> .:[ {0} ]:. </font>" //{0} = SubMenu Name
 }
 ```
 
 ## .:[ Change Log ]:.
 ```
-(1.0.1)
+(1.0.2)
+[Fix]
+- Rework + Optimize Emote Plugin
+- GKZ Api
+- Some Bugs
+- Bug Emote_CancelPlayersAnimationOnPressing Ability To Walk Emote
+- Bug Aim Punching
 
+[Added In config.json]
+- GKZ MenuApi 
+- Reload_Json_Flags 
+- Reload_Json_CommandsInGame 
+- AutoUpdateSignatures 
+
+[Removed In config.json]
+- KEY No Needed Any More
+- ChangeCheckIpAdressToWebSite No Needed Any More
+
+[Removed In Emote_Settings.json]
+- Flags Changed To Only_These_Flags_Can_Access_It
+- RandomAnimationName_X Changed To RandomAnimationName Add As Many As You Like
+- AnimationName2EnterByFrames No Needed Any More
+- AnimationName2EnterByTimerInXSecs No Needed Any More
+- EmoteName No Needed Any More
+- If_LoopAnimation_False_KillAnimationByFrames No Needed Any More
+- If_LoopAnimation_False_KillAnimationByTimerInXSecs No Needed Any More
+
+(1.0.1)
 [Fix]
 - Some Bugs
 - Bug OpenMenu_CloseMenuAfterSelectItem Dont Stop Animation If It True
@@ -280,6 +284,5 @@
 - Menu Mode 1 2 3 Can Be Modify In Lang
 
 (1.0.0)
-
 -Initial Release
 ```
