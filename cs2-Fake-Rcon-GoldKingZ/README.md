@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] Fake-Rcon-GoldKingZ (1.0.2)  
+# [CS2] Fake-Rcon-GoldKingZ (1.0.3)  
 
 ### Dynamic Fake Rcon Depend FakeRcon_Settings.json
 ### Setup Each Group's Limits With Logs
@@ -23,7 +23,6 @@
 
 [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
 
-[MySqlConnector](https://www.nuget.org/packages/MySqlConnector)
 
 ## .:[ Configuration ]:.
 
@@ -33,12 +32,6 @@
 ```json
 
 {
-  //Key To Active Plugin
-  "KEY": "test",
-
-  //Change Check IpAdress To WebSite
-  "ChangeCheckIpAdressToWebSite": "XXXXXXXXX.YYY",
-
 //----------------------------[ ↓ Fake Rcon Config ↓ ]----------------------------
 
   //Commands In Game For Fake Rcon
@@ -173,7 +166,7 @@
 	//==========================
 	//{nextline} = Print On Next Line
 	//==========================
-	
+
 	"PrintConsoleToPlayer.Notallowed": "You Are Not Allowed To Use Fake Rcon",
 	"PrintConsoleToPlayer.Notallowed.This.Command": "This Command [{0}] is not allowed for you",
 	"PrintConsoleToPlayer.Banned": "You Reached Password Tries Limit You On CoolDown For {0}",
@@ -185,6 +178,13 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.3)
+-Fix Bugs
+-Fix GKZ Api
+-Remove Port Restricted
+-Remove Key No Needed
+-Remove ChangeCheckIpAdressToWebSite
+
 (1.0.2)
 -Fix Server Will Crash on Capital letter Send Commands (fake_rcon MAP DE_DUST2)
 
