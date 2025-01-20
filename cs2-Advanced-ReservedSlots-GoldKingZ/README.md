@@ -7,7 +7,7 @@
 # [CS2] Advanced-ReservedSlots-GoldKingZ (1.0.1)  
 
 ### Dynamic Kick Reserved Slots Depend Group Priority 
-### when server is full - 1  it random kick start with normal people when group_1 or 2 or 3 joined then if no normal people in game it random kick Group_1 and so on...
+### When Server Is Full - 1  It Will Start KickMode Depend Priority Group You Set In ReservedSlots_Settings.json 
 
 ![image](https://github.com/oqyh/cs2-Private-Plugins/assets/48490385/c7eea100-f571-40e9-880c-ef2414e055d6)
 
