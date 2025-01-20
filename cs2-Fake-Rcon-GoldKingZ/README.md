@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] Fake-Rcon-GoldKingZ (1.0.3)  
+# [CS2] Fake-Rcon-GoldKingZ (1.0.4)  
 
 ### Dynamic Fake Rcon Depend FakeRcon_Settings.json
 ### Setup Each Group's Limits With Logs
@@ -178,6 +178,9 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.4)
+-Fix GKZ Api
+
 (1.0.3)
 -Fix Bugs
 -Fix GKZ Api
