@@ -4,7 +4,7 @@
 + PRICE 5$ + FREE Multiple Servers [Lifetime ( One Time Payment )] 
 ```
 
-# [CS2] Advanced-ReservedSlots-GoldKingZ (1.0.0)  
+# [CS2] Advanced-ReservedSlots-GoldKingZ (1.0.1)  
 
 ### Dynamic Kick Reserved Slots Depend Group Priority 
 ### when server is full - 1  it random kick start with normal people when group_1 or 2 or 3 joined then if no normal people in game it random kick Group_1 and so on...
@@ -22,7 +22,6 @@
 
 [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
 
-[MySqlConnector](https://www.nuget.org/packages/MySqlConnector)
 
 ## .:[ Configuration ]:.
 
@@ -32,16 +31,43 @@
 ```json
 
 {
+//----------------------------[ ↓ Main Config ↓ ]----------------------------
+  
+  //Allow These Groups Only To Reload Json
+  "Reload_Json_Flags": "@css/root,@css/admin,#css/root,#css/admin",
 
-  //Key To Active Plugin
-  "KEY": "",
+  //Commands In Game To Reload Json
+  "Reload_Json_CommandsInGame": "!reloadreserved,!reloadreservedslot,!reloadreserv",
 
-  //Delay Kick To Show Message To Let Kicked Player Understand Why Get Kicked
+//----------------------------[ ↓ ReservedSlots Config ↓ ]----------------------------
+
+  //Kick Mode?
+  //(0) = Kick Random Players
+  //(1) = Kick Highest Ping
+  //(2) = Kick Highest Score
+  //(3) = Kick Lowest Score
+  //(4) = Kick Player Who In The Server Longest Time
+  //(5) = Kick Player Who In The Server Shortest Time
+  "KickMode": 0,
+
+  //Do KickMode On Players In Spectators First?
+  //(true) = Yes
+  //(false) = No (Any)
+  "PriorityKickOnSpecPlayers": true,
+
+  //Kick With Proper Reason?
+  "KickWithReason": false,
+
+  //Do Delay Kick?
   "Delaykick": true,
 
-  //If Delaykick true How Much In Secs
-  "DelayTimeXInSecs": 5,
+  //If Delaykick true Do Delay Kick Time (InSecs)
+  "DelayTimeXInSecs": 10,
 
+//----------------------------[ ↓ Utilities ↓ ]----------------------------
+
+  //Enable Debug Will Print Server Console If You Face Any Issue
+  "EnableDebug": false
 }
 
 ```
@@ -54,17 +80,14 @@
 ```json
 
 {
-  "Group_1": {
-    "GROUP_NAME": "VIPS", //Group Name
-    "FLAGS": "@css/vip,#css/vip"
+  "VIPS": { //Group Name 
+    "Flags": "@css/vip,#css/vip" //Flags
   },
-  "Group_2": {
-    "GROUP_NAME": "VVIPS",
-    "FLAGS": "@css/vvip,#css/vvip"
+  "VVIPS": { //Group Name 
+    "Flags": "@css/vvip,#css/vvip" //Flags
   },
-  "Group_3": {
-    "GROUP_NAME": "ADMINS",
-    "FLAGS": "@css/admin,#css/root"
+  "ADMINS": { //Group Name 
+    "Flags": "@css/admin,#css/admin" //Flags
   }
 }
 
@@ -85,14 +108,27 @@
 	//{nextline} = Print On Next Line
 	//==========================
 
-	"player.kicked.full.delay": "{red}------------------------------------------ {nextline} {green}[AdvancedReservedSlots] {red}Server is full {grey}This Slot Reserved For {lime}Vips Only {nextline} {red}------------------------------------------",
-	"player.kicked.full.replaced": "{red}------------------------------------------ {nextline} {green}[AdvancedReservedSlots] {grey}You Will Be Kicked {nextline} {green}[AdvancedReservedSlots] {grey}Reason: {lime}[ {purple}{0} {grey}/ {gold}{1} {lime}] {grey}Took Your Spot {nextline} {red}------------------------------------------", //{0} = VIP PLAYER NAME //{1} = VIP FLAG NAME
-	"random.kick.announcement": "{green}[AdvancedReservedSlots] {lime}[ {purple}{0} {grey}/ {gold}{1} {lime}] {grey}Joinned {nextline} {green}[AdvancedReservedSlots] {grey}Random Kick Choosed {red}{2}" //{0} = VIP PLAYER NAME //{1} = VIP FLAG NAME //{2} = WHO WILL GET KICKED
+	"PrintChatToPlayer.ReloadJson.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This",
+
+	"PrintChatToPlayer.Kicked.Full.Delay": "{red}------------------------------------------ {nextline} {green}[AdvancedReservedSlots] {red}Server is full {grey}This Slot Reserved For {lime}Vips Only {nextline} {red}------------------------------------------",
+    "PrintChatToPlayer.Kicked.Full.Replaced": "{red}------------------------------------------ {nextline} {green}[AdvancedReservedSlots] {grey}You Will Be Kicked {nextline} {green}[AdvancedReservedSlots] {grey}Reason: {lime}[ {purple}{0} {grey}/ {gold}{1} {lime}] {grey}Took Your Spot {nextline} {red}------------------------------------------",
+    "PrintChatToAll.Kick": "{green}[AdvancedReservedSlots] {lime}[ {purple}{0} {grey}/ {gold}{1} {lime}] {grey}Joinned {nextline} {green}[AdvancedReservedSlots] {grey}Player: {red}{2} {grey}Will Get Kicked"
 }
 ```
 
 ## .:[ Change Log ]:.
 ```
+(1.0.1)
+-Fix Bugs
+-Fix GKZ Api
+-Remove Port Restricted
+-Remove Key No Needed
+-Added KickMode (Kick Random Players,Kick Highest Ping,Kick Highest Score,Kick Lowest Score,Kick Player Who In The Server Longest Time,Kick Player Who In The Server Shortest Time)
+-Added PriorityKickOnSpecPlayers 
+-Added KickWithReason 
+-Added Reload_Json_Flags 
+-Added Reload_Json_CommandsInGame 
+
 (1.0.0)
 -Initial Release
 ```
