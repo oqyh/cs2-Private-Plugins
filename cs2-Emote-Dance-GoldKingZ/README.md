@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] Emote-Dance-GoldKingZ (1.0.2)  
+# [CS2] Emote-Dance-GoldKingZ (1.0.3)  
 
 ### Fortnite Dance Emote Animation 
 
@@ -216,6 +216,9 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.3)
+-Fix GKZ Api
+
 (1.0.2)
 [Fix]
 - Rework + Optimize Emote Plugin
