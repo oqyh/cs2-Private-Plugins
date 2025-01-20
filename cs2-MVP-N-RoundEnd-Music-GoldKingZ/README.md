@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
-# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.3)  
+# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.4)  
 
 ## Video ShowCase Of Plugin
 
@@ -403,6 +403,9 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.4)
+-Fix GKZ Api
+
 (1.0.3)
 -Fix Bugs
 -Fix Error invoking callback
