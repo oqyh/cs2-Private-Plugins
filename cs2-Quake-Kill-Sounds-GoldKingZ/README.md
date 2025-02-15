@@ -204,7 +204,6 @@
 // "NoScopeKill": // No Scope Kills Will Reset On Death
 // "OnAirKill": // On Air Kills Will Reset On Death
 // "TeamKill": // Team Kill Will Reset On Death
-// "TeamKill": // Team Kill Will Reset On Death
 //============================================
 //        Quake Events
 //============================================
