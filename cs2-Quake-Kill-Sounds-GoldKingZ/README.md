@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
-# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.4)  
+# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.5)  
 
 ## Video ShowCase Of Plugin
 
@@ -277,6 +277,9 @@
 	//==========================
 	//    Quake Kill Sounds
 	//==========================
+	//"ShowChat.xxxxxxxx" = To Show In Chat
+	//"ShowCenter.xxxxxxxx" = To Show In Center Html
+	//"ShowCenter_Bottom.xxxxxxxx" = To Show In Center Bottom
 	//{0} = Attacker Player Name
 	//{1} = Victim Player Name
 	//{2} = How Much Kills 
@@ -407,6 +410,14 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.5)
+-Rework On Plugin
+-Fix Duplication On Kill  
+-Fix default Packs On Rejoin / Disconnect 
+-Fix No Print Chat On No Sound Path
+-Fix Fall Back Lang If Not Found Custom (Example If Not Found "ShowChat.ComboKill_2" It Will Now Use "ShowChat.ComboKill")
+-Fix Bug Priority_Controller
+
 (1.0.4)
 -Fix GKZ Api
 
