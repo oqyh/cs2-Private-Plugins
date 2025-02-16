@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
-# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.4)  
+# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.5)  
 
 ## Video ShowCase Of Plugin
 
@@ -267,6 +267,9 @@
 	//==========================
 	//        MVP Music
 	//==========================
+	//"MVP.ShowChat.xxxxxxxx" = To Show MVP In Chat
+	//"MVP.ShowCenter.xxxxxxxx" = To Show MVP In Center Html
+	//"MVP.ShowCenter_Bottom.xxxxxxxx" = To Show MVP In Center Bottom
 	//{0} = Player Name Of Who MVP Of The Match
 	//{1} = Selected Name Of MVP
 	//==========================
@@ -299,6 +302,9 @@
 	//==========================
 	//        Round End Music 
 	//==========================
+	//"RES.ShowChat.xxxxxxxx" = To Show RES In Chat
+	//"RES.ShowCenter.xxxxxxxx" = To Show RES In Center Html
+	//"RES.ShowCenter_Bottom.xxxxxxxx" = To Show RES In Center Bottom
 	//{0} = Name Of Round End Music 
 	//==========================
 	
@@ -403,6 +409,12 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.5)
+-Rework On Plugin
+-Some Clean Up On Mysql
+-Fix Player Not Saved Data On Disconnect 
+-Fix MVP Not Set On Disconnect / Map Changed 
+
 (1.0.4)
 -Fix GKZ Api
 
