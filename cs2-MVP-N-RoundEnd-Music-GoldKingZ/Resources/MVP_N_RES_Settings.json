@@ -315,6 +315,7 @@
 	},
 	"Menu.Vip MVPs":
 	{
+		"Only_These_Flags_Can_Access_It": "@css/admin,#css/admin,@css/vip,#css/vip",
 		"SubMenu.Hanumankind - Big Dawgs":
 		{
 			"Unique_Name": "bigdawgs",
