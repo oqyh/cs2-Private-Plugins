@@ -178,6 +178,9 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.5)
+-Fix Api Crash
+
 (1.0.4)
 -Fix GKZ Api
 
