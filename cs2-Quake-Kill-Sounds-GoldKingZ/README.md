@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members (Limited Time Only)] 
 ```
 
-# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.5)  
+# [CS2] Quake-Kill-Sounds-GoldKingZ (1.0.6)  
 
 ## Video ShowCase Of Plugin
 
@@ -409,6 +409,9 @@
 
 ## .:[ Change Log ]:.
 ```
+(1.0.6)
+-Fix Api Crash
+
 (1.0.5)
 -Rework On Plugin
 -Fix Duplication On Kill  
