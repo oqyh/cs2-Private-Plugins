@@ -1,0 +1,392 @@
+{
+	"Menu.Say Sound Settings":
+	{
+		"SubMenu.STATUS.TOGGLE_SOUND. Sound:":
+		{
+			"Only_These_Flags_Can_Access_It": "@css/root,@css/vip"
+		},
+		
+		"SubMenu.STATUS.TOGGLE_MESSAGE. Message:":{}
+	},
+	
+	"Menu.(Free) SaySounds":
+	{
+		"SubMenu.Hi":
+		{
+			"Hook_Radio": "cheer",
+			"Toggle_Sound_In_Chat": "hi,hello",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"hi"
+			]
+		},
+		"SubMenu.Bye":
+		{
+			"Toggle_Sound_In_Chat": "bye",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"bye1",
+				"bye2"
+			]
+		},
+		"SubMenu.Clap":
+		{
+			"Toggle_Sound_In_Chat": "clap,clapping",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"clap1",
+				"clap2",
+				"clap3",
+				"clap4"
+			]
+		},
+		"SubMenu.Cry":
+		{
+			"Toggle_Sound_In_Chat": "cry,crying",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"cry1",
+				"cry2",
+				"cry3",
+				"cry4"
+			]
+		},
+		"SubMenu.Death":
+		{
+			"Toggle_Sound_In_Chat": "Dead",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"death"
+			]
+		},
+		"SubMenu.EZ":
+		{
+			"Toggle_Sound_In_Chat": "ez,easy,ezz",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"ez1",
+				"ez2",
+				"ez3"
+			]
+		},
+		"SubMenu.Fart":
+		{
+			"Toggle_Sound_In_Chat": "fart,farted,farts",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"fart1",
+				"fart2",
+				"fart3",
+				"fart4"
+			]
+		},
+		"SubMenu.Fire In The Hole":
+		{
+			"Toggle_Sound_In_Chat": "fith,fireinthehole,firehole",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"fireinthehole"
+			]
+		},
+		"SubMenu.GG":
+		{
+			"Toggle_Sound_In_Chat": "gg,goodgame,good game",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"gg1",
+				"gg2",
+				"gg3"
+			]
+		},
+		"SubMenu.HAHA":
+		{
+			"Toggle_Sound_In_Chat": "haha,hahaha",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"haha1",
+				"haha2",
+				"haha3",
+				"haha4"
+			]
+		},
+		"SubMenu.HandSome":
+		{
+			"Hook_Radio": "compliment",
+			"Toggle_Sound_In_Chat": "handsome",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"handsome"
+			]
+		},
+		"SubMenu.Hell Yeah":
+		{
+			"Toggle_Sound_In_Chat": "hellyeah,hellyea,hellya",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"hellyeah"
+			]
+		},
+		"SubMenu.Huh?":
+		{
+			"Toggle_Sound_In_Chat": "huh",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"huh"
+			]
+		},
+		"SubMenu.Hurt":
+		{
+			"Toggle_Sound_In_Chat": "hurt",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"hurt"
+			]
+		},
+		"SubMenu.Laugh":
+		{
+			"Toggle_Sound_In_Chat": "laughing,laugh",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"laugh1",
+				"laugh2",
+				"laugh3"
+			]
+		},
+		"SubMenu.MAMA":
+		{
+			"Toggle_Sound_In_Chat": "mama",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"mama"
+			]
+		},
+		"SubMenu.Nice Work":
+		{
+			"Toggle_Sound_In_Chat": "Nice Work,NiceWork",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"nicework"
+			]
+		},
+		"SubMenu.Rizz":
+		{
+			"Toggle_Sound_In_Chat": "rizz",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"rizz"
+			]
+		},
+		"SubMenu.Shhhhh":
+		{
+			"Toggle_Sound_In_Chat": "shhh,shh,shush",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"shush"
+			]
+		},
+		"SubMenu.Stop":
+		{
+			"Toggle_Sound_In_Chat": "stop,stopit",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"stop1",
+				"stop2"
+			]
+		},
+		"SubMenu.Suka":
+		{
+			"Toggle_Sound_In_Chat": "Suka,Blyat,Suka Blyat,SukaBlyat",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"suka"
+			]
+		},
+		"SubMenu.Whistle (T Team Only)":
+		{
+			"Toggle_Sound_In_Chat": "Whistling,Whistle",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"OnlyForTeam": 2,
+			"Sound_Paths":
+			[
+				"whistle1",
+				"whistle2",
+				"whistle3"
+			]
+		},
+		"SubMenu.Woohoo":
+		{
+			"Toggle_Sound_In_Chat": "woohoo",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"woohoo"
+			]
+		},
+		"SubMenu.WoW":
+		{
+			"Toggle_Sound_In_Chat": "WoW",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"wow"
+			]
+		},
+		"SubMenu.WTF":
+		{
+			"Toggle_Sound_In_Chat": "wtf,what the fk,wthatthefk",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"wtf1",
+				"wtf2",
+				"wtf3"
+			]
+		},
+		"SubMenu.WTH":
+		{
+			"Toggle_Sound_In_Chat": "wth,what the hell,wthatthehell",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"wth1",
+				"wth2",
+				"wth3"
+			]
+		},
+		"SubMenu.Yeah":
+		{
+			"Toggle_Sound_In_Chat": "yeah,yea",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Paths":
+			[
+				"yeah1",
+				"yeah2",
+				"yeah3",
+				"yeah4"
+			]
+		}
+	},
+	
+	"Menu.(VIP) SaySounds":
+	{
+		"SubMenu.Eh?":
+		{
+			"Only_These_Flags_Can_Access_It": "@css/vip,@css/root,@css/admin,#css/vip,#css/root,#css/admin",
+			"Toggle_Sound_In_Chat": "eh,ehh,ehhh",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 2,
+			"Sound_Paths":
+			[
+				"eh"
+			]
+		},
+		"SubMenu.Yipe!":
+		{
+			"Only_These_Flags_Can_Access_It": "@css/vip,@css/root,@css/admin,#css/vip,#css/root,#css/admin",
+			"Toggle_Sound_In_Chat": "yiippee,yipe,yipee",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 2,
+			"Sound_Paths":
+			[
+				"yipe"
+			]
+		},
+		"SubMenu.PEW":
+		{
+			"Only_These_Flags_Can_Access_It": "@css/vip,@css/root,@css/admin,#css/vip,#css/root,#css/admin",
+			"Toggle_Sound_In_Chat": "pew",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 2,
+			"Sound_Paths":
+			[
+				"pew"
+			]
+		},
+		"SubMenu.Light Weight":
+		{
+			"Only_These_Flags_Can_Access_It": "@css/vip,@css/root,@css/admin,#css/vip,#css/root,#css/admin",
+			"Toggle_Sound_In_Chat": "lw,Light Weight,LightWeight",
+			"PrintChatToAll": true,
+			"Give_Cooldown_After_This_InXSecs": 2,
+			"Sound_Paths":
+			[
+				"lightweight"
+			]
+		}
+	},
+	
+	
+	"Menu.(ADMIN) SaySounds":
+	{
+		"Hide_It_And_Show_Only_ForFlags": "@css/root,@css/admin,#css/root,#css/admin",
+		
+		"SubMenu.Wake Up (Not 3d Sound)":
+		{
+			"Only_These_Flags_Can_Access_It": "@css/root,@css/admin,#css/root,#css/admin",
+			"Toggle_Sound_In_Chat": "wakeup,wake up",
+			"PrintChatToAll": true,
+			"Sound_Paths":
+			[
+				"sounds/saysound/wakeup.vsnd"
+			]
+		},
+		"SubMenu.Women":
+		{
+			"Only_These_Flags_Can_Access_It": "@css/root,@css/admin,#css/root,#css/admin",
+			"Toggle_Sound_In_Chat": "women",
+			"PrintChatToAll": true,
+			"Sound_Paths":
+			[
+				"women"
+			]
+		}
+	}
+}
