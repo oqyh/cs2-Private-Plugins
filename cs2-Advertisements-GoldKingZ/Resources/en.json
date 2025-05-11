@@ -14,11 +14,11 @@
 	//"Show_Mode" = Not Use = Print To Player Chat 
 					0 		= Print To Player Chat
 					1 		= Print To Player Chat
-					2 		= Print To Player Console
-					3 		= Print To Player Center (HTML)
-					4 		= Print To Player Center Bottom
-					5 		= Print To Player Alert
-					6 		= Print To Player Screen
+					2 		= Print To Player Console 		
+					3 		= Print To Player Center (HTML) Adding "3:10" Is The Duration In Secs
+					4 		= Print To Player Center Bottom Adding "4:10" Is The Duration In Secs
+					5 		= Print To Player Alert 		Adding "5:10" Is The Duration In Secs
+					6 		= Print To Player Screen 		Adding "6:10" Is The Duration In Secs
 	//"Delay_Welcome_InXSecs" = If You Use "Welcome" How Much Delay Before Send Message
 	//"Sound_Volume" = Sound Volume from 0 to 100
 	//"Sound_Paths" = Sound Paths (If It Start With sounds/ Will Not Support Volume)
@@ -93,10 +93,7 @@
 		"Show_Mode" : "1",
 		"Sound_Volume" : 50,
 		"Sound_Paths":
-        [
-            "UIPanorama.exitPopup_scroll",
-			"UIPanorama.container_countdown",
-        ]
+        ["UIPanorama.exitPopup_scroll"]
 	},
 	"3": 
 	{
