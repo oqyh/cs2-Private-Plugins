@@ -209,7 +209,7 @@
 - Added Ads_Default_Wall_Logo
 - Added Ads_Default_Wall_Text
 - Added Ads_Default_Player_Logo
-- Exlude Ads From Lang Folder Now Ads In `advertisements` Folder
+- Exclude Ads From Lang Folder Now Ads In `advertisements` Folder
 
 ### [1.0.0]
 - Initial plugin release
