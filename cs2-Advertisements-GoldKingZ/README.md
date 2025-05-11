@@ -188,7 +188,6 @@
 
 ### [1.0.1]
 - Rework Plugin
-
 - Remove Unnecessaries
 - Support GIF 
 - Change SendMessageEveryXMins To SendMessageOnEvery Choose Mins/Secs 
