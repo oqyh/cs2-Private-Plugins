@@ -1,0 +1,189 @@
+{
+	//==========================
+	//        Colors
+	//==========================
+	//{Yellow} {Gold} {Silver} {Blue} {DarkBlue} {BlueGrey} {Magenta} {LightRed}
+	//{LightBlue} {Olive} {Lime} {Red} {Purple} {Grey}
+	//{Default} {White} {Darkred} {Green} {LightYellow}
+	//==========================
+	//        Format 
+	//==========================
+	//"Welcome" = Welcome Message (Remove it to disable it)
+	//"OnDeath" = When Player Dead Message (Remove it to disable it)
+	//"Message" = Message 
+	//"Show_Mode" = Not Use = Print To Player Chat 
+					0 		= Print To Player Chat
+					1 		= Print To Player Chat
+					2 		= Print To Player Console
+					3 		= Print To Player Center (HTML)
+					4 		= Print To Player Center Bottom
+					5 		= Print To Player Alert
+					6 		= Print To Player Screen
+	//"Delay_Welcome_InXSecs" = If You Use "Welcome" How Much Delay Before Send Message
+	//"Sound_Volume" = Sound Volume from 0 to 100
+	//"Sound_Paths" = Sound Paths (If It Start With sounds/ Will Not Support Volume)
+	//"Font_Name" = Front Name (For Show_Mode 6 Only)
+	//"Font_Size" = Front Size (For Show_Mode 6 Only)
+	//"RGBA_Color" = Front Color (For Show_Mode 6 Only) Use This Site https://rgbacolorpicker.com/
+	//"X_Axis" = X-Axis (For Show_Mode 6 Only)
+	//"Y_Axis" = Y-Axis (For Show_Mode 6 Only)
+	//"BackGround" = true or false To Use Black BackGround (For Show_Mode 6 Only)
+	//==========================
+	//        Placeholders
+	//==========================
+	//{nextline} = Print On Next Line
+	//{PLAYER_NAME} = Player Name
+	//{PLAYER_STEAMID} = STEAM_0:1:122910632
+	//{PLAYER_STEAMID3} = U:1:245821265
+	//{PLAYER_STEAMID32} = 245821265
+	//{PLAYER_STEAMID64} = 76561198206086993
+	//{TIME} = 14:30
+	//{TIME2} = 14:30 PM
+	//{TIME3} = 14:30:45
+	//{TIME4} = 14:30:45 PM
+	//{DATE} = 25.12.2023
+	//{DATE2} = 12.25.2023
+	//{SERVER_NAME} = Server Name
+	//{SERVER_MAP_NAME} = Map Name
+	//{SERVER_MAP2_NAME} = Custom Map Name (RenameMaps)
+	//{SERVER_IP} = Server Ip In Server Lunch Option (-ip 127.0.0.1)
+	//{SERVER_IP2} = Get Server Public IP
+	//{SERVER_PORT} = Server Port
+	//{SERVER_DNS} = Get Server DNS
+	//{SERVER_MAXPLAYERS_COUNT} = Server Max Players
+	//{SERVER_PLAYERS_COUNT} = Players In Server Without Bots
+	//{SERVER_PLAYERS_COUNT_WITH_BOTS} = Players In Server With Bots
+	//==========================
+	
+	"Welcome": 
+	{
+		"Message" : "{magenta}---------------------.:[ Welcome ]:.--------------------- {nextline} {grey}Hello There {lime}{PLAYER_NAME} {nextline} {grey}Welcome To {Orange}{SERVER_NAME} {nextline} {grey}Please Make Sure You Add Our Server To Fav {lime}{SERVER_IP2}:{SERVER_PORT} {nextline}{magenta}-------------------------------------------------------------",
+		"Delay_Welcome_InXSecs" : 5,
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.round_report_odds_none",
+            
+        ]
+	},
+	"OnDeath": 
+	{
+		"Message" : "Join Our Discord {nextline} <img src='https://raw.githubusercontent.com/oqyh/cs2-Private-Plugins/main/Resources/goldkingz.png' class=''> {nextline} ",
+		"Show_Mode" : "3:10",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "PanoramaUI.Chatwheel.Alert"
+        ]
+	},
+	
+	
+	"1": 
+	{
+		"Message" : "{lime}[Ad] {grey}Join Our Discord {lime}https://discord.com/invite/U7AuQhu",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "PanoramaUI.Chatwheel.Alert"
+        ]
+	},
+	"2": 
+	{
+		"Message" : "{magenta}-------Test--------{nextline}{lime}[Ad] {grey}This Test Message 2 {nextline}{magenta}-------------------",
+		"Show_Mode" : "1",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.exitPopup_scroll",
+			"UIPanorama.container_countdown",
+        ]
+	},
+	"3": 
+	{
+		"Message" : "[Ad] This Message Test On Player {nextline} [Ad] Game Console",
+		"Show_Mode" : "2",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.exitPopup_scroll",
+			"UIPanorama.container_countdown",
+        ]
+	},
+	"4": 
+	{
+		"Message" : "{darkred}This Message Test On {nextline} Player Center",
+		"Show_Mode" : "3:10",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.exitPopup_scroll",
+			"UIPanorama.container_countdown",
+        ]
+	},
+	"5": 
+	{
+		"Message" : "{darkred}This Message Test On {nextline} Player Center {nextline}<font class='fontSize-xl' color='#f809e6'>But Using Custom Size And HTML Color",
+		"Show_Mode" : "3:10",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.exitPopup_scroll",
+			"UIPanorama.container_countdown",
+        ]
+	},
+	"6": 
+	{
+		"Message" : "This Message Test On {nextline} Player Center Bottom",
+		"Show_Mode" : "4:10",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.exitPopup_scroll",
+			"UIPanorama.container_countdown",
+        ]
+	},
+	"7": 
+	{
+		"Message" : "This Message Test On {nextline} Player Center Alert",
+		"Show_Mode" : "5:10",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.exitPopup_scroll",
+			"UIPanorama.container_countdown",
+        ]
+	},
+	"8": 
+	{
+		"Message" : "This Message Test On {nextline} Player Screen Text",
+		"Show_Mode" : "6:10",
+		"Font_Size" : 40,
+		"Font_Name" : "Arial",
+		"RGBA_Color" : "226, 27, 130, 255",
+		"X_Axis" : -4,
+		"Y_Axis" : 0,
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.exitPopup_scroll",
+			"UIPanorama.container_countdown",
+        ]
+	},
+	"9": 
+	{
+		"Message" : "This Message Test On {nextline} Player Screen Text {nextline} But With BackGround",
+		"Show_Mode" : "6:10",
+		"Font_Size" : 40,
+		"Font_Name" : "Arial",
+		"RGBA_Color" : "226, 27, 130, 255",
+		"X_Axis" : -4,
+		"Y_Axis" : 0,
+		"BackGround" : true,
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "UIPanorama.exitPopup_scroll",
+			"UIPanorama.container_countdown",
+        ]
+	}
+}
