@@ -14,121 +14,89 @@
 ![serverfull](https://github.com/oqyh/cs2-Private-Plugins/assets/48490385/789259bd-a31c-40b5-a140-5ddf26c04bbf)
 
 
-## .:[ Dependencies ]:.
+---
 
-[Metamod:Source (2.x)](https://www.sourcemm.net/downloads.php/?branch=master)
+## 📦 Dependencies
+[![Metamod:Source](https://img.shields.io/badge/Metamod:Source-2d2d2d?logo=sourceengine)](https://www.sourcemm.net)
 
-[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases)
+[![CounterStrikeSharp](https://img.shields.io/badge/CounterStrikeSharp-83358F)](https://github.com/roflmuffin/CounterStrikeSharp)
 
-[Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
+[![JSON](https://img.shields.io/badge/JSON-000000?logo=json)](https://www.newtonsoft.com/json) [Included in zip]
 
+---
 
-## .:[ Configuration ]:.
+## 📥 Installation
 
-> [!CAUTION]
-> Config Located In ..\addons\counterstrikesharp\plugins\Advanced-ReservedSlots-GoldKingZ\config\config.json                                         
+### Plugin Installation
+1. Download the latest `Advanced-ReservedSlots-GoldKingZ.x.x.x.zip` In Discord
+2. Extract contents to your `csgo` directory
+3. Configure settings in `Advanced-ReservedSlots-GoldKingZ/config/config.json`
+4. Restart your server
 
-```json
+---
 
-{
-//----------------------------[ ↓ Main Config ↓ ]----------------------------
-  
-  //Allow These Groups Only To Reload Json
-  "Reload_Json_Flags": "@css/root,@css/admin,#css/root,#css/admin",
+# ⚙️ Configuration
 
-  //Commands In Game To Reload Json
-  "Reload_Json_CommandsInGame": "!reloadreserved,!reloadreservedslot,!reloadreserv",
+> [!IMPORTANT]
+> **Main Configuration**  
+> `../Advanced-ReservedSlots-GoldKingZ/config/config.json` 
 
-//----------------------------[ ↓ ReservedSlots Config ↓ ]----------------------------
+## 🛠️ `config/config.json`
 
-  //Kick Mode?
-  //(0) = Kick Random Players
-  //(1) = Kick Highest Ping
-  //(2) = Kick Highest Score
-  //(3) = Kick Lowest Score
-  //(4) = Kick Player Who In The Server Longest Time
-  //(5) = Kick Player Who In The Server Shortest Time
-  "KickMode": 0,
+<details open>
+<summary><b>Main Config</b> (Click to expand 🔽)</summary>
 
-  //Do KickMode On Players In Spectators First?
-  //(true) = Yes
-  //(false) = No (Any)
-  "PriorityKickOnSpecPlayers": true,
+| Property | Description | Values | Required |  
+|----------|-------------|--------|----------|
+| `Reload_Json_CommandsInGame` | Commands to reload ReservedSlots_Settings.json. Commands starting with '!'/`css_` work in chat/console. | Example: `!reloadreserved,!reloadreserv`<br>`""`-Disable | - |
+| `Reload_Json_Flags` | Flags/Groups/SteamIDs allowed to reload settings *(Required if Reload_Json_CommandsInGame is enabled)*. | Format: `SteamID: X \| Flag: Y \| Group: Z`<br>Example: `SteamID: 76561198206086993 \| Flag: @css/vips`<br>`""`-Allow everyone | `Reload_Json_CommandsInGame` ≠ `""` |
+| `Reload_Json_Hide` | Hide chat message after successful reload *(Required if Reload_Json_CommandsInGame is enabled)*. | `true`-Yes<br>`false`-No | `Reload_Json_CommandsInGame` ≠ `""` |
+| `KickMode` | Kick priority method for reserved slots. | `0`-Random<br>`1`-Highest Ping<br>`2`-Highest Score<br>`3`-Lowest Score<br>`4`-Longest Time<br>`5`-Shortest Time | - |
+| `PriorityKickOnSpecPlayers` | Prioritize kicking spectators first. | `true`-Yes<br>`false`-No | - |
+| `KickWithReason` | Show a proper kick reason to players. | `true`-Yes<br>`false`-No | - |
+| `Delaykick` | Enable delayed kick. | `true`-Yes<br>`false`-No | - |
+| `DelayTimeXInSecs` | Delay duration before kick | Integer (seconds)<br>Example: `10` | `Delaykick` = `true` |
 
-  //Kick With Proper Reason?
-  "KickWithReason": false,
+</details>
 
-  //Do Delay Kick?
-  "Delaykick": true,
+<details>
+<summary><b>Utilities Config</b> (Click to expand 🔽)</summary>
 
-  //If Delaykick true Do Delay Kick Time (InSecs)
-  "DelayTimeXInSecs": 10,
+| Property | Description | Values | Required |  
+|----------|-------------|--------|----------|
+| `EnableDebug` | Debug Mode | `true`-Enable<br>`false`-Disable | - |
 
-//----------------------------[ ↓ Utilities ↓ ]----------------------------
+</details>
 
-  //Enable Debug Will Print Server Console If You Face Any Issue
-  "EnableDebug": false
-}
+---
 
-```
+## 📜 Changelog
 
+<details>
+<summary><b>📋 View Version History</b> (Click to expand 🔽)</summary>
 
-## .:[ Configuration ReservedSlots ]:.
+### [1.0.3]
+- Rework Plugin
+- Remove Unnecessaries
+- Added Info On Each Config
+- Added Reload_Json_CommandsInGame Ability To Toggle Throw Console/Chat
+- Added Reload_Json_Hide
 
-> [!CAUTION]
-> ReservedSlots Config Located In ..\addons\counterstrikesharp\plugins\Advanced-ReservedSlots-GoldKingZ\config\ReservedSlots_Settings.json                                         
-```json
+### [1.0.2]
+- Fix Api Crash
 
-{
-  "VIPS": { //Group Name 
-    "Flags": "@css/vip,#css/vip" //Flags
-  },
-  "VVIPS": { //Group Name 
-    "Flags": "@css/vvip,#css/vvip" //Flags
-  },
-  "ADMINS": { //Group Name 
-    "Flags": "@css/admin,#css/admin" //Flags
-  }
-}
+### [1.0.1]
+- Fix Bugs
+- Fix GKZ Api
+- Remove Port Restricted
+- Remove Key No Needed
+- Added KickMode (Kick Random Players,Kick Highest Ping,Kick Highest Score,Kick Lowest Score,Kick Player Who In The Server Longest Time,Kick Player Who In The Server Shortest Time)
+- Added PriorityKickOnSpecPlayers 
+- Added KickWithReason 
+- Added Reload_Json_Flags 
+- Added Reload_Json_CommandsInGame 
 
-```
+### [1.0.0]
+- Initial plugin release
 
-## .:[ Language ]:.
-```json
-{
-	//==========================
-	//        Colors
-	//==========================
-	//{Yellow} {Gold} {Silver} {Blue} {DarkBlue} {BlueGrey} {Magenta} {LightRed}
-	//{LightBlue} {Olive} {Lime} {Red} {Purple} {Grey}
-	//{Default} {White} {Darkred} {Green} {LightYellow}
-	//==========================
-	//        Other
-	//==========================
-	//{nextline} = Print On Next Line
-	//==========================
-	
-	"PrintChatToPlayer.ReloadJson.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This",
-	
-	"PrintChatToPlayer.Kicked.Full.Delay": "{red}------------------------------------------ {nextline} {green}[AdvancedReservedSlots] {red}Server is full {grey}This Slot Reserved For {lime}Vips Only {nextline} {red}------------------------------------------",
-	"PrintChatToPlayer.Kicked.Full.Replaced": "{red}------------------------------------------ {nextline} {green}[AdvancedReservedSlots] {grey}You Will Be Kicked {nextline} {green}[AdvancedReservedSlots] {grey}Reason: {lime}[ {purple}{0} {grey}/ {gold}{1} {lime}] {grey}Took Your Spot {nextline} {red}------------------------------------------",
-	"PrintChatToAll.Kick": "{green}[AdvancedReservedSlots] {lime}[ {purple}{0} {grey}/ {gold}{1} {lime}] {grey}Joinned {nextline} {green}[AdvancedReservedSlots] {grey}Player: {red}{2} {grey}Will Get Kicked"
-}
-```
-
-## .:[ Change Log ]:.
-```
-(1.0.1)
--Fix Bugs
--Fix GKZ Api
--Remove Port Restricted
--Remove Key No Needed
--Added KickMode (Kick Random Players,Kick Highest Ping,Kick Highest Score,Kick Lowest Score,Kick Player Who In The Server Longest Time,Kick Player Who In The Server Shortest Time)
--Added PriorityKickOnSpecPlayers 
--Added KickWithReason 
--Added Reload_Json_Flags 
--Added Reload_Json_CommandsInGame 
-
-(1.0.0)
--Initial Release
-```
+</details>
