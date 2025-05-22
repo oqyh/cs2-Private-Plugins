@@ -140,6 +140,10 @@
 | `"OnDeath"` | Death message | Remove to disable |
 | `"Message"` | Content container | `"Hello {PLAYER_NAME}!"` |
 | `"Show_Mode"` | Display location | `not used`=Chat<br>`0`=Chat<br>`1`=Chat<br>`2`=Console<br>`3`=Center HTML Adding "3:10" Is The Duration In Secs<br>`4`=Bottom center Adding "4:10" Is The Duration In Secs<br>`5`=Alert box Adding "5:10" Is The Duration In Secs<br>`6`=Custom Screen Adding "6:10" Is The Duration In Secs|
+| `"Only_These_Maps"` | Show This AD To These Maps Only | `Flag: @css/vips,@css/admins` |
+| `"Any_Maps_Except"` | Show This AD To Any Maps Except These Maps | `Flag: @css/vips,@css/admins` |
+| `"Only_These_Groups"` | Show This AD To These Flags Only | `Flag: @css/vips,@css/admins` |
+| `"Any_Groups_Except"` | Show This AD To Any Players Except These Flags Dont Show To Them | `Flag: @css/vips,@css/admins` |
 | `"Delay_Welcome_InXSecs"` | Welcome message delay | `5` = 5 seconds |
 | `"Sound_Volume"` | Audio level | `0`-`100` |
 | `"Sound_Paths"` | Sound files | `["sounds/effects/ding.wav"]` |
@@ -185,6 +189,14 @@
 
 <details>
 <summary><b>📋 View Version History</b> (Click to expand 🔽)</summary>
+
+### [1.0.2]
+- Fix Bug Value Cannot Be Null
+- Fix Welcom Message On Reconnect
+- Added Only_These_Maps
+- Added Any_Maps_Except
+- Added Only_These_Groups
+- Added Any_Groups_Except
 
 ### [1.0.1]
 - Rework Plugin
