@@ -49,8 +49,8 @@
 | Property | Description | Values | Required |  
 |----------|-------------|--------|----------|
 | `Reload_Json_CommandsInGame` | Commands to reload ReservedSlots_Settings.json. Commands starting with '!'/`css_` work in chat/console. | Example: `!reloadreserved,!reloadreserv`<br>`""`-Disable | - |
-| `Reload_Json_Flags` | Flags/Groups/SteamIDs allowed to reload settings *(Required if Reload_Json_CommandsInGame is enabled)*. | Format: `SteamID: X \| Flag: Y \| Group: Z`<br>Example: `SteamID: 76561198206086993 \| Flag: @css/vips`<br>`""`-Allow everyone | `Reload_Json_CommandsInGame` ≠ `""` |
-| `Reload_Json_Hide` | Hide chat message after successful reload *(Required if Reload_Json_CommandsInGame is enabled)*. | `true`-Yes<br>`false`-No | `Reload_Json_CommandsInGame` ≠ `""` |
+| `Reload_Json_Flags` | Flags/Groups/SteamIDs allowed to reload settings | Format: `SteamID: X \| Flag: Y \| Group: Z`<br>Example: `SteamID: 76561198206086993 \| Flag: @css/vips`<br>`""`-Allow everyone | `Reload_Json_CommandsInGame` ≠ `""` |
+| `Reload_Json_Hide` | Hide chat message after successful reload | `true`-Yes<br>`false`-No | `Reload_Json_CommandsInGame` ≠ `""` |
 | `KickMode` | Kick priority method for reserved slots. | `0`-Random<br>`1`-Highest Ping<br>`2`-Highest Score<br>`3`-Lowest Score<br>`4`-Longest Time<br>`5`-Shortest Time | - |
 | `PriorityKickOnSpecPlayers` | Prioritize kicking spectators first. | `true`-Yes<br>`false`-No | - |
 | `KickWithReason` | Show a proper kick reason to players. | `true`-Yes<br>`false`-No | - |
