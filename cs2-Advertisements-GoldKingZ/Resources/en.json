@@ -12,13 +12,17 @@
 	//"OnDeath" = When Player Dead Message (Remove it to disable it)
 	//"Message" = Message 
 	//"Show_Mode" = Not Use = Print To Player Chat 
-					0 		= Print To Player Chat
-					1 		= Print To Player Chat
-					2 		= Print To Player Console 		
-					3 		= Print To Player Center (HTML) Adding "3:10" Is The Duration In Secs
-					4 		= Print To Player Center Bottom Adding "4:10" Is The Duration In Secs
-					5 		= Print To Player Alert 		Adding "5:10" Is The Duration In Secs
-					6 		= Print To Player Screen 		Adding "6:10" Is The Duration In Secs
+	//				0 		= Print To Player Chat
+	//				1 		= Print To Player Chat
+	//				2 		= Print To Player Console 		
+	//				3 		= Print To Player Center (HTML) Adding "3:10" Is The Duration In Secs
+	//				4 		= Print To Player Center Bottom Adding "4:10" Is The Duration In Secs
+	//				5 		= Print To Player Alert 		Adding "5:10" Is The Duration In Secs
+	//				6 		= Print To Player Screen 		Adding "6:10" Is The Duration In Secs
+	//"Only_These_Maps" = Show This AD To These Maps Only
+	//"Any_Maps_Except" = Show This AD To Any Maps Except These Maps
+	//"Only_These_Groups" = Show This AD To These Flags Only
+	//"Any_Groups_Except" = Show This AD To Any Players Except These Flags Dont Show To Them
 	//"Delay_Welcome_InXSecs" = If You Use "Welcome" How Much Delay Before Send Message
 	//"Sound_Volume" = Sound Volume from 0 to 100
 	//"Sound_Paths" = Sound Paths (If It Start With sounds/ Will Not Support Volume)
@@ -80,7 +84,8 @@
 	
 	"1": 
 	{
-		"Message" : "{lime}[Ad] {grey}Join Our Discord {lime}https://discord.com/invite/U7AuQhu",
+		"Only_These_Maps" : "de_,cs_,surf_nyx,surf_boreas",
+		"Message" : "This Message Will Show To These Maps Only de_ cs_ surf_nyx surf_boreas",
 		"Sound_Volume" : 50,
 		"Sound_Paths":
         [
@@ -89,13 +94,32 @@
 	},
 	"2": 
 	{
+		"Only_These_Groups" : "Flag: @css/vips,@css/admins | Group: #css/vips,#css/admins",
+		"Message" : "This Message Will Show To Only vips and admins ",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "PanoramaUI.Chatwheel.Alert"
+        ]
+	},
+	"3": 
+	{
+		"Message" : "{lime}[Ad] {grey}Join Our Discord {lime}https://discord.com/invite/U7AuQhu",
+		"Sound_Volume" : 50,
+		"Sound_Paths":
+        [
+            "PanoramaUI.Chatwheel.Alert"
+        ]
+	},
+	"4": 
+	{
 		"Message" : "{magenta}-------Test--------{nextline}{lime}[Ad] {grey}This Test Message 2 {nextline}{magenta}-------------------",
 		"Show_Mode" : "1",
 		"Sound_Volume" : 50,
 		"Sound_Paths":
         ["UIPanorama.exitPopup_scroll"]
 	},
-	"3": 
+	"5": 
 	{
 		"Message" : "[Ad] This Message Test On Player {nextline} [Ad] Game Console",
 		"Show_Mode" : "2",
@@ -106,7 +130,7 @@
 			"UIPanorama.container_countdown",
         ]
 	},
-	"4": 
+	"6": 
 	{
 		"Message" : "{darkred}This Message Test On {nextline} Player Center",
 		"Show_Mode" : "3:10",
@@ -117,7 +141,7 @@
 			"UIPanorama.container_countdown",
         ]
 	},
-	"5": 
+	"7": 
 	{
 		"Message" : "{darkred}This Message Test On {nextline} Player Center {nextline}<font class='fontSize-xl' color='#f809e6'>But Using Custom Size And HTML Color",
 		"Show_Mode" : "3:10",
@@ -128,7 +152,7 @@
 			"UIPanorama.container_countdown",
         ]
 	},
-	"6": 
+	"8": 
 	{
 		"Message" : "This Message Test On {nextline} Player Center Bottom",
 		"Show_Mode" : "4:10",
@@ -139,7 +163,7 @@
 			"UIPanorama.container_countdown",
         ]
 	},
-	"7": 
+	"9": 
 	{
 		"Message" : "This Message Test On {nextline} Player Center Alert",
 		"Show_Mode" : "5:10",
@@ -150,7 +174,7 @@
 			"UIPanorama.container_countdown",
         ]
 	},
-	"8": 
+	"10": 
 	{
 		"Message" : "This Message Test On {nextline} Player Screen Text",
 		"Show_Mode" : "6:10",
@@ -166,7 +190,7 @@
 			"UIPanorama.container_countdown",
         ]
 	},
-	"9": 
+	"11": 
 	{
 		"Message" : "This Message Test On {nextline} Player Screen Text {nextline} But With BackGround",
 		"Show_Mode" : "6:10",
