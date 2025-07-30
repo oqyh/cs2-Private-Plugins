@@ -1,23 +1,65 @@
 {
-  "CBaseEntity_EmitSoundParamsFunc": {
-    "signatures": {
-      "library": "server",
-      "windows": "48 8B C4 48 89 58 ? 48 89 70 ? 55 57 41 56 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 45 33 F6",
-      "linux": "48 B8 ? ? ? ? ? ? ? ? 55 48 89 E5 41 55 41 54 49 89 FC 53 48 89 F3"
-    }
-  },
-  "CSoundOpGameSystem_StartSoundEventFunc": {
-    "signatures": {
-      "library": "server",
-      "windows": "40 57 41 54 41 55 41 56 41 57 48 81 EC",
-      "linux": "48 B8 ? ? ? ? ? ? ? ? 55 48 89 E5 41 57 45 89 C7 41 56 41 55"
-    }
-  },
-  "CSoundOpGameSystem_SetSoundEventParamFunc": {
-    "signatures": {
-      "library": "server",
-      "windows": "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 56 48 83 EC ? 41 80 39",
-      "linux": "55 48 89 E5 41 57 41 56 49 89 D6 48 89 CA 41 55 49 89 F5"
-    }
-  }
+	"CBaseEntity_EmitSoundParamsFunc": {
+		"signatures": {
+			"library": "server",
+			"windows": "48 89 5C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 4C 89 74 24 ? 55 48 8D 6C 24 ? 48 81 EC ? ? ? ? 45 33 F6 48 C7 45",
+			"linux": "48 B8 ? ? ? ? ? ? ? ? 55 48 89 E5 41 55 41 54 49 89 FC 53 48 89 F3"
+		}
+	},
+	"CSoundOpGameSystem_StartSoundEventFunc": {
+		"signatures": {
+			"library": "server",
+			"windows": "48 8B C4 48 89 58 ? 48 89 68 ? 56 57 41 54 41 56 41 57 48 81 EC ? ? ? ? 4D 8B F8",
+			"linux": "48 B8 ? ? ? ? ? ? ? ? 55 48 89 E5 41 57 45 89 C7 41 56 41 55"
+		}
+	},
+	"CSoundOpGameSystem_SetSoundEventParamFunc": {
+		"signatures": {
+			"library": "server",
+			"windows": "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 56 48 81 EC ? ? ? ? 41 80 39",
+			"linux": "55 48 89 E5 41 57 41 56 49 89 D6 48 89 CA 41 55 49 89 F5"
+		}
+	},
+	"CSoundOpGameSystem_SetSoundEventParamFunc_2": {
+        "signatures": {
+			"library": "server",
+            "windows": "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 56 48 83 EC ? 48 8B B4 24 ? ? ? ? 49 8B F8",
+            "linux": "55 48 89 E5 41 57 41 56 49 89 F6 48 89 D6 41 55 41 89 CD"
+        }
+    },
+	"CSoundOpGameSystem_StopSoundFunc": {
+		"signatures": {
+			"library": "server",
+			"windows": "48 89 5C 24 ? 56 48 83 EC ? 48 8B F2 48 8D 54 24",
+			"linux": "55 48 89 E5 41 54 49 89 F4 48 83 EC ? E8 ? ? ? ? 4D 85 E4"
+		}
+	},
+	"GiveNamedItem2": {
+		"signatures": {
+			"library": "server",
+			"windows": "48 83 EC ? 48 C7 44 24 ? ? ? ? ? 45 33 C9 45 33 C0 C6 44 24 ? ? E8 ? ? ? ? 48 83 C4 ? C3 CC CC CC CC CC CC CC CC CC CC CC CC CC CC 48 83 EC",
+			"linux": "55 48 89 E5 41 57 41 56 41 55 41 54 53 48 83 EC ? 48 89 7D ? 44 89 45"
+		}
+	},
+	"NavAreaBuildPath": {
+		"signatures": {
+			"library": "server",
+			"windows": "48 8B C4 4C 89 48 ? 48 89 48 ? 55 53 56",
+			"linux": "55 48 89 E5 41 57 41 56 41 55 49 89 CD 41 54 49 89 D4 53 48 89 FB 48 8D 3D"
+		}
+	},
+	"NavPathCost": {
+		"signatures": {
+			"library": "server",
+			"windows": "48 83 EC ? 8B 0D ? ? ? ? 65 48 8B 04 25 ? ? ? ? BA ? ? ? ? 48 8B 04 C8 8B 04 02 39 05 ? ? ? ? 7F ? 80 3D",
+			"linux": "0F B6 05 ? ? ? ? 84 C0 74 ? 80 3D ? ? ? ? ? 74 ? C6 05"
+		}
+	},
+	"CSource2Server_IsValidNavMesh": {
+		"signatures": {
+			"library": "server",
+			"windows": "48 83 3D ? ? ? ? ? 0F 95 C0 C3 CC CC CC CC 48 89 5C 24",
+			"linux": "48 8D 05 ? ? ? ? 48 83 38 ? 0F 95 C0"
+		}
+	}
 }
