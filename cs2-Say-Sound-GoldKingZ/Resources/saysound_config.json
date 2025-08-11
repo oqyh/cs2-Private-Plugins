@@ -1,0 +1,432 @@
+﻿{
+	//==========================
+	//        Options
+	//==========================
+	// "Hide_It_And_Show_Only_ForFlags": "group:#css/vips,#css/admins" //Hide Menu/SubMenu And Only These Flags Can See It || Not Used = Everyone See It
+	// "Only_These_Flags_Can_Access_It": "SteamID: 76561198206086993,76561198974936845 | Flag: @css/vips,@css/admins" //Only These Can Access Menu/SubMenu || Not Used = Everyone Can Access It
+	// "SubMenu.STATUS.TOGGLE_SOUND.xxxxxxxxxxx:":{} //Show Client His Current Toggle SaySound Sound Enabled Or Disabled
+	// "SubMenu.STATUS.TOGGLE_MESSAGE.xxxxxxxxxxx:":{} //Show Client His Current Toggle SaySound Message Enabled Or Disabled
+	// "Toggle_Sound_In_Radio": "cheer,coverme", //Hook This Sound Into Player Radio [Example: coverme,takepoint,holdpos,regroup,followme,takingfire,go,fallback,sticktog,getinpos,stormfront,report,roger,enemyspot,needbackup,sectorclear,inposition,reportingin,getout,negative,enemydown,sorry,cheer,compliment,thanks,go_a,go_b,needrop,deathcry]
+	// "Toggle_Sound_In_Radio_Hide": 1, // Hide Radio If Toggle_Sound_In_Radio Pass? || 1 = Yes, But Only After Toggle Successfully || 2 = Yes, Hide All The Time || 0 OR Not Used = No
+	// "Toggle_Sound_In_Chat": "hi,hello", //Toggle In Chat ShortCut Note: If The Command Starts With '!' or 'css_' You Will Have The Ability To Toggle It On The Console And Chat
+	// "Toggle_Sound_In_Chat_Hide": 1, // Hide Radio If Toggle_Sound_In_Chat Pass? || 1 = Yes, But Only After Toggle Successfully || 2 = Yes, Hide All The Time || 0 OR Not Used = No
+	// "PrintToChat": 1, // Print To Chat? || 1 = Yes, Locally To Player || 2 = Yes, To All || 0 OR Not Used = No
+	// "OnlyForTeam": 1, // Only Team Can Access This || 1 = CT || 2 = T || 0 OR Not Used = Any Team
+	// "Give_Cooldown_After_This_InXSecs": 5, //Give Cooldown After This 5 Secs
+	// "Play_Sound_To_Ears": false, // Play Sound To Players Ears? || true = Yes || false OR Not Used = No Player Sound Globally
+	// "Sound_Volume": "60%" // Sound Volume From 1%(lower) to 100%(higher) || Not Used = 100%
+	// "Sound_Paths": ["wakeup","bye"] // Sounds Add As Many As You Like
+	//==========================
+	
+	"Menu.Say Sound Settings":
+	{
+		"SubMenu.STATUS.TOGGLE_SOUND. Sound:":
+		{
+			"Only_These_Flags_Can_Access_It": "Flag: @css/root,@css/admin,@css/admins,@css/vips,@css/vip | Group: #css/root,#css/admin,#css/admins,#css/vips,#css/vip",
+		},
+		
+		"SubMenu.STATUS.TOGGLE_MESSAGE. Message:":{}
+	},
+	
+	"Menu.(Free) SaySounds":
+	{
+		"SubMenu.Hi":
+		{
+			"Toggle_Sound_In_Chat": "hi,hello",
+			"PrintToChat": 2,
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"hi"
+			]
+		},
+		"SubMenu.Bye":
+		{
+			"Toggle_Sound_In_Chat": "bye",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"bye1",
+				"bye2"
+			]
+		},
+		"SubMenu.Clap":
+		{
+			"Toggle_Sound_In_Chat": "clap,clapping",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"clap1",
+				"clap2",
+				"clap3",
+				"clap4"
+			]
+		},
+		"SubMenu.Cry":
+		{
+			"Toggle_Sound_In_Chat": "cry,crying",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"cry1",
+				"cry2",
+				"cry3",
+				"cry4"
+			]
+		},
+		"SubMenu.Death":
+		{
+			"Toggle_Sound_In_Chat": "Dead",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"death"
+			]
+		},
+		"SubMenu.EZ":
+		{
+			"Toggle_Sound_In_Chat": "ez,easy,ezz",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"ez1",
+				"ez2",
+				"ez3"
+			]
+		},
+		"SubMenu.Fart":
+		{
+			"Toggle_Sound_In_Chat": "fart,farted,farts",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"fart1",
+				"fart2",
+				"fart3",
+				"fart4"
+			]
+		},
+		"SubMenu.Fire In The Hole":
+		{
+			"Toggle_Sound_In_Chat": "fith,fireinthehole,firehole",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"fireinthehole"
+			]
+		},
+		"SubMenu.GG":
+		{
+			"Toggle_Sound_In_Chat": "gg,goodgame,good game",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"gg1",
+				"gg2",
+				"gg3"
+			]
+		},
+		"SubMenu.HAHA":
+		{
+			"Toggle_Sound_In_Chat": "haha,hahaha",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"haha1",
+				"haha2",
+				"haha3",
+				"haha4"
+			]
+		},
+		"SubMenu.HandSome":
+		{
+			"Toggle_Sound_In_Chat": "handsome",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"handsome"
+			]
+		},
+		"SubMenu.Hell Yeah":
+		{
+			"Toggle_Sound_In_Chat": "hellyeah,hellyea,hellya",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"hellyeah"
+			]
+		},
+		"SubMenu.Huh?":
+		{
+			"Toggle_Sound_In_Chat": "huh",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"huh"
+			]
+		},
+		"SubMenu.Hurt":
+		{
+			"Toggle_Sound_In_Chat": "hurt",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"hurt"
+			]
+		},
+		"SubMenu.Laugh":
+		{
+			"Toggle_Sound_In_Chat": "laughing,laugh",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"laugh1",
+				"laugh2",
+				"laugh3"
+			]
+		},
+		"SubMenu.MAMA":
+		{
+			"Toggle_Sound_In_Chat": "mama",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"mama"
+			]
+		},
+		"SubMenu.Nice Work":
+		{
+			"Toggle_Sound_In_Chat": "Nice Work,NiceWork",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"nicework"
+			]
+		},
+		"SubMenu.Rizz":
+		{
+			"Toggle_Sound_In_Chat": "rizz",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"rizz"
+			]
+		},
+		"SubMenu.Shhhhh":
+		{
+			"Toggle_Sound_In_Chat": "shhh,shh,shush",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"shush"
+			]
+		},
+		"SubMenu.Stop":
+		{
+			"Toggle_Sound_In_Chat": "stop,stopit",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"stop1",
+				"stop2"
+			]
+		},
+		"SubMenu.Suka":
+		{
+			"Toggle_Sound_In_Chat": "Suka,Blyat,Suka Blyat,SukaBlyat",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"suka"
+			]
+		},
+		"SubMenu.Whistle (T Team Only)":
+		{
+			"OnlyForTeam": 2,
+			
+			"Toggle_Sound_In_Chat": "Whistling,Whistle",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"whistle1",
+				"whistle2",
+				"whistle3"
+			]
+		},
+		"SubMenu.Woohoo":
+		{
+			"Toggle_Sound_In_Chat": "woohoo",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"woohoo"
+			]
+		},
+		"SubMenu.WoW":
+		{
+			"Toggle_Sound_In_Chat": "WoW",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"wow"
+			]
+		},
+		"SubMenu.WTF":
+		{
+			"Toggle_Sound_In_Chat": "wtf,what the fk,wthatthefk",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"wtf1",
+				"wtf2",
+				"wtf3"
+			]
+		},
+		"SubMenu.WTH":
+		{
+			"Toggle_Sound_In_Chat": "wth,what the hell,wthatthehell",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"wth1",
+				"wth2",
+				"wth3"
+			]
+		},
+		"SubMenu.Yeah":
+		{
+			"Toggle_Sound_In_Chat": "yeah,yea",
+			"Give_Cooldown_After_This_InXSecs": 5,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"yeah1",
+				"yeah2",
+				"yeah3",
+				"yeah4"
+			]
+		}
+	},
+	
+	"Menu.(VIP) SaySounds":
+	{
+		"SubMenu.Eh? (CT Only)":
+		{
+			"Only_These_Flags_Can_Access_It": "Flag: @css/vips,@css/vip,@css/root | Group: #css/vips,#css/vip,#css/root",
+			"OnlyForTeam": 1,
+
+			"Toggle_Sound_In_Chat": "eh,ehh,ehhh",
+			"Toggle_Sound_In_Chat_Hide": 2,
+			"PrintToChat": 2,
+			"Give_Cooldown_After_This_InXSecs": 2,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"eh"
+			]
+		},
+		"SubMenu.Yipe!":
+		{
+			"Only_These_Flags_Can_Access_It": "Flag: @css/vips,@css/vip,@css/root | Group: #css/vips,#css/vip,#css/root",
+			
+			"Toggle_Sound_In_Chat": "yiippee,yipe,yipee",
+			"Toggle_Sound_In_Chat_Hide": 2,
+			"PrintToChat": 2,
+			"Give_Cooldown_After_This_InXSecs": 2,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"yipe"
+			]
+		},
+		"SubMenu.PEW":
+		{
+			"Only_These_Flags_Can_Access_It": "Flag: @css/vips,@css/vip,@css/root | Group: #css/vips,#css/vip,#css/root",
+			
+			"Toggle_Sound_In_Chat": "pew",
+			"Toggle_Sound_In_Chat_Hide": 2,
+			"PrintToChat": 2,
+			"Give_Cooldown_After_This_InXSecs": 2,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"pew"
+			]
+		},
+		"SubMenu.Light Weight":
+		{
+			"Only_These_Flags_Can_Access_It": "Flag: @css/vips,@css/vip,@css/root | Group: #css/vips,#css/vip,#css/root",
+			
+			"Toggle_Sound_In_Chat": "lw,Light Weight,LightWeight",
+			"Toggle_Sound_In_Chat_Hide": 2,
+			"PrintToChat": 2,
+			"Give_Cooldown_After_This_InXSecs": 2,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"lightweight"
+			]
+		}
+	},
+	
+	
+	"Menu.(ADMIN) SaySounds":
+	{
+		"Hide_It_And_Show_Only_ForFlags": "Flag: @css/root,@css/admin,@css/admins | Group: #css/root,#css/admin,#css/admins",
+		
+		"SubMenu.Wake Up (To Players Ears)":
+		{
+			"Only_These_Flags_Can_Access_It": "Flag: @css/root,@css/admin,@css/admins | Group: #css/root,#css/admin,#css/admins",
+			"Toggle_Sound_In_Chat": "wakeup,wake up",
+			"Toggle_Sound_In_Chat_Hide": 2,
+			"PrintToChat": 2,
+			"Play_Sound_To_Ears": true,
+			"Sound_Volume": "100%",
+			"Sound_Paths":
+			[
+				"wakeup"
+			]
+		},
+		"SubMenu.Women":
+		{
+			"Only_These_Flags_Can_Access_It": "Flag: @css/root,@css/admin,@css/admins | Group: #css/root,#css/admin,#css/admins",
+			
+			"Toggle_Sound_In_Radio": "cheer",
+			"Toggle_Sound_In_Radio_Hide": 2,
+			"Toggle_Sound_In_Chat": "women",
+			"Toggle_Sound_In_Chat_Hide": 2,
+			"PrintToChat": 2,
+			"Sound_Volume": "60%",
+			"Sound_Paths":
+			[
+				"women"
+			]
+		}
+	}
+}
