@@ -134,6 +134,8 @@ Let Players Convert Chat/Radio To Say Sound With Radius
 ### [Say-Sound-GoldKingZ 1.0.6]
 - Fix some bugs
 - Fix `Reload_Json` When Reload Not Hook/Unhook Radio + Chat
+- Rework In Lang `PrintChatToPlayer.SaySound` + `PrintToChatToAll.SaySound` To `SaySound`
+- Rework In Lang `PrintChatToPlayer` To `PrintToChatToPlayer`
 - Updated `Menu-API-GoldKingZ` To 1.0.2
 - Added `Sound_Volume` Ability To Reduse Orginal Audio Volume
 - Added Ability Sound Enable/Disable Client Side
@@ -147,7 +149,9 @@ Let Players Convert Chat/Radio To Say Sound With Radius
 - Added `OpenMenu_Hide` Ability To Hide/Show After OpenMenu || 1 = Yes, But Only After Toggle Successfully || 2 = Yes, Hide All The Time || 0 = No
 - Added `Toggle_Sounds_Hide` Ability To Hide/Show After Toggle_Sounds || 1 = Yes, But Only After Toggle Successfully || 2 = Yes, Hide All The Time || 0 = No
 - Added `Toggle_Messages_Hide` Ability To Hide/Show After Toggle_Messages || 1 = Yes, But Only After Toggle Successfully || 2 = Yes, Hide All The Time || 0 = No
+- Remove `Hook_Radio`
 - Remove `PrintChatToAll`
+- Remove `PrintChatToPlayer`
 
 ### [SaySound_App_GoldKingZ 1.0.1]
 - Fix some bugs
