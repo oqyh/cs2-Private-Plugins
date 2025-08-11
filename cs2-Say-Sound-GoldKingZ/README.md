@@ -45,7 +45,7 @@ Let Players Convert Chat/Radio To Say Sound With Radius
 > [!IMPORTANT]
 > **Main Configuration**  
 > `../Say-Sound-GoldKingZ/config/config.json`  
-> **Advertisements Configuration**  
+> **SaySound Configuration**  
 > `../Say-Sound-GoldKingZ/config/saysound_config.json`  
 
 ## 🛠️ `config/config.json`
