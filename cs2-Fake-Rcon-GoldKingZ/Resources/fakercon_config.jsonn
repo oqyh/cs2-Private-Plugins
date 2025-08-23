@@ -1,0 +1,28 @@
+{
+	//==========================
+	//        Options
+	//==========================
+	// "Root_Admin_Rcon": //Name Of The Group
+	// "Flags": SteamID: 76561198206086993 | Flag: @css/admins | group:#css/admins" //Only These Can Access Group || Not Used = Everyone Can Try To Access It By Password
+	// "Password": "RootPassWORD123123" //Password To Enter The Group (Note: If Using "Flags"+"Password" In Same Group It Will Check Both Flags + Password)
+	// "Allow_Any_Except_These": "sv_cheats,mp_respawn_on_death_t,mp_respawn_on_death_ct" //Allow Any Convar Except These In The String 
+	// "Allow_These_Only": "sv_alltalk,sv_allow_votes" //Allow Only These In The String
+	//==========================
+
+	"Root_Admin_Rcon":
+	{
+		"Flags": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/root,@root,admin | Groups: #css/root,#root,admin",
+		"Password": "RootPassWORD123123"
+	},
+	"Mods_Rcon":
+	{
+		"Flags": "SteamIDs: 76561197960287930 | Flags: @css/mods,@mods,mods | Groups: #css/mods,#mods,mods",
+		"Allow_Any_Except_These": "sv_cheats,mp_respawn_on_death_t,mp_respawn_on_death_ct",
+		"Password": "ModsPassword123123"
+	},
+	"Vip_Rcon":
+	{
+		"Allow_These_Only": "sv_alltalk,sv_allow_votes",
+		"Password": "vip123123"
+	}
+}
