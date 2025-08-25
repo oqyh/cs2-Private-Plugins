@@ -20,7 +20,7 @@
   },
   "Vip_Rcon": {
     "Allow_These_Only": "sv_alltalk,sv_allow_votes",
-    "Password": "vip123123",
-    "Flags": "SteamIDs:  | Flags:  | Groups: "
+    "Password": "vip123123"
   }
 }
+
