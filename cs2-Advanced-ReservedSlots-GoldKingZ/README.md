@@ -4,7 +4,7 @@
 + PRICE 5$ + FREE Multiple Servers [Lifetime ( One Time Payment )] 
 ```
 
-# [CS2] Advanced-ReservedSlots-GoldKingZ (1.0.1)  
+# [CS2] Advanced-ReservedSlots-GoldKingZ (1.0.3)  
 
 ### Dynamic Kick Reserved Slots Depend Group Priority 
 ### When Server Is Full - 1  It Will Start KickMode Depend Priority Group You Set In ReservedSlots_Settings.json 
