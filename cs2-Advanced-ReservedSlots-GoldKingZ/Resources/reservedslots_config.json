@@ -1,0 +1,17 @@
+	//==========================
+	//        Options
+	//==========================
+	// "Flags": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: admin | Groups: #root" //Only These Can Access Group || Not Used = Everyone Can Try To Access It By Password
+	//==========================
+
+{
+  "VIPS": {
+    "Flags": "SteamIDs: | Flags: @css/vips,@css/vip | Groups: #css/vips,#css/vip"
+  },
+  "VVIPS": {
+    "Flags": "SteamIDs: | Flags: @css/vvips,@css/vvip | Groups: #css/vvips,#css/vvip"
+  },
+  "ADMINS": {
+    "Flags": "SteamIDs: 76561198206086993,76561198974936845 | Flags: @css/admin,@css/admin | Groups: #css/admin,#css/admin"
+  }
+}
