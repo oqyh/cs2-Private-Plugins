@@ -1,0 +1,44 @@
+{
+	"CSoundOpGameSystem_SetSoundEventParamFunc_2": {
+        "signatures": {
+			"library": "server",
+            "windows": "AC CP SQ ZA ? AC CP BQ ZA ? SB ST AL SB AC CE FQ ? AC CN NA ZA ? ? ? ? AP CN GC",
+            "linux": "SS AC CP FS AL ST AP CP GT AL SB AS CP QF AL SS AP CP QR"
+        }
+    },
+	"CSoundOpGameSystem_StopSoundFunc": {
+		"signatures": {
+			"library": "server",
+			"windows": "AC CP SQ ZA ? SB AC CE FQ ? AC CN GZ AC CR SA ZA",
+			"linux": "SS AC CP FS AL SB AL SS AL SA SE AC CP GE AC CE FQ ? FC ? ? ? ? AC CS RN"
+		}
+	},
+	"GiveNamedItem2": {
+		"signatures": {
+			"library": "server",
+			"windows": "AC CE FQ ? AC QT AA ZA ? ? ? ? ? AS EE QP AS EE QO QB AA ZA ? ? FC ? ? ? ? AC CE QA ? QE QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ AC CE FQ",
+            "linux": "AS EL QP AS EL QO EL QP EL RZ FP ? ? ? ? QQ SS AS EL QP"
+		}
+	},
+	"NavAreaBuildPath": {
+		"signatures": {
+			"library": "server",
+			"windows": "AC CN QA AQ CP AC ? AC CP AC ? SS SE SB",
+			"linux": "SS AC CR OS ? ? ? ? AC CP FS AL ST AL SB AL SS AL SA AQ CR ZS ? ? ? ? SE AC CP RE"
+		}
+	},
+	"NavPathCost": {
+		"signatures": {
+			"library": "server",
+			"windows": "AC CE FQ ? CN OR ? ? ? ? BS AC CN OA ZS ? ? ? ? NM ? ? ? ? AC CN OA QC CN OA OZ EP OS ? ? ? ? TG ? CO ER",
+			"linux": "SS AC CP FS AL SA SE OG NB OS ? ? ? ? AC CR LR ? ? ? ? CA QO TA ? CO ER ? ? ? ? ? TA"
+		}
+	},
+	"CSource2Server_IsValidNavMesh": {
+		"signatures": {
+			"library": "server",
+			"windows": "AC CE ER ? ? ? ? ? OG PS QO QE QQ QQ QQ QQ AC CP SQ ZA",
+			"linux": "AC CR OS ? ? ? ? AC CE EC ? OG PS QO QE"
+		}
+	}
+}
