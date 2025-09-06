@@ -41,6 +41,13 @@
 			"linux": "AC CR OS ? ? ? ? AC CE EC ? OG PS QO QE"
 		}
 	},
+	"CCSPlayerController_SwitchWeaponFunc": {
+		"signatures": {
+			"library": "server",
+			"windows": "AC CP SQ ZA ? AC CP BQ ZA ? AC CP TA ZA ? ST AC CE FQ ? AL CN FC AC CN RM AC CN GL",
+			"linux": "SS AC CP FS AL ST AL SB AL CP RB AL SS AP CP GR AL SA AP CP GA SE AC CE FQ ? FC"
+		}
+	},
 	"CCSPlayerController_DropFunc": {
 		"signatures": {
 			"library": "server",
