@@ -40,5 +40,12 @@
 			"windows": "AC CE ER ? ? ? ? ? OG PS QO QE QQ QQ QQ QQ AC CP SQ ZA",
 			"linux": "AC CR OS ? ? ? ? AC CE EC ? OG PS QO QE"
 		}
+	},
+	"CCSPlayerController_DropFunc": {
+		"signatures": {
+			"library": "server",
+			"windows": "AC CP SQ ZA ? ST AC CE FQ ? AC CN GM FC ? ? ? ? AC CN RC",
+			"linux": "SS AC CP FS AL SA AP CP GA SE FC ? ? ? ? AC CS QO TA ? AC CP QE"
+		}
 	}
 }
