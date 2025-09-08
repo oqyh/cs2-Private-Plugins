@@ -54,5 +54,12 @@
 			"windows": "AC CP SQ ZA ? ST AC CE FQ ? AC CN GM FC ? ? ? ? AC CN RC",
 			"linux": "SS AC CP FS AL SA AP CP GA SE FC ? ? ? ? AC CS QO TA ? AC CP QE"
 		}
+	},
+	"CBaseEntity_TakeDamageOld_Compatibility_With_CS2FixesFunc": {
+		"signatures": {
+			"library": "server",
+			"windows": "AQ CN RQ SB ST AC CL FQ ? ? ? ? AC CN AL",
+			"linux": "SS AC CP FS AL ST AP CP GG AL SB AL SS AL SA AP CP RA SE AC CP GE"
+		}
 	}
 }
