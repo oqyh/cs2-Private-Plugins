@@ -4,222 +4,201 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] Emote-Dance-GoldKingZ (1.0.3)  
+# [CS2] Emote-Dance-GoldKingZ (1.0.4)  
 
 ### Fortnite Dance Emote Animation 
 
+## 🖼️ ShowCase GIF
 
-![EmotePlugin](https://github.com/user-attachments/assets/1d8bcb3b-6eb4-4f87-ae18-b3c31cad9e56)
-
-![mode1](https://github.com/user-attachments/assets/16972642-cdbb-4ffd-8ce0-4c57efd1341d)
-![mode2](https://github.com/user-attachments/assets/cbb7f77d-143d-4302-91c8-b0c9458c14ae)
+![Emote_ShowCase](https://github.com/user-attachments/assets/d7ac663e-ba4a-4c2a-b031-e3d3f117f4e6)
 
 
-## .:[ Dependencies ]:.
-[Metamod:Source (2.x)](https://www.sourcemm.net/downloads.php/?branch=master)
+## ▶️ ShowCase Video
 
-[MultiAddonManager](https://github.com/Source2ZE/MultiAddonManager)
+[![Watch the video](https://img.youtube.com/vi/FfsralH4H9U/maxresdefault.jpg)](https://youtu.be/FfsralH4H9U)
 
-[CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp/releases)
+---
 
-[Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json)
+## 📦 Dependencies
+[![Metamod:Source](https://img.shields.io/badge/Metamod:Source-2d2d2d?logo=sourceengine)](https://www.sourcemm.net)
 
+[![CounterStrikeSharp](https://img.shields.io/badge/CounterStrikeSharp-83358F)](https://github.com/roflmuffin/CounterStrikeSharp)
 
-## .:[ Configuration ]:.
-
-> [!CAUTION]
-> Config Located In ..\addons\counterstrikesharp\plugins\Emote-Dance-GoldKingZ\config\config.json                                         
-
-```json
-
-{
-//----------------------------[ ↓ Main Config ↓ ]----------------------------
-
-  //Open Menu Mode:
-  //0 = Disable Menu
-  //1 = Custom Chat Menu By GoldKingZ
-  //2 = Custom Chat Menu By GoldKingZ
-  //3 = WASD Menu By GoldKingZ
-  "OpenMenu_Mode": 3,
-
-  //Allow These Groups Only To Open Emote (Make It Empty "" To Let AnyOne)  [Example:@css/root,@css/admin,@css/vip,#css/admin,#css/vip]
-  "OpenMenu_Flags": "",
-
-  //Commands In Game To Open Emote Menu
-  "OpenMenu_CommandsInGame": "!emotes,!emote,!dances,!dance",
-
-  //Allow These Groups Only To Reload Json
-  "Reload_Json_Flags": "@css/root,@css/admin,#css/root,#css/admin",
-
-  //Commands In Game To Reload Json
-  "Reload_Json_CommandsInGame": "!reloademote,!reloaddance",
-
-//----------------------------[ ↓ Emote/Dance Config ↓ ]----------------------------
-
-  //Emote View?
-  //true = ThirdPerson View
-  //false = FirstPerson View
-  "Emote_Thirdperson_View": true,
-
-  //Freeze If Player Emote?
-  "Emote_FreezePlayerWhenEmote": true,
-
-  //Check If Player Was Freezed Before Giving (Emote_FreezePlayerWhenEmote) And Dont Unfreeze Him?
-  //true = Yes
-  //false = No Dont Check
-  "Emote_AutoDetectIfPlayerWasFreezedDontUnFreezeHim": true,
-
-  //Cancel Emote If Player Get Damaged
-  "Emote_CancelAnimationIfGettingDamaged": true,
-
-  //Hide Default Chat Message If Toggle Emote By Chat?
-  "Emote_HideDefaultChatMessageAfterToggleShortCut": true,
-
-  //Do You Want Emote_CancelPlayersAnimationOnPressing Works While Player On WASD Menu
-  "Emote_DoCancelPlayersAnimationWhileMenuWASDIsOn": false,
-
-  //Cancel Player Emote On Pressing
-  //(jump,space): When Player Jumps/Space
-  //(attack3): attack3
-  //(walk,shift): When Walk
-  //(scoreboard,tab): When Player Open Scoreboard
-  //(crouch,duck): When Player Duck
-  //(leftclick,attack): When Player Left Click/attack
-  //(rightclick,attack2): When Player Right Click/attack2
-  //(w,moveforward): When Player Move Forward
-  //(s,movebackward): When Player Move Backward
-  //(d,moveright): When Player Move Right Side
-  //(a,moveleft): When Player Move Left Side
-  //(inspect): When Player inspect Weapon
-  //(reload,r): When Player Reload
-  //(use,e): When Player +Use
-  "Emote_CancelPlayersAnimationOnPressing": "walk,moveforward,movebackward,moveright,moveleft,jump,crouch,leftclick",
-
-  //Skip Cooldown For These Flags
-  "Emote_ImmunityFromCooldownFlags": "@css/root,@css/admin,#css/root,#css/admin",
-
-//----------------------------[ ↓ Utilities ↓ ]----------------------------
-
-  //Auto Update Signatures
-  "AutoUpdateSignatures": true,
-
-  //Enable Debug Will Print Server Console If You Face Any Issue
-  "EnableDebug": false
-}
-
-```
+[![MultiAddonManager](https://img.shields.io/badge/MultiAddonManager-181717?logo=github&logoColor=white)](https://github.com/Source2ZE/MultiAddonManager)
 
 
-## .:[ Configuration Emote ]:.
 
-> [!CAUTION]
-> Emote Config Located In ..\addons\counterstrikesharp\plugins\Emote-Dance-GoldKingZ\config\Emote_Settings.json                                       
-```json
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://dev.mysql.com/doc/connector-net/en/) [Included in zip]
 
-//==========================
-//        Options
-//==========================
-// "Hide_It_And_ShowThisOnlyForFlags": "@css/root,@css/vip" //Only These Flags Show Menu/NoMenu OR SubMenu 
-// "Only_These_Flags_Can_Access_It": "@css/root,@css/vip" //Only These Can Access The Emote
-// "ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl" //Model That Has Animation
-// "RandomAnimationName": ["Animation_1","Animation_2","Animation_3"], //Random Animation
-// "AnimationName": "Emote_EasternBloc_Start" //Name Of The Animation
-// "AnimationName2": "Emote_EasternBloc" //If Yo Have Continuous Animation Added Here
-// "MusicEmote": "Emote_EasternBloc" //Music Name If Dont Have Make It Empty Or Dont Use It
-// "Toggle_Emote_In_Chat": "Bloc,EasternBloc" //Toggle Emote In Chat Add As Many As You Like
-// "LoopAnimation": true //true = Will Loop AnimationName Or AnimationName2 If Exist  //false OR Not Used = Will Play AnimationName One Time And AnimationName2 If Exist
-// "PrintChatToAll": true //true = Print To All Who Emote //false OR Not Used = Wil Be Disabled
-// "PrintChatToPlayer": false //true = Print To Player Who Emote //false OR Not Used = Wil Be Disabled
-// "If_LoopAnimation_True_RepeatMusicEmoteOnEveryXSecs": 3.134694 //If LoopAnimation true Repeat Music On Every Time In Secs
-// "If_LoopAnimation_True_RepeatMusicEmoteAfterXFrames": 3.134694 //If LoopAnimation true Repeat Music On End Of Frames
-// "Give_Cooldown_After_This_InXSecs": 25, //Give Cooldown After This 25 Secs
-//==========================
+[![JSON](https://img.shields.io/badge/JSON-000000?logo=json)](https://www.newtonsoft.com/json) [Included in zip]
 
-{
-	"Menu. Dances": //After Menu. Is The Name Of Menu
-	{
-		"SubMenu.Dance Moves 1": //After SubMenu. Is The Name Of Submenu
-		{
-			"ModelAnimation": "models/goldkingz/emote/goldkingz_emotes.vmdl",
-			"AnimationName": "DanceMoves",
-			"MusicEmote": "DanceMoves1",
-			"Toggle_Emote_In_Chat": "dance,ninja",
-			"LoopAnimation": true,
-			"PrintChatToAll": true,
-			"If_LoopAnimation_True_RepeatMusicEmoteAfterXFrames": 204
-		}
-		//..Add Many As You Like For More Submenus
-	}
-	//..Add Many As You Like For More Menus
-}
+---
 
-```
+## 📥 Installation
 
-![329846165-ba02c700-8e0b-4ebe-bc28-103b796c0b2e](https://github.com/oqyh/cs2-Game-Manager/assets/48490385/3df7caa9-34a7-47da-94aa-8d682f59e85d)
+### Plugin Installation
+1. Download the latest `Emote-Dance-GoldKingZ.x.x.x.zip` In Discord
+2. Extract contents to your `csgo` directory
+3. Configure settings in `Emote-Dance-GoldKingZ/config/config.json`
+4. Restart your server
 
-## .:[ Language ]:.
-```json
-{
-	//==========================
-	//        Colors
-	//==========================
-	//{Yellow} {Gold} {Silver} {Blue} {DarkBlue} {BlueGrey} {Magenta} {LightRed}
-	//{LightBlue} {Olive} {Lime} {Red} {Purple} {Grey}
-	//{Default} {White} {Darkred} {Green} {LightYellow}
-	//==========================
-	//        Other
-	//==========================
-	//{nextline} = Print On Next Line
-	//==========================
+---
 
-	"PrintChatToPlayer.ReloadJson.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This",
-	"PrintChatToPlayer.Menu.Disabled": "{green}Gold KingZ {grey}| {darkred}Emote Menu Is {darkred}Disabled By The Server",
-	"PrintChatToPlayer.Menu.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}Emote Menu Is For {lime}VIPS {darkred}Only",
-	"PrintChatToPlayer.Emote.While.He.Is.Dead": "{green}Gold KingZ {grey}| You Cant Emote When You Are Dead",
-	"PrintChatToPlayer.Emote.While.He.Is.OnBot": "{green}Gold KingZ {grey}| You Cant Emote While You Are a Bot",
-	"PrintChatToPlayer.Emote.While.He.Is.NotOnTheGround": "{green}Gold KingZ {grey}| You Cant Emote While You Are on Air",
-	"PrintChatToPlayer.Emote.While.He.Is.OnCooldown": "{green}Gold KingZ {grey}| You Are On Cooldown. Please Wait {yellow}{0} Seconds.",
+# ⚙️ Configuration
 
-	//Default Message Emote On Not Allowed (If Not Found Custom Message)
-	"PrintChatToPlayer.Selected.Not.Allowed": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This",
+> [!IMPORTANT]
+> **Main Configuration**  
+> `../Emote-Dance-GoldKingZ/config/config.json`  
+> **Emote Configuration**  
+> `../Emote-Dance-GoldKingZ/config/emote_config.json`  
 
-	//Custom Message For Specific Emote On Not Allowed
-	"PrintChatToPlayer.Selected.Not.Allowed.Dance 1": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
-	"PrintChatToPlayer.Selected.Not.Allowed.Dance 2": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
-	"PrintChatToPlayer.Selected.Not.Allowed.Dance 3": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
-	"PrintChatToPlayer.Selected.Not.Allowed.Dance 4": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
-	"PrintChatToPlayer.Selected.Not.Allowed.Dance 5": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}VIPS Only",
-	"PrintChatToPlayer.Selected.Not.Allowed.Dance 6": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}ADMINS Only",
-	"PrintChatToPlayer.Selected.Not.Allowed.Dance 7": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}ADMINS Only",
-	"PrintChatToPlayer.Selected.Not.Allowed.Dance 8": "{green}Gold KingZ {grey}| {darkred}You Dont Have Permission To Access This {lime}ADMINS Only",
+## 🛠️ `config/config.json`
 
-	//Default Message On Start Emote (If Not Found Custom Message)
-	"PrintChatToPlayer.Emote": "{green}Gold KingZ {grey}| You Played Emote {yellow}{0}", //{0} = Dance Name 
-	"PrintChatToAll.Emote": "{green}Gold KingZ {grey}| {purple}{0} {grey}Played Emote {yellow}{1}", //{0} = Player Name || {1} = Dance Name
+<details open>
+<summary><b>Main Config</b> (Click to expand 🔽)</summary>
 
-	//Custom Message For Specific Emote On Start Emote
-	"PrintChatToAll.Emote.Dance 1": "{green}Gold KingZ {grey}| {blue}[VIP] {purple}{0} {grey}Played Emote {yellow}{1}",
-	"PrintChatToAll.Emote.Dance 6": "{green}Gold KingZ {grey}| {darkred}[ADMIN] {purple}{0} {grey}Played Emote {yellow}{1}",
+| Property | Description | Values | Required |
+|----------|-------------|--------|----------|
+| `Reload_Emote_CommandsInGame` | Commands to reload emote plugin | Format: `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4` | Yes |
+| `Reload_Emote_Flags` | Who can use reload commands | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1` | Yes |
+| `Reload_Emote_Hide` | Hide chat after reload command | `0`-No<br>`1`-Hide on success<br>`2`-Always hide | Yes |
+| `OpenMenu_Mode` | How to open emote menu | `0`-Disabled<br>`1`-Chat menu<br>`2`-Center menu<br>`3`-Center WASD<br>`4`-Screen Text WASD | Yes |
+| `OpenMenu_CommandsInGame` | Commands to open menu | Format: `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4` | Yes |
+| `OpenMenu_Flags` | Who can open menu | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1` | Yes |
+| `OpenMenu_Hide` | Hide chat after menu command | `0`-No<br>`1`-Hide on success<br>`2`-Always hide | Yes |
+| `DisableOnWarmUp` | Disable emotes during warmup | `true`-Yes<br>`false`-No | - |
+| `PickSoundsByOrder` | Play sounds in order | `true`-Sequential<br>`false`-Random | - |
+| `CameraViewOnEmote` | Camera view during emote | `0`-No change<br>`1`-Third person<br>`2`-Smooth third person | - |
+| `HidePlayersOnEmote` | Hide players during emote | `0`-No<br>`1`-Only enemies<br>`2`-All players | - |
+| `FreezePlayerOnEmote` | Freeze player during emote | `0`-No<br>`1`-Yes<br>`2`-Yes (if not already frozen) | - |
+| `StopEmoteOnDamage` | Stop emote when taking damage | `true`-Yes<br>`false`-No | - |
+| `StopEmoteOnPostion` | Stop emote if position changes | `true`-Yes<br>`false`-No | - |
+| `StopEmoteOnPressing` | Keys that stop emote | Comma-separated key names | - |
+| `IgnoreStopEmoteOnPressingOnWASD` | Ignore stop keys when WASD menu open | `true`-Yes<br>`false`-No | - |
+| `Immunity_From_Cooldown_Flags` | Who has cooldown immunity | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1` | - |
+| `Default_Sounds` | Default sound setting for new players | `true`-On<br>`false`-Off | - |
+| `Default_Messages` | Default message setting for new players | `true`-On<br>`false`-Off | - |
+| `Cookies_Enable` | Enable local data storage | `true`-Yes<br>`false`-No | - |
+| `Cookies_AutoRemovePlayerOlderThanXDays` | Auto-delete inactive data | `0`-Disabled<br>`>0`-Days to keep | If Cookies_Enable=true |
+| `MySql_Enable` | Enable MySQL storage | `true`-Yes<br>`false`-No | - |
+| `MySql_Host` | MySQL host address | IP/hostname | If MySql_Enable=true |
+| `MySql_Database` | Database name | String | If MySql_Enable=true |
+| `MySql_Username` | Database username | String | If MySql_Enable=true |
+| `MySql_Password` | Database password | String | If MySql_Enable=true |
+| `MySql_Port` | Database port | Number (default: 3306) | If MySql_Enable=true |
+| `MySql_AutoRemovePlayerOlderThanXDays` | Auto-delete inactive data | `0`-Disabled<br>`>0`-Days to keep | If MySql_Enable=true |
+
+</details>
+
+<details>
+<summary><b>Utility Settings</b> (Click to expand 🔽)</summary>
+
+| Property | Description | Values | Required |
+|----------|-------------|--------|----------|
+| `AutoUpdateSignatures` | Auto-update game signatures | `true`-Yes<br>`false`-No | - |
+| `EnableDebug` | Enable debug mode | `true`-Yes<br>`false`-No | - |
+
+</details>
+
+---
 
 
-	//Menus Style
-	"Mode_1.MainMenu.Title": "{Magenta} Emote Menu",
-	"Mode_1.SubMenu.Title": "{Purple} .:[ {0} ]:.", //{0} = SubMenu Name
+## 🛠️ `config/emote_config.json`
 
-	"Mode_2.MainMenu.Title": "<font class='fontSize-M' color='#b74eae'> Emote Menu</font>",
-	"Mode_2.SubMenu.Title": "<font class='fontSize-M' color='#f809e6'> .:[ {0} ]:. </font>", //{0} = SubMenu Name
+<details open>
+<summary><b>Message Configuration</b> (Click to expand 🔽)</summary>
 
-	"Mode_3.MainMenu.Title": "<font class='fontSize-M' color='#b74eae'> Emote Menu</font>",
-	"Mode_3.SubMenu.Title": "<font class='fontSize-M' color='#f809e6'> .:[ {0} ]:. </font>" //{0} = SubMenu Name
-}
-```
+## 🔄 Status Indicators
 
-## .:[ Change Log ]:.
-```
-(1.0.3)
+| Option | Description |
+|--------|-------------|
+| `SubMenu.STATUS.TOGGLE_SOUND.xxxxxxxxxxx` | Show sound toggle status |
+| `SubMenu.STATUS.TOGGLE_MESSAGE.xxxxxxxxxxx` | Show message toggle status |
+| `SubMenu.STATUS.REPOSITION.xxxxxxxxxxx` | Allow menu repositioning |
+
+## ⚙️ General Options
+
+| Option | Description | Format/Values |
+|--------|-------------|---------------|
+| `Hide_It_And_Show_Only_ForFlags` | Restrict visibility | `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1` |
+| `Only_These_Flags_Can_Access_It` | Restrict access | `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1` |
+| `Toggle_In_Radio` | Bind to radio command | Comma-separated radio commands |
+| `Toggle_In_Radio_Hide` | Hide radio message | `0`-No<br>`1`-On success<br>`2`-Always |
+| `Toggle_In_Chat` | Bind to chat/console command | `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4` |
+| `Toggle_In_Chat_Hide` | Hide chat message | `0`-No<br>`1`-On success<br>`2`-Always |
+| `PrintToChat` | Notification type | `0`-None<br>`1`-To player<br>`2`-To all |
+| `OnlyForTeam` | Team restriction | `0`-Any<br>`1`-CT only<br>`2`-T only |
+
+## 🎬 Animation Options
+
+| Option | Description | Format/Values |
+|--------|-------------|---------------|
+| `Model` | Animation model path | `models/path/to/model.vmdl` |
+| `RandomAnimationName` | Random animations | `["anim1", "anim2", "anim3"]` |
+| `AnimationName` | Primary animation | Animation name string |
+| `AnimationName2` | Secondary animation | Animation name string |
+| `LoopAnimation` | Loop animation | `true`-Yes<br>`false`-No |
+| `RepeatMusicOnEveryXSecs` | Music repeat interval | Number of seconds |
+| `RepeatMusicAfterXFrames` | Music repeat by frames | Number of frames |
+
+## 🔊 Sound Options
+
+| Option | Description | Format/Values |
+|--------|-------------|---------------|
+| `Sound_Volume` | Sound volume level | `1%`-`100%` (default: 100%) |
+| `Sound_Paths` | Sound file paths | `["sound1", "sound2", "sound3"]` |
+
+## ⏱️ Cooldown Options
+
+| Option | Description | Format/Values |
+|--------|-------------|---------------|
+| `Give_Cooldown_After_This_InXSecs` | Cooldown duration | Number of seconds |
+
+</details>
+
+---
+
+## 📜 Changelog
+
+<details>
+<summary><b>📋 View Version History</b> (Click to expand 🔽)</summary>
+
+### [1.0.4]
+-Rework + Optimize On Plugin 
+-Fix Players Flags
+-Fix Bug On Gloves + Teleporting
+-Rework On ReloadJson To Reload Rntire Plugin
+-Rework Config Added Comments Each Config
+-Update Menu-API-GoldKingZ To 1.0.2
+-Added Reload_Emote_Hide
+-Added OpenMenu_Hide
+-Added Third Person Smooth Camera
+-Added PickSoundsByOrder
+-Added DisableOnWarmUp
+-Added HidePlayersOnEmote
+-Added StopEmoteOnPostion
+-Added Default_Sounds
+-Added Default_Messages
+-Added Cookies_Enable
+-Added Cookies_AutoRemovePlayerOlderThanXDays
+-Added MySql_Enable
+-Added MySql_AutoRemovePlayerOlderThanXDays
+-Added AutoUpdateSignatures
+-Added AutoUpdateSignatures
+-Added OnlyForTeam For Specific Emote
+-Added SubMenu.STATUS.TOGGLE_SOUND.xxxxxxxxxxx
+-Added SubMenu.STATUS.TOGGLE_MESSAGE.xxxxxxxxxxx
+-Added SubMenu.STATUS.REPOSITION.xxxxxxxxxxx
+-Added Toggle_In_Radio
+-Added Toggle_In_Radio_Hide
+-Added Toggle_In_Chat_Hide
+-Remove PrintChatToAll
+-Remove PrintToChat 1 = Locally | 2 = All
+
+### [1.0.3]
 -Fix GKZ Api
 
-(1.0.2)
+### [1.0.2]
 [Fix]
 - Rework + Optimize Emote Plugin
 - GKZ Api
@@ -246,7 +225,7 @@
 - If_LoopAnimation_False_KillAnimationByFrames No Needed Any More
 - If_LoopAnimation_False_KillAnimationByTimerInXSecs No Needed Any More
 
-(1.0.1)
+### [1.0.1]
 [Fix]
 - Some Bugs
 - Bug OpenMenu_CloseMenuAfterSelectItem Dont Stop Animation If It True
@@ -286,6 +265,7 @@
 - Rework Lang (PrintChatToPlayer / PrintChatToAll)
 - Menu Mode 1 2 3 Can Be Modify In Lang
 
-(1.0.0)
--Initial Release
-```
+### [1.0.0]
+- Initial plugin release
+
+</details>
