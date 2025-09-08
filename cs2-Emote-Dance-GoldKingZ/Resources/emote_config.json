@@ -1,0 +1,1044 @@
+	//==========================
+	//        Options
+	//==========================
+	// "Hide_It_And_Show_Only_ForFlags": "SteamIDs:  | Flags:  | Groups: #css/vips,#css/admins" //Hide Menu/SubMenu And Only These Flags Can See It || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone See It
+	// "Only_These_Flags_Can_Access_It": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/vips,@css/admins | Groups: " //Only These Can Access Menu/SubMenu || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone Can Access It
+	// "SubMenu.STATUS.TOGGLE_SOUND.xxxxxxxxxxx:":{} //Show Client His Current Toggle Sound Enabled Or Disabled
+	// "SubMenu.STATUS.TOGGLE_MESSAGE.xxxxxxxxxxx:":{} //Show Client His Current Toggle Message Enabled Or Disabled
+	// "SubMenu.STATUS.REPOSITION.xxxxxxxxxxx:":{} //Reposition Menu 4 
+	// "Toggle_In_Radio": "cheer,coverme", //Hook This Emote Into Player Radio [Example: coverme,takepoint,holdpos,regroup,followme,takingfire,go,fallback,sticktog,getinpos,stormfront,report,roger,enemyspot,needbackup,sectorclear,inposition,reportingin,getout,negative,enemydown,sorry,cheer,compliment,thanks,go_a,go_b,needrop,deathcry]
+	// "Toggle_In_Radio_Hide": 1, // Hide Radio If Toggle_In_Radio Pass? || 1 = Yes, But Only After Toggle Successfully || 2 = Yes, Hide All The Time || 0 OR Not Used = No
+	// "Toggle_In_Chat": "Console_Commands: css_cmd,cmd2 | Chat_Commands: command1,command2", //Toggle In Console/Chat ShortCut Note: Console_Commands Can Be Execute Via Both Console And Chat By (!) || Making Both Console_Commands And Chat_Commands Empty = Disable
+	// "Toggle_In_Chat_Hide": 1, // Hide Radio If Toggle_In_Chat Pass? || 1 = Yes, But Only After Toggle Successfully || 2 = Yes, Hide All The Time || 0 OR Not Used = No
+	// "PrintToChat": 1, // Print To Chat? || 1 = Yes, Locally To Player || 2 = Yes, To All || 0 OR Not Used = No
+	// "OnlyForTeam": 1, // Only Team Can Access This || 1 = CT || 2 = T || 0 OR Not Used = Any Team
+	// "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl" //Model That Has Animation
+	// "RandomAnimationName": ["Animation_1","Animation_2","Animation_3"], //Random Animation
+	// "AnimationName": "Emote_EasternBloc_Start" //Name Of The Animation
+	// "AnimationName2": "Emote_EasternBloc" //If Yo Have Continuous Animation Added Here
+	// "LoopAnimation": true //true = Will Loop AnimationName Or AnimationName2 If Exist  //false OR Not Used = Will Play AnimationName One Time And AnimationName2 If Exist
+	// "RepeatMusicOnEveryXSecs": 7.557687, //If LoopAnimation true Repeat Music On Every Time In Secs
+	// "RepeatMusicAfterXFrames": 204, //If LoopAnimation true Repeat Music On End Of Frames
+	// "Give_Cooldown_After_This_InXSecs": 5, //Give Cooldown After This 5 Secs
+	// "Sound_Volume": "60%" // Sound Volume From 1%(lower) to 100%(higher) || Not Used = 100%
+	// "Sound_Paths": ["DanceMoves1","DanceMoves2"] // Sounds Add As Many As You Like
+	//==========================
+
+{
+  "Menu.Emote Settings": {
+    "SubMenu.STATUS.TOGGLE_SOUND. Sound:": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Sound,Sounds"
+    },
+    "SubMenu.STATUS.TOGGLE_MESSAGE. Message:": {
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Message,Messages"
+    },
+    "SubMenu.STATUS.REPOSITION. Reposition Menu:": {
+      "Toggle_In_Chat": "Console_Commands: css_ressmenu,css_repmenu,css_reposition,css_rep | Chat_Commands: Message,Messages"
+    }
+  },
+  "Menu.Dances": {
+    "SubMenu.Dance Moves 1": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "DanceMoves",
+      "Toggle_In_Radio": "cheer",
+      "Toggle_In_Radio_Hide": 1,
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: dance,ninja",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicAfterXFrames": 204,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "DanceMoves1"
+      ]
+    },
+    "SubMenu.Dance Moves 2": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "DanceMoves",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: dance2,ninja2",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicAfterXFrames": 204,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "DanceMoves2"
+      ]
+    },
+    "SubMenu.Electro Shuffle": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "ElectroShuffle",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Shuffle,Electro,ElectroShuffle",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 7.557687,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "ElectroShuffle"
+      ]
+    },
+    "SubMenu.Aerobic Champ": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_AerobicChamp",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Aerobic,Champ,AerobicChamp",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 12.598435,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_AerobicChamp"
+      ]
+    },
+    "SubMenu.Band Of The Fort": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_BandOfTheFort",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Band,BandFort",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 8.891791,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_BandOfTheFort"
+      ]
+    },
+    "SubMenu.Bendy": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Bendy",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Bendy",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 9.142858,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Bendy"
+      ]
+    },
+    "SubMenu.Charleston": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Charleston",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Charleston",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 7.384626,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Charleston"
+      ]
+    },
+    "SubMenu.Breakdance": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_Breakdance",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Breakdance",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicAfterXFrames": 257,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_Breakdance"
+      ]
+    },
+    "SubMenu.Disco": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_Disco_T3",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Disco",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 8.542018,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_Disco_T3"
+      ]
+    },
+    "SubMenu.Take The L": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_Loser",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: loser,takethel",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 12.631587,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_Loser"
+      ]
+    },
+    "SubMenu.BoneLess": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_NoBones",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: BoneLess",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 15.36,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_NoBones"
+      ]
+    },
+    "SubMenu.Pump": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_Pump",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Pump",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 13.847165,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_Pump"
+      ]
+    },
+    "SubMenu.Ride The Pony": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_RideThePony",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Pony,ride",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 1.75,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_RideThePony"
+      ]
+    },
+    "SubMenu.Shoot": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_Shoot",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Shoot",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 13.430975,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_Shoot"
+      ]
+    },
+    "SubMenu.Swipe It": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_SwipeIt",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Swipe,Swipeit",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 13.241384,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_SwipeIt"
+      ]
+    },
+    "SubMenu.Worm": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dance_Worm",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Worm",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 6.857143,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Dance_Worm"
+      ]
+    },
+    "SubMenu.Boogie Bomb": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_DG_Disco",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Boogie,BoogieBomb",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 7.386848,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_DG_Disco"
+      ]
+    },
+    "SubMenu.Eastern Bloc": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_EasternBloc_Start",
+      "AnimationName2": "Emote_EasternBloc",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Bloc,EasternBloc",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 14.317959,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_EasternBloc"
+      ]
+    },
+    "SubMenu.Fancy Feet": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_FancyFeet",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: FancyFeet",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 16.84211,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_FancyFeet"
+      ]
+    },
+    "SubMenu.Floss": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_FlossDance",
+      "Toggle_In_Chat": "Console_Commands: fff | Chat_Commands: Floss",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 8.346168,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_FlossDance"
+      ]
+    },
+    "SubMenu.Fresh": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Fresh",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Fresh",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 5.05288,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Fresh"
+      ]
+    },
+    "SubMenu.GrooveJam": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_GrooveJam",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: GrooveJam,Groove",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 15.118118,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_GrooveJam"
+      ]
+    },
+    "SubMenu.Breakdown": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Hip_Hop",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Breakdown",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 14.545465,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Hip_Hop"
+      ]
+    },
+    "SubMenu.Freestylin": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Hiphop_01",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Freestye,Freestylin",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 18.932766,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Hiphop_01"
+      ]
+    },
+    "SubMenu.Hula": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Hula_Start",
+      "AnimationName2": "Emote_Hula",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Hula",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 14.117664,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Hula"
+      ]
+    },
+    "SubMenu.Infinite Dab": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_InfiniDab_Intro",
+      "AnimationName2": "Emote_InfiniDab_Loop",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: InfiniteDab,infdab",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 15.459229,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_InfiniDab"
+      ]
+    },
+    "SubMenu.Intensity": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Intensity_Start",
+      "AnimationName2": "Emote_Intensity_Loop",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Intensity",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 35.301926,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Intensity_Loop"
+      ]
+    },
+    "SubMenu.IrishJig": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_IrishJig_Start",
+      "AnimationName2": "Emote_IrishJig",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: IrishJig",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 12.065488,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_IrishJig"
+      ]
+    },
+    "SubMenu.Korean Eagle": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_KoreanEagle",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: KoreanEagle",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 18.640793,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_KoreanEagle"
+      ]
+    },
+    "SubMenu.KPOP": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Kpop_02",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: KPOP",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 7.667075,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Kpop_02"
+      ]
+    },
+    "SubMenu.Living Large": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_LivingLarge",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: LivingLarge",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 12.432967,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_LivingLarge"
+      ]
+    },
+    "SubMenu.Shake It Up": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Maracas",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Maracas,ShakeItUp,ShakeIt",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 8.135601,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Maracas"
+      ]
+    },
+    "SubMenu.Orange Justice": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Mask_Off_Intro",
+      "AnimationName2": "Emote_Mask_Off_Loop",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Justice,OrangeJustice",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 18.93508,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Mask_Off_Loop"
+      ]
+    },
+    "SubMenu.Pop Lock": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_PopLock",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: PopLock",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 16.617756,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_PopLock"
+      ]
+    },
+    "SubMenu.Star Power": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_PopRock",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: StarPower,poprock",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 16,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_PopRock"
+      ]
+    },
+    "SubMenu.Robot": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_RobotDance",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Robot",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 19.793833,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_RobotDance"
+      ]
+    },
+    "SubMenu.Smooth Ride": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_SmoothDrive",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: SmoothRide,SmoothDrive",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 20.869593,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_SmoothDrive"
+      ]
+    },
+    "SubMenu.Techno Zombie": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_TechnoZombie",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: TechnoZombie",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 9.6,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_TechnoZombie"
+      ]
+    },
+    "SubMenu.Twist": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Twist",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Twist",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 11.162789,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Twist"
+      ]
+    },
+    "SubMenu.Dance Therapy": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_WarehouseDance_Start",
+      "AnimationName2": "Emote_WarehouseDance_Loop",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: DanceTherapy,Therapy,Warehouse",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 31.765057,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_WarehouseDance_Loop"
+      ]
+    },
+    "SubMenu.Wiggle": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Wiggle",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Wiggle",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 5.161293,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Wiggle"
+      ]
+    },
+    "SubMenu.Rambunctious": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Zippy_Dance",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Rambunctious,Zippy",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 7.333333,
+      "Give_Cooldown_After_This_InXSecs": 25,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Zippy_Dance"
+      ]
+    }
+  },
+  "Menu.Emotes": {
+    "SubMenu.Blow Kiss": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_BlowKiss",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Kiss",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_BlowKiss"
+      ]
+    },
+    "SubMenu.Bring It On": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Bring_It_On",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Bring",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Calculated": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Calculated",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Calculated,Calculate,cal",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Calculated"
+      ]
+    },
+    "SubMenu.Celebration": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Celebration_Loop",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Celebration",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 3.134694,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Celebration_Loop"
+      ]
+    },
+    "SubMenu.Chicken": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Chicken",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Chicken",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 3.667007,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Chicken"
+      ]
+    },
+    "SubMenu.Chug": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Chug",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Chug",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Confused": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Confused",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Confused",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Cry": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Cry",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Cry,sad",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 7.833991,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Cry"
+      ]
+    },
+    "SubMenu.Dab": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Dab",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dab",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Dusting Off Hands": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_DustingOffHands",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: dusthand,hand,dusthands,hands",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_DustingOffHands"
+      ]
+    },
+    "SubMenu.Dust Off Shoulders": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_DustOffShoulders",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: dustshoulder,shoulder,dustshoulders,shoulders",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Facepalm": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Facepalm",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Facepalm",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Facepalm"
+      ]
+    },
+    "SubMenu.Fishing": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Fishing",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Fishing",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Fishing"
+      ]
+    },
+    "SubMenu.Gun Show": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Flex",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: flex,GunShow",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Flex"
+      ]
+    },
+    "SubMenu.Flippn Sexy": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_FlippnSexy",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: flip,flipsexy",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_FlippnSexy"
+      ]
+    },
+    "SubMenu.Finger Guns": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Fonzie_Pistol",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: FingerGuns,FingerGun",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Slow Clap": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_golfclap",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: SlowClap,sclap,clap",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 3.841066,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_golfclap"
+      ]
+    },
+    "SubMenu.Guitar": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_guitar",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Guitar",
+      "LoopAnimation": true,
+      "PrintToChat": 1,
+      "RepeatMusicOnEveryXSecs": 10.137823,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_guitar"
+      ]
+    },
+    "SubMenu.Hand Signals": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_HandSignals",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: HandSignals,HandSignal,Signal",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_HandSignals"
+      ]
+    },
+    "SubMenu.Hot Stuff": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Hotstuff",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: HotStuff",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Hotstuff"
+      ]
+    },
+    "SubMenu.Break Heart": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_IBreakYou",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: BreakHeart",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_IBreakYou"
+      ]
+    },
+    "SubMenu.Love Heart": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_IHeartYou",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: LoveHeart",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Laugh": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Laugh",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Laugh",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Laugh"
+      ]
+    },
+    "SubMenu.Luchador": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Luchador",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Luchador",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Luchador"
+      ]
+    },
+    "SubMenu.Make It Rain": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Make_It_Rain",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: MakeItRain",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Make_It_Rain"
+      ]
+    },
+    "SubMenu.Not Today": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_NotToday",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: NotToday",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Rock Paper Scissor (Random)": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "RandomAnimationName": [
+        "Emote_RockPaperScissor_Paper",
+        "Emote_RockPaperScissor_Rock",
+        "Emote_RockPaperScissor_Scissor"
+      ],
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: RockPaperScissor,rps",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Rock Paper Scissor (Paper)": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_RockPaperScissor_Paper",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Paper",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Rock Paper Scissor (Rock)": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_RockPaperScissor_Rock",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Rock",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Rock Paper Scissor (Scissor)": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_RockPaperScissor_Scissor",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Scissor",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Salt": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Salt",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Salt",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Salute": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Salute",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Salute",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Salute"
+      ]
+    },
+    "SubMenu.Snap": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Snap",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Snap",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Snap"
+      ]
+    },
+    "SubMenu.Gentlemans Dab": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_StageBow",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: GDab,GentlemanDab,GentlemansDab",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_StageBow"
+      ]
+    },
+    "SubMenu.Thumbs Down": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_ThumbsDown",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: ThumbsDown,ThumbDown",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Thumbs Up": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_ThumbsUp",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: ThumbsUp,ThumbUp",
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10
+    },
+    "SubMenu.Wave (T)": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Wave2",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Wave",
+      "OnlyForTeam": 2,
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Wave2"
+      ]
+    },
+    "SubMenu.Youre Awesome (CT)": {
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "Emote_Youre_Awesome",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: YoureAwesome,urAwesome",
+      "OnlyForTeam": 1,
+      "PrintToChat": 1,
+      "Give_Cooldown_After_This_InXSecs": 10,
+      "Sound_Volume": "60%",
+      "Sound_Paths": [
+        "Emote_Youre_Awesome"
+      ]
+    }
+  },
+  "Menu.Other (Vips)": {
+    "SubMenu.Dance 1": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "adeepmentality",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dance1",
+      "Toggle_In_Chat_Hide": 1,
+      "PrintToChat": 2
+    },
+    "SubMenu.Dance 2": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "adj",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dance2",
+      "Toggle_In_Chat_Hide": 1,
+      "PrintToChat": 2
+    },
+    "SubMenu.Dance 3": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "badapple",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dance3",
+      "Toggle_In_Chat_Hide": 1,
+      "PrintToChat": 2
+    },
+    "SubMenu.Dance 4": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "badbadwater",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dance4",
+      "Toggle_In_Chat_Hide": 1,
+      "PrintToChat": 2
+    },
+    "SubMenu.Dance 5": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "calisthenics",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dance5",
+      "Toggle_In_Chat_Hide": 1,
+      "PrintToChat": 2
+    }
+  },
+  "Menu.Other (Admins)": {
+    "Hide_It_And_Show_Only_ForFlags": "SteamIDs:  | Flags: @css/root,@css/admin,@css/admins | Groups: #css/root,#css/admin,#css/admins",
+    "SubMenu.Dance 6": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/root,@css/admin,@css/admins | Groups: #css/root,#css/admin,#css/admins",
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "caramell_dansen",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dance6",
+      "Toggle_In_Chat_Hide": 2,
+      "PrintToChat": 2
+    },
+    "SubMenu.Dance 7": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/root,@css/admin,@css/admins | Groups: #css/root,#css/admin,#css/admins",
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "ch4nge",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dance7",
+      "Toggle_In_Chat_Hide": 2,
+      "PrintToChat": 2
+    },
+    "SubMenu.Dance 8": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/root,@css/admin,@css/admins | Groups: #css/root,#css/admin,#css/admins",
+      "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
+      "AnimationName": "conqueror",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Dance8",
+      "Toggle_In_Chat_Hide": 2,
+      "PrintToChat": 2
+    }
+  }
+}
