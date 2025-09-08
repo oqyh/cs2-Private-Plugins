@@ -34,7 +34,7 @@
       "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Message,Messages"
     },
     "SubMenu.STATUS.REPOSITION. Reposition Menu:": {
-      "Toggle_In_Chat": "Console_Commands: css_ressmenu,css_repmenu,css_reposition,css_rep | Chat_Commands: Message,Messages"
+      "Toggle_In_Chat": "Console_Commands: css_ressmenu,css_repmenu,css_reposition,css_rep | Chat_Commands: "
     }
   },
   "Menu.Dances": {
