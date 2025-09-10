@@ -291,7 +291,7 @@
     "SubMenu.Floss": {
       "Model": "models/goldkingz/emote/goldkingz_emotes.vmdl",
       "AnimationName": "Emote_FlossDance",
-      "Toggle_In_Chat": "Console_Commands: fff | Chat_Commands: Floss",
+      "Toggle_In_Chat": "Console_Commands:  | Chat_Commands: Floss",
       "LoopAnimation": true,
       "PrintToChat": 1,
       "RepeatMusicOnEveryXSecs": 8.346168,
@@ -1042,3 +1042,4 @@
     }
   }
 }
+
