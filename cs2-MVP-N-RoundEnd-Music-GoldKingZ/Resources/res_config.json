@@ -1,0 +1,63 @@
+	//==========================
+	//        Options
+	//==========================
+	// "ShowChat": true, //Show RES Chat Message? (RES.ShowChat) //false OR Not Used = Wil Be Disabled
+	// "ShowCenter": true, //Show RES Center Message? (RES.ShowCenter) //false OR Not Used = Wil Be Disabled
+	// "ShowCenter_Bottom": true, //Show RES Center Message? (RES.ShowCenter_Bottom) //false OR Not Used = Wil Be Disabled
+	// "Sound_Volume": "60%" // Sound Volume From 1%(lower) to 100%(higher) || Not Used = 100%
+	// "Sound_Paths": ["holdout1","holdout2"] // Sounds Add As Many As You Like
+	//==========================
+
+{
+  "SubMenu.Lithe - Hold Out": {
+    "ShowChat": true,
+    "ShowCenter": true,
+    "Sound_Volume": "100%",
+    "Sound_Paths": [
+      "holdout1",
+      "holdout2"
+    ]
+  },
+  "What Is That Melody": {
+    "ShowChat": true,
+    "ShowCenter": true,
+    "Sound_Volume": "100%",
+    "Sound_Paths": [
+      "melody"
+    ]
+  },
+  "Two Twelve Subwoofer": {
+    "ShowChat": true,
+    "ShowCenter": true,
+    "Sound_Volume": "100%",
+    "Sound_Paths": [
+      "twotwelvesubwoofer"
+    ]
+  },
+  "Untitled #13 - Glwzbll": {
+    "ShowChat": true,
+    "ShowCenter": true,
+    "Sound_Volume": "100%",
+    "Sound_Paths": [
+      "untitled13"
+    ]
+  },
+  "NXCRE & The Villains - USURPER": {
+    "ShowChat": true,
+    "ShowCenter": true,
+    "Sound_Volume": "100%",
+    "Sound_Paths": [
+      "usurper1",
+      "usurper2",
+      "usurper3"
+    ]
+  },
+  "Вектор А - Напоследок": {
+    "ShowChat": true,
+    "ShowCenter_Bottom": true,
+    "Sound_Volume": "100%",
+    "Sound_Paths": [
+      "finally"
+    ]
+  }
+}

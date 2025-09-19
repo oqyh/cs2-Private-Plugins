@@ -1,0 +1,292 @@
+	//==========================
+	//        Options
+	//==========================
+	// "Hide_It_And_Show_Only_ForFlags": "SteamIDs:  | Flags:  | Groups: #css/vips,#css/admins" //Hide Menu/SubMenu And Only These Flags Can See It || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone See It
+	// "Only_These_Flags_Can_Access_It": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/vips,@css/admins | Groups: " //Only These Can Access Menu/SubMenu || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone Can Access It
+	// "Only_These_Flags_Can_Vol.0": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/vips,@css/admins | Groups: " //Only These Can Access Volume 0 || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone Can Access It
+	// "SubMenu.STATUS.MVPSELECTED.xxxxxxxxxxx:":{} //Show Client His Current MVP Selected
+	// "SubMenu.STATUS.MVPNONSELECTED.xxxxxxxxxxx:":{} //Let Client To Set None Current MVP
+	// "SubMenu.STATUS.MVPVOL.xxxxxxxxxxx:":{} //Show Client His Current MVP Volume [Note: Required Combine_MVP_RES false]  
+	// "SubMenu.STATUS.MVPCHAT.xxxxxxxxxxx:":{} //Show Client His Current MVP Chat Message (MVP.ShowChat) [Note: Required Combine_MVP_RES false]  
+	// "SubMenu.STATUS.MVPCENTER.xxxxxxxxxxx:":{} //Show Client His Current MVP Center Message (MVP.ShowCenter) [Note: Required Combine_MVP_RES false]  
+	// "SubMenu.STATUS.MVPCENTERBOTTOM.xxxxxxxxxxx:":{} //Show Client His Current MVP Center Bottom Message (MVP.ShowCenter_Bottom) [Note: Required Combine_MVP_RES false]  
+	// "SubMenu.STATUS.RESVOL.xxxxxxxxxxx:":{} //Show Client His Current RES Volume [Note: Required Combine_MVP_RES false]  
+	// "SubMenu.STATUS.RESCHAT.xxxxxxxxxxx:":{} //Show Client His Current RES Chat Message (RES.ShowChat) [Note: Required Combine_MVP_RES false]  
+	// "SubMenu.STATUS.RESCENTER.xxxxxxxxxxx:":{} //Show Client His Current RES Center Message (RES.ShowCenter) [Note: Required Combine_MVP_RES false]  
+	// "SubMenu.STATUS.RESCENTERBOTTOM.xxxxxxxxxxx:":{} //Show Client His Current RES Center Bottom Message (RES.ShowCenter_Bottom) [Note: Required Combine_MVP_RES false]  
+	// "SubMenu.STATUS.BOTHVOL.xxxxxxxxxxx:":{} //Show Client His Current BOTH MVP + RES Volume [Note: Required Combine_MVP_RES true]  
+	// "SubMenu.STATUS.BOTHCHAT.xxxxxxxxxxx:":{} //Show Client His Current BOTH MVP + RES Chat Message (MVP.ShowChat + RES.ShowChat) [Note: Required Combine_MVP_RES true]  
+	// "SubMenu.STATUS.BOTHCENTER.xxxxxxxxxxx:":{} //Show Client His Current BOTH MVP + RES Center Message (MVP.ShowCenter + RES.ShowCenter) [Note: Required Combine_MVP_RES true]  
+	// "SubMenu.STATUS.BOTHCENTERBOTTOM.xxxxxxxxxxx:":{} //Show Client His Current BOTH MVP + RES Center Bottom Message (MVP.ShowCenter_Bottom + RES.ShowCenter_Bottom) [Note: Required Combine_MVP_RES true]  
+	// "SubMenu.STATUS.REPOSITION.xxxxxxxxxxx:":{} //Reposition Menu 4 
+	// "Toggle_In_Chat": "Console_Commands: css_cmd,cmd2 | Chat_Commands: command1,command2", //Toggle In Console/Chat ShortCut Note: Console_Commands Can Be Execute Via Both Console And Chat By (!) || Making Both Console_Commands And Chat_Commands Empty = Disable
+	// "Toggle_In_Chat_Hide": 1, // Hide Radio If Toggle_In_Chat Pass? || 1 = Yes, But Only After Toggle Successfully || 2 = Yes, Hide All The Time || 0 OR Not Used = No
+	// "Unique_Name": "9mm", //Unique Name To Let Plugin Search For It [Note: Its Important Otherwise MVP Will Not Work]
+	// "Make_It_Previewable": true, //true = Make Music Previewable Before Select It //false OR Not Used = Wil Be Disabled
+	// "ShowChat": true, //Show MVP Chat Message? (MVP.ShowChat) //false OR Not Used = Wil Be Disabled
+	// "ShowCenter": true, //Show MVP Center Message? (MVP.ShowCenter) //false OR Not Used = Wil Be Disabled
+	// "ShowCenter_Bottom": true, //Show MVP Center Message? (MVP.ShowCenter_Bottom) //false OR Not Used = Wil Be Disabled
+	// "Sound_Volume": "60%" // Sound Volume From 1%(lower) to 100%(higher) || Not Used = 100%
+	// "Sound_Paths": ["badtaste1","badtaste2"] // Sounds Add As Many As You Like
+	//==========================
+
+
+{
+  "SubMenu.STATUS.MVPSELECTED. Selected:": {},
+  "SubMenu.STATUS.MVPNONSELECTED. None MVP": {},
+  "Menu.Settings": {
+    "SubMenu.STATUS.MVPVOL.Mvp Vol:": {
+      "Only_These_Flags_Can_Vol.0": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Only_These_Flags_Can_Vol.20": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Only_These_Flags_Can_Vol.40": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root"
+    },
+    "SubMenu.STATUS.MVPCHAT.Mvp Chat:": {},
+    "SubMenu.STATUS.MVPCENTER.Mvp Center:": {},
+    "SubMenu.STATUS.MVPCENTERBOTTOM.Mvp Center Bottom:": {},
+    "SubMenu.STATUS.RESVOL.Res Vol:": {},
+    "SubMenu.STATUS.RESCHAT.Res Chat:": {},
+    "SubMenu.STATUS.RESCENTER.Res Center:": {},
+    "SubMenu.STATUS.RESCENTERBOTTOM.Res Center Bottom:": {},
+    "SubMenu.STATUS.BOTHVOL. Vol:": {},
+    "SubMenu.STATUS.BOTHCHAT. Chat:": {},
+    "SubMenu.STATUS.BOTHCENTER. Center:": {},
+    "SubMenu.STATUS.BOTHCENTERBOTTOM. Center Bottom:": {},
+    "SubMenu.STATUS.REPOSITION. Reposition Menu?": {
+      "Toggle_In_Chat": "Console_Commands: css_ressmenu,css_repmenu,css_reposition,css_rep | Chat_Commands: "
+    }
+  },
+  "Menu.Free MVPs": {
+    "SubMenu.9MM - Memphis Cult": {
+      "Unique_Name": "9mm",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "9mm"
+      ]
+    },
+    "SubMenu.дурной вкус - пластинки": {
+      "Unique_Name": "badtaste",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "badtaste1",
+        "badtaste2"
+      ]
+    },
+    "SubMenu.Playboi Carti - Beef": {
+      "Unique_Name": "beef",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "beef"
+      ]
+    },
+    "SubMenu.BigXthaPlug - Change Me": {
+      "Unique_Name": "changeme",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "changeme1",
+        "changeme2"
+      ]
+    },
+    "SubMenu.Freddie Dredd - Killin": {
+      "Unique_Name": "killin",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter_Bottom": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "demand"
+      ]
+    },
+    "SubMenu.Chris Grey - Different": {
+      "Unique_Name": "different",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter_Bottom": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "different1",
+        "different2"
+      ]
+    },
+    "SubMenu.Lithe - Fall Back": {
+      "Unique_Name": "fallback",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter_Bottom": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "fallback1",
+        "fallback2"
+      ]
+    },
+    "SubMenu.Ur Final Message": {
+      "Unique_Name": "finalmsg",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "finalmessage1",
+        "finalmessage2"
+      ]
+    },
+    "SubMenu.GoHardHuh": {
+      "Unique_Name": "gohardhuh",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "gohardhuh"
+      ]
+    },
+    "SubMenu.History": {
+      "Unique_Name": "history",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "history"
+      ]
+    },
+    "SubMenu.OT - Johnny Dang": {
+      "Unique_Name": "johnny",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "johnny1",
+        "johnny2"
+      ]
+    },
+    "SubMenu.A$AP - Lord Pretty Flacko": {
+      "Unique_Name": "asaplord",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "lordprettyflacko1",
+        "lordprettyflacko2"
+      ]
+    },
+    "SubMenu.Tommy - Million Dollar Baby": {
+      "Unique_Name": "dollarbaby",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "million1",
+        "million2"
+      ]
+    },
+    "SubMenu.Xavier Wulf - Psycho Pass": {
+      "Unique_Name": "psycho",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "psycho1",
+        "psycho2"
+      ]
+    },
+    "SubMenu.If We Being Real": {
+      "Unique_Name": "beingreal",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "real1",
+        "real2"
+      ]
+    },
+    "SubMenu.Separate Ways": {
+      "Unique_Name": "separate",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "separate1",
+        "separate2"
+      ]
+    },
+    "SubMenu.I Dont Care About You": {
+      "Unique_Name": "idc",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "swat"
+      ]
+    },
+    "SubMenu.Xcho - Ты и Я": {
+      "Unique_Name": "uandme",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "uandme"
+      ]
+    }
+  },
+  "Menu.Vip MVPs": {
+    "SubMenu.Hanumankind - Big Dawgs": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Unique_Name": "bigdawgs",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "bigdawgs1",
+        "bigdawgs2",
+        "bigdawgs3"
+      ]
+    },
+    "SubMenu.Ratatatataa": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Unique_Name": "ratata",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "ratata"
+      ]
+    }
+  },
+  "Menu.Admins Only": {
+    "Hide_It_And_Show_Only_ForFlags": "SteamIDs:  | Flags: @css/root,@css/admin,@css/admins | Groups: #css/root,#css/admin,#css/admins",
+    "SubMenu.Misha Xramovi - B экстазе": {
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/root,@css/admin,@css/admins | Groups: #css/root,#css/admin,#css/admins",
+      "Unique_Name": "ecstasy",
+      "Make_It_Previewable": true,
+      "ShowChat": true,
+      "ShowCenter": true,
+      "Sound_Volume": "100%",
+      "Sound_Paths": [
+        "ecstasy1",
+        "ecstasy2"
+      ]
+    }
+  }
+}
