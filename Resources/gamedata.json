@@ -6,13 +6,6 @@
             "linux": "55 48 89 E5 41 57 49 89 F7 41 56 45 89 CE 41 55 49 89 CD"
         }
     },
-	"CSoundOpGameSystem_StopSoundFunc": {
-		"signatures": {
-			"library": "server",
-			"windows": "48 89 5C 24 ? 56 48 83 EC ? 48 8B F2 48 8D 54 24",
-			"linux": "55 48 89 E5 41 56 41 55 41 54 53 48 89 F3 48 83 EC ? E8 ? ? ? ? 48 85 DB"
-		}
-	},
 	"GiveNamedItem2": {
 		"signatures": {
 			"library": "server",
@@ -42,3 +35,4 @@
 		}
 	}
 }
+
