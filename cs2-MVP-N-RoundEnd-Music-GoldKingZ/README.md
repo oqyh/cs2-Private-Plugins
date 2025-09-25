@@ -188,7 +188,7 @@
 
 ### [1.0.8]
 - Fix Bug On Flags Will Not Work On Other Plugins (Vipcore, ect...)
-- Fix Bug MVP Will Stop On Dead Players When Change Camera
+- Fix Bug MVP/RES Will Stop On Dead Players When Change Camera
 
 ### [1.0.7]
 - Rework + Optimize On Plugin 
