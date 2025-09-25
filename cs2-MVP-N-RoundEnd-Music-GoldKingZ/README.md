@@ -187,7 +187,7 @@
 <summary><b>📋 View Version History</b> (Click to expand 🔽)</summary>
 
 ### [1.0.8]
-- Fix Bug On Flags Conflict On Other Plugins (Vipcore, ect...)
+- Fix Bug On Flags Will Not Work On Other Plugins (Vipcore, ect...)
 - Fix Bug MVP Will Stop On Dead Players When Change Camera
 
 ### [1.0.7]
