@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.7)  
+# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.8)  
 
 ### Custom MVP Per Player If Not Used Will Play Server Round End Custom Music If Not Found Will Play Player Original Music Kit
 
@@ -185,6 +185,10 @@
 
 <details>
 <summary><b>📋 View Version History</b> (Click to expand 🔽)</summary>
+
+### [1.0.8]
+- Fix Bug On Flags Conflict On Other Plugins (Vipcore, ect...)
+- Fix Bug MVP Will Stop On Dead Players When Change Camera
 
 ### [1.0.7]
 - Rework + Optimize On Plugin 
