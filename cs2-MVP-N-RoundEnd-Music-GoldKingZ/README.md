@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.8)  
+# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.9)  
 
 ### Custom MVP Per Player If Not Used Will Play Server Round End Custom Music If Not Found Will Play Player Original Music Kit
 
@@ -58,50 +58,63 @@
 <details open>
 <summary><b>Main Config</b> (Click to expand 🔽)</summary>
 
-| Property | Description | Values | Required |
-|----------|-------------|--------|----------|
-| `Reload_MVP_RES_CommandsInGame` | Commands to reload MVP/RES plugin | Format: `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4` | - |
-| `Reload_MVP_RES_Flags` | Who can use reload commands | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1` | `Reload_MVP_RES_CommandsInGame` |
-| `Reload_MVP_RES_Hide` | Hide chat after reload command | `0`-No<br>`1`-Hide on success<br>`2`-Always hide | `Reload_MVP_RES_CommandsInGame` |
-| `OpenMenu_Mode` | How to open MVP/RES menu | `0`-Disabled<br>`1`-Chat menu<br>`2`-Center menu<br>`3`-Center WASD<br>`4`-Screen Text WASD | - |
-| `OpenMenu_CommandsInGame` | Commands to open menu | Format: `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4` | `OpenMenu_Mode` |
-| `OpenMenu_Flags` | Who can open menu | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1` | `OpenMenu_CommandsInGame` |
-| `OpenMenu_Hide` | Hide chat after menu command | `0`-No<br>`1`-Hide on success<br>`2`-Always hide | `OpenMenu_CommandsInGame` |
-| `Disable_Default_MVP_Music` | Disable default MVP music | `true`-Yes<br>`false`-No | - |
-| `Custom_Music_length_InSecs` | Custom music duration in seconds | Number (default: 10) | - |
-| `Enable_Custom_MVP` | Enable custom MVP sounds | `true`-Yes<br>`false`-No | - |
-| `MVP_PickSoundsByOrder` | Play MVP sounds in order | `true`-Sequential<br>`false`-Random | - |
-| `MVP_AvailableVolumes` | Available MVP volume levels | Comma-separated values (e.g., "0,20,40,60,80,100") | - |
-| `MVP_Default_Volume` | Default MVP volume for new players | String (e.g., "100") | - |
-| `MVP_Default_ShowChat` | Default chat display for new players | `true`-On<br>`false`-Off | - |
-| `MVP_Default_ShowCenter` | Default center text display for new players | `true`-On<br>`false`-Off | - |
-| `MVP_Default_ShowCenterBottom` | Default bottom center text display for new players | `true`-On<br>`false`-Off | - |
-| `Enable_Custom_RES` | Enable custom round end sounds | `true`-Yes<br>`false`-No | - |
-| `RES_PickSoundsByOrder` | Play RES sounds in order | `true`-Sequential<br>`false`-Random | - |
-| `RES_AvailableVolumes` | Available RES volume levels | Comma-separated values (e.g., "0,20,40,60,80,100") | - |
-| `RES_Default_Volume` | Default RES volume for new players | String (e.g., "100") | - |
-| `RES_Default_ShowChat` | Default chat display for new players | `true`-On<br>`false`-Off | - |
-| `RES_Default_ShowCenter` | Default center text display for new players | `true`-On<br>`false`-Off | - |
-| `RES_Default_ShowCenterBottom` | Default bottom center text display for new players | `true`-On<br>`false`-Off | - |
-| `Combine_MVP_RES` | Combine MVP and RES settings | `true`-Yes<br>`false`-No | - |
-| `BOTH_AvailableVolumes` | Available combined volume levels | Comma-separated values (e.g., "0,20,40,60,80,100") | - |
-| `BOTH_Default_Volume` | Default combined volume for new players | String (e.g., "100") | - |
-| `BOTH_Default_ShowChat` | Default chat display for new players | `true`-On<br>`false`-Off | - |
-| `BOTH_Default_ShowCenter` | Default center text display for new players | `true`-On<br>`false`-Off | - |
-| `BOTH_Default_ShowCenterBottom` | Default bottom center text display for new players | `true`-On<br>`false`-Off | - |
-| `Cookies_Enable` | Enable local data storage | `true`-Yes<br>`false`-No | - |
-| `Cookies_AutoRemovePlayerOlderThanXDays` | Auto-delete inactive data | `0`-Disabled<br>`>0`-Days to keep | `Cookies_Enable` |
-| `MySql_Enable` | Enable MySQL storage | `true`-Yes<br>`false`-No | - |
-| `MySql_Host` | MySQL host address | IP/hostname | `MySql_Enable` |
-| `MySql_Database` | Database name | String | `MySql_Enable` |
-| `MySql_Username` | Database username | String | `MySql_Enable` |
-| `MySql_Password` | Database password | String | `MySql_Enable` |
-| `MySql_Port` | Database port | Number (default: 3306) | `MySql_Enable` |
-| `MySql_AutoRemovePlayerOlderThanXDays` | Auto-delete inactive data | `0`-Disabled<br>`>0`-Days to keep | `MySql_Enable` |
-| `EnableDebug` | Enable debug mode | `true`-Yes<br>`false`-No | - |
+| Property                                       | Description                                                | Values                                                                                      | Required                        |
+| ---------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------- |
+| `Reload_MVP_RES_CommandsInGame`                | Commands to reload MVP/RES plugin                          | Format: `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4`                           | -                               |
+| `Reload_MVP_RES_Flags`                         | Who can use reload commands                                | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1`                             | `Reload_MVP_RES_CommandsInGame` |
+| `Reload_MVP_RES_Hide`                          | Hide chat after reload command                             | `0`-No<br>`1`-Hide on success<br>`2`-Always hide                                            | `Reload_MVP_RES_CommandsInGame` |
+| `OpenMenu_Mode`                                | How to open MVP/RES menu                                   | `0`-Disabled<br>`1`-Chat menu<br>`2`-Center menu<br>`3`-Center WASD<br>`4`-Screen Text WASD | -                               |
+| `OpenMenu_CommandsInGame`                      | Commands to open menu                                      | Format: `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4`                           | `OpenMenu_Mode`                 |
+| `OpenMenu_Flags`                               | Who can open menu                                          | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1`                             | `OpenMenu_CommandsInGame`       |
+| `OpenMenu_Hide`                                | Hide chat after menu command                               | `0`-No<br>`1`-Hide on success<br>`2`-Always hide                                            | `OpenMenu_CommandsInGame`       |
+| `Disable_Default_MVP_Music`                    | Disable default MVP music                                  | `true`-Yes<br>`false`-No (only when custom music plays)                                     | -                               |
+| `Custom_Music_length_InSecs`                   | Custom music duration in seconds (delay before next round) | Number (default: 10)                                                                        | -                               |
+| `Enable_Custom_MVP`                            | Enable custom MVP sounds                                   | `true`-Yes<br>`false`-No                                                                    | -                               |
+| `MVP_PickSoundsByOrder`                        | Play MVP sounds in order                                   | `true`-Sequential<br>`false`-Random                                                         | -                               |
+| `MVP_Default_Volume`                           | Default MVP volume for new players                         | String (e.g., `"100"`)                                                                      | -                               |
+| `MVP_Default_ShowChat`                         | Show MVP chat by default                                   | `true`-On<br>`false`-Off                                                                    | -                               |
+| `MVP_Default_ShowCenter`                       | Show MVP center text by default                            | `true`-On<br>`false`-Off                                                                    | -                               |
+| `MVP_Default_ShowCenterBottom`                 | Show MVP bottom-center text by default                     | `true`-On<br>`false`-Off                                                                    | -                               |
+| `Enable_Custom_RES`                            | Enable custom round end sounds                             | `true`-Yes<br>`false`-No                                                                    | -                               |
+| `RES_PickSoundsByOrder`                        | Play RES sounds in order                                   | `true`-Sequential<br>`false`-Random                                                         | -                               |
+| `RES_Default_Volume`                           | Default RES volume for new players                         | String (e.g., `"100"`)                                                                      | -                               |
+| `RES_Default_ShowChat`                         | Show RES chat by default                                   | `true`-On<br>`false`-Off                                                                    | -                               |
+| `RES_Default_ShowCenter`                       | Show RES center text by default                            | `true`-On<br>`false`-Off                                                                    | -                               |
+| `RES_Default_ShowCenterBottom`                 | Show RES bottom-center text by default                     | `true`-On<br>`false`-Off                                                                    | -                               |
+| `Combine_MVP_RES`                              | Combine MVP and RES settings                               | `true`-Yes<br>`false`-No (separate configs)                                                 | -                               |
+| `BOTH_Default_Volume`                          | Default combined volume for new players                    | String (e.g., `"100"`)                                                                      | -                               |
+| `BOTH_Default_ShowChat`                        | Show combined chat by default                              | `true`-On<br>`false`-Off                                                                    | -                               |
+| `BOTH_Default_ShowCenter`                      | Show combined center text by default                       | `true`-On<br>`false`-Off                                                                    | -                               |
+| `BOTH_Default_ShowCenterBottom`                | Show combined bottom-center text by default                | `true`-On<br>`false`-Off                                                                    | -                               |
+| `Cookies_Enable`                               | Enable local player data storage                           | `0`-Disabled<br>`1`-Save on disconnect<br>`2`-Save on map change (recommended)              | -                               |
+| `Cookies_AutoRemovePlayerOlderThanXDays`       | Auto-delete inactive local data                            | `0`-Disabled<br>`>0`-Days to keep                                                           | `Cookies_Enable`                |
+| `MySql_Enable`                                 | Enable MySQL storage                                       | `0`-Disabled<br>`1`-Save on disconnect<br>`2`-Save on map change (recommended)              | -                               |
+| `MySql_ConnectionTimeout`                      | MySQL connection timeout                                   | Seconds (default: 30)                                                                       | `MySql_Enable`                  |
+| `MySql_RetryAttempts`                          | Retry attempts on failure                                  | Number (default: 3)                                                                         | `MySql_Enable`                  |
+| `MySql_RetryDelay`                             | Delay between retries                                      | Seconds (default: 2)                                                                        | `MySql_Enable`                  |
+| `MySql_Servers`                                | MySQL server list                                          | Array of `{Server,Port,Database,Username,Password}`                                         | `MySql_Enable`                  |
+| `MySql_AutoRemovePlayerOlderThanXDays`         | Auto-delete inactive MySQL data                            | `0`-Disabled<br>`>0`-Days to keep                                                           | `MySql_Enable`                  |
+| `EnableDebug`                                  | Enable debug mode (console logging)                        | `true`-Yes<br>`false`-No                                                                    | -                               |
 </details>
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 🛠️ `config/mvp_config.json`
@@ -135,7 +148,7 @@
 |--------|-------------|---------------|
 | `Hide_It_And_Show_Only_ForFlags` | Hide menu and only show for specific flags | `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1`<br>Empty = Everyone can see |
 | `Only_These_Flags_Can_Access_It` | Restrict access | `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1`<br>Empty = Everyone can access |
-| `Only_These_Flags_Can_Vol.0` | Restrict volume 0 | `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1`<br>Empty = Everyone can access |
+| `Only_These_Flags_Can_Vol.From.0.To.20` | Restrict volume From 0 To 20 | `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1`<br>Empty = Everyone can access |
 | `Toggle_In_Chat` | Chat/console commands to toggle menu | `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4`<br>Empty = Disabled |
 | `Toggle_In_Chat_Hide` | Hide chat after toggle command | `0`-No<br>`1`-Hide on success<br>`2`-Always hide |
 | `Unique_Name` | Unique identifier for plugin | String (Required for MVP to work) |
@@ -185,6 +198,47 @@
 
 <details>
 <summary><b>📋 View Version History</b> (Click to expand 🔽)</summary>
+
+### [1.0.9]
+- Fix Bug Stop On Dead Players When Change Camera
+- Fix "SubMenu.STATUS.REPOSITION.xxxxxxxxxxx:":{} Not Respond
+- Removed "Only_These_Flags_Can_Vol.X"
+- Removed "MVP_AvailableVolumes"
+- Removed "RES_AvailableVolumes"
+- Removed "BOTH_AvailableVolumes"
+- Added "Only_These_Flags_Can_Vol.From.X.To.X"
+- Added MVPVOL/RESVOL/BOTHVOL Ability To "Toggle_In_Chat" Any Volume 0 To 100
+- Added Cookies_Enable 1 Save Data On Players Disconnect
+- Added MySql_Enable 1 Save Data On Players Disconnect
+- Added MySql_ConnectionTimeout
+- Added MySql_RetryAttempts
+- Added MySql_RetryDelay
+- Added MySql_Config Multiple MySql
+- Added In MenuConfig CenterWASD_Dev
+- Added In MenuConfig ScreenTextWASD_Cookies_Enable 1 Save Data When Player Save Menu Position
+- Added In MenuConfig ScreenTextWASD_Cookies_Enable 2 Save Data On Players Disconnect
+- Added In MenuConfig ScreenTextWASD_MySql_Enable 1 Save Data On Players Disconnect
+- Added In MenuConfig ScreenTextWASD_MySql_ConnectionTimeout
+- Added In MenuConfig ScreenTextWASD_MySql_RetryAttempts
+- Added In MenuConfig ScreenTextWASD_MySql_RetryDelay
+- Added In MenuConfig ScreenTextWASD_MySql_Config Multiple MySql
+- Added New lang
+  -  "PrintToChatToPlayer.Selected.MVPVOL.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.MVPVOL.Info"
+  -  "PrintToChatToPlayer.Selected.MVPCHAT.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.MVPCENTER.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.MVPCENTERBOTTOM.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.RESVOL.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.RESVOL.Info"
+  -  "PrintToChatToPlayer.Selected.RESCHAT.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.RESCENTER.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.RESCENTERBOTTOM.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.BOTHVOL.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.BOTHVOL.Info"
+  -  "PrintToChatToPlayer.Selected.BOTHCHAT.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.BOTHCENTER.Not.Allowed"
+  -  "PrintToChatToPlayer.Selected.BOTHCENTERBOTTOM.Not.Allowed"
+
 
 ### [1.0.8]
 - Fix Bug On Flags Will Not Work On Other Plugins (Vipcore, ect...)
