@@ -3,7 +3,7 @@
 	//==========================
 	// "Hide_It_And_Show_Only_ForFlags": "SteamIDs:  | Flags:  | Groups: #css/vips,#css/admins" //Hide Menu/SubMenu And Only These Flags Can See It || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone See It
 	// "Only_These_Flags_Can_Access_It": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/vips,@css/admins | Groups: " //Only These Can Access Menu/SubMenu || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone Can Access It
-	// "Only_These_Flags_Can_Vol.0": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/vips,@css/admins | Groups: " //Only These Can Access Volume 0 || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone Can Access It
+	// "Only_These_Flags_Can_Vol.From.0.To.20": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/vips,@css/admins | Groups: " //Only These Can Access Volume From 0 To 20 || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone Can Access It
 	// "SubMenu.STATUS.MVPSELECTED.xxxxxxxxxxx:":{} //Show Client His Current MVP Selected
 	// "SubMenu.STATUS.MVPNONSELECTED.xxxxxxxxxxx:":{} //Let Client To Set None Current MVP
 	// "SubMenu.STATUS.MVPVOL.xxxxxxxxxxx:":{} //Show Client His Current MVP Volume [Note: Required Combine_MVP_RES false]  
@@ -30,27 +30,47 @@
 	// "Sound_Paths": ["badtaste1","badtaste2"] // Sounds Add As Many As You Like
 	//==========================
 
-
 {
   "SubMenu.STATUS.MVPSELECTED. Selected:": {},
   "SubMenu.STATUS.MVPNONSELECTED. None MVP": {},
   "Menu.Settings": {
     "SubMenu.STATUS.MVPVOL.Mvp Vol:": {
-      "Only_These_Flags_Can_Vol.0": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
-      "Only_These_Flags_Can_Vol.20": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
-      "Only_These_Flags_Can_Vol.40": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root"
+      "Toggle_In_Chat": "Console_Commands: css_mvpvol,css_volmvp | Chat_Commands: ",
+      "Only_These_Flags_Can_Vol.From.0.To.20": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/vips,@css/admins | Groups: "
     },
-    "SubMenu.STATUS.MVPCHAT.Mvp Chat:": {},
-    "SubMenu.STATUS.MVPCENTER.Mvp Center:": {},
-    "SubMenu.STATUS.MVPCENTERBOTTOM.Mvp Center Bottom:": {},
-    "SubMenu.STATUS.RESVOL.Res Vol:": {},
-    "SubMenu.STATUS.RESCHAT.Res Chat:": {},
-    "SubMenu.STATUS.RESCENTER.Res Center:": {},
-    "SubMenu.STATUS.RESCENTERBOTTOM.Res Center Bottom:": {},
-    "SubMenu.STATUS.BOTHVOL. Vol:": {},
-    "SubMenu.STATUS.BOTHCHAT. Chat:": {},
-    "SubMenu.STATUS.BOTHCENTER. Center:": {},
-    "SubMenu.STATUS.BOTHCENTERBOTTOM. Center Bottom:": {},
+    "SubMenu.STATUS.MVPCHAT.Mvp Chat:": {
+      "Toggle_In_Chat": "Console_Commands: css_mvpchat,css_chatmvp | Chat_Commands: "
+    },
+    "SubMenu.STATUS.MVPCENTER.Mvp Center:": {
+      "Toggle_In_Chat": "Console_Commands: css_mvpcenter,css_centermvp | Chat_Commands: "
+    },
+    "SubMenu.STATUS.MVPCENTERBOTTOM.Mvp Center Bottom:": {
+      "Toggle_In_Chat": "Console_Commands: css_mvpcenterbottom,css_centerbottommvp | Chat_Commands: "
+    },
+    "SubMenu.STATUS.RESVOL.Res Vol:": {
+      "Toggle_In_Chat": "Console_Commands: css_resvol,css_volres | Chat_Commands: "
+    },
+    "SubMenu.STATUS.RESCHAT.Res Chat:": {
+      "Toggle_In_Chat": "Console_Commands: css_reschat,css_chatres | Chat_Commands: "
+    },
+    "SubMenu.STATUS.RESCENTER.Res Center:": {
+      "Toggle_In_Chat": "Console_Commands: css_rescenter,css_centerres | Chat_Commands: "
+    },
+    "SubMenu.STATUS.RESCENTERBOTTOM.Res Center Bottom:": {
+      "Toggle_In_Chat": "Console_Commands: css_rescenterbottom,css_centerbottomres | Chat_Commands: "
+    },
+    "SubMenu.STATUS.BOTHVOL. Vol:": {
+      "Toggle_In_Chat": "Console_Commands: css_vol | Chat_Commands: "
+    },
+    "SubMenu.STATUS.BOTHCHAT. Chat:": {
+      "Toggle_In_Chat": "Console_Commands: css_chat | Chat_Commands: "
+    },
+    "SubMenu.STATUS.BOTHCENTER. Center:": {
+      "Toggle_In_Chat": "Console_Commands: css_center | Chat_Commands: "
+    },
+    "SubMenu.STATUS.BOTHCENTERBOTTOM. Center Bottom:": {
+      "Toggle_In_Chat": "Console_Commands: css_centerbottom | Chat_Commands: "
+    },
     "SubMenu.STATUS.REPOSITION. Reposition Menu?": {
       "Toggle_In_Chat": "Console_Commands: css_ressmenu,css_repmenu,css_reposition,css_rep | Chat_Commands: "
     }
@@ -250,7 +270,7 @@
   },
   "Menu.Vip MVPs": {
     "SubMenu.Hanumankind - Big Dawgs": {
-      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
+      "Only_These_Flags_Can_Access_It": "SteamIDs:  | Flags: @vip/vip,@css/vip,@css/root | Groups: #css/vips,#css/vip,#css/root",
       "Unique_Name": "bigdawgs",
       "Make_It_Previewable": true,
       "ShowChat": true,
