@@ -207,6 +207,7 @@
 - Removed "RES_AvailableVolumes"
 - Removed "BOTH_AvailableVolumes"
 - Added "Only_These_Flags_Can_Vol.From.X.To.X"
+- Added Auto ServerPrecacheResources Direct From multiaddonmanager.cfg + Custom By Adding In ServerPrecacheResources.txt
 - Added MVPVOL/RESVOL/BOTHVOL Ability To "Toggle_In_Chat" Any Volume 0 To 100
 - Added Cookies_Enable 1 Save Data On Players Disconnect
 - Added MySql_Enable 1 Save Data On Players Disconnect
