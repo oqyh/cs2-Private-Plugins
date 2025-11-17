@@ -4,7 +4,7 @@
 + PRICE FREE [Only Discord Members] 
 ```
 
-# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.0.9)  
+# [CS2] MVP-N-RoundEnd-Music-GoldKingZ (1.1.0)  
 
 ### Custom MVP Per Player If Not Used Will Play Server Round End Custom Music If Not Found Will Play Player Original Music Kit
 
@@ -60,6 +60,7 @@
 
 | Property                                       | Description                                                | Values                                                                                      | Required                        |
 | ---------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------- |
+| `AutoSetPlayerLanguage`                        | Auto-set language based on player country                  | `true`-Yes<br>`false`-No                                                                    | -                               |
 | `Reload_MVP_RES_CommandsInGame`                | Commands to reload MVP/RES plugin                          | Format: `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4`                           | -                               |
 | `Reload_MVP_RES_Flags`                         | Who can use reload commands                                | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1`                             | `Reload_MVP_RES_CommandsInGame` |
 | `Reload_MVP_RES_Hide`                          | Hide chat after reload command                             | `0`-No<br>`1`-Hide on success<br>`2`-Always hide                                            | `Reload_MVP_RES_CommandsInGame` |
@@ -67,6 +68,7 @@
 | `OpenMenu_CommandsInGame`                      | Commands to open menu                                      | Format: `Console_Commands: cmd1,cmd2 \| Chat_Commands: cmd3,cmd4`                           | `OpenMenu_Mode`                 |
 | `OpenMenu_Flags`                               | Who can open menu                                          | Format: `SteamIDs: id1,id2 \| Flags: @flag1 \| Groups: #group1`                             | `OpenMenu_CommandsInGame`       |
 | `OpenMenu_Hide`                                | Hide chat after menu command                               | `0`-No<br>`1`-Hide on success<br>`2`-Always hide                                            | `OpenMenu_CommandsInGame`       |
+| `OpenMenu_Default_Mode`                        | Default menu for new players                               | `0`-Disabled<br>`1`-Chat menu<br>`2`-Center menu<br>`3`-Center WASD<br>`4`-Screen Text WASD | -                               |
 | `Disable_Default_MVP_Music`                    | Disable default MVP music                                  | `true`-Yes<br>`false`-No (only when custom music plays)                                     | -                               |
 | `Custom_Music_length_InSecs`                   | Custom music duration in seconds (delay before next round) | Number (default: 10)                                                                        | -                               |
 | `Enable_Custom_MVP`                            | Enable custom MVP sounds                                   | `true`-Yes<br>`false`-No                                                                    | -                               |
@@ -94,22 +96,11 @@
 | `MySql_RetryDelay`                             | Delay between retries                                      | Seconds (default: 2)                                                                        | `MySql_Enable`                  |
 | `MySql_Servers`                                | MySQL server list                                          | Array of `{Server,Port,Database,Username,Password}`                                         | `MySql_Enable`                  |
 | `MySql_AutoRemovePlayerOlderThanXDays`         | Auto-delete inactive MySQL data                            | `0`-Disabled<br>`>0`-Days to keep                                                           | `MySql_Enable`                  |
+| `AutoUpdateGeoLocation`                        | Auto-update GeoLocation data                               | `true`-Yes<br>`false`-No                                                                    | -                               |
 | `EnableDebug`                                  | Enable debug mode (console logging)                        | `true`-Yes<br>`false`-No                                                                    | -                               |
 </details>
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -126,6 +117,7 @@
 
 | Option | Description | Condition |
 |--------|-------------|-----------|
+| `SubMenu.STATUS.MENU.xxxxxxxxxxx` | Show his current Menu selected | - |
 | `SubMenu.STATUS.MVPSELECTED.xxxxxxxxxxx` | Show client's current MVP selection | - |
 | `SubMenu.STATUS.MVPNONSELECTED.xxxxxxxxxxx` | Allow client to set no MVP selection | - |
 | `SubMenu.STATUS.MVPVOL.xxxxxxxxxxx` | Show client's current MVP volume | Requires `Combine_MVP_RES` = false |
@@ -198,6 +190,37 @@
 
 <details>
 <summary><b>📋 View Version History</b> (Click to expand 🔽)</summary>
+
+### [1.1.0]
+- Rework On SoundEvents
+- Fix in mvp_config and res_config ShowChat On false Keep Shown
+- Fix Menu 1/2 Added Back On Preview
+- Fix AutoPrecacheResources
+- Removed Player Camera Freeze
+- Added Auto Force download Addons If Missing
+- Added update/forceupdate Command To Force Update Addons
+- Added Ability To Change Menu Client Side
+- Added lang PrintToChatToPlayer.MenuClientSide.Not.Allowed
+- Added lang PrintToChatToPlayer.MenuClientSide.Mode1
+- Added lang PrintToChatToPlayer.MenuClientSide.Mode2
+- Added lang PrintToChatToPlayer.MenuClientSide.Mode3
+- Added lang PrintToChatToPlayer.MenuClientSide.Mode4
+- Added lang "Mode_1.STATUS.MENU.Mode1"
+- Added lang "Mode_1.STATUS.MENU.Mode2"
+- Added lang "Mode_1.STATUS.MENU.Mode3"
+- Added lang "Mode_1.STATUS.MENU.Mode4"
+- Added lang "Mode_2.STATUS.MENU.Mode1"
+- Added lang "Mode_2.STATUS.MENU.Mode2"
+- Added lang "Mode_2.STATUS.MENU.Mode3"
+- Added lang "Mode_2.STATUS.MENU.Mode4"
+- Added lang "Mode_3.STATUS.MENU.Mode1"
+- Added lang "Mode_3.STATUS.MENU.Mode2"
+- Added lang "Mode_3.STATUS.MENU.Mode3"
+- Added lang "Mode_3.STATUS.MENU.Mode4"
+- Added lang "Mode_4.STATUS.MENU.Mode1"
+- Added lang "Mode_4.STATUS.MENU.Mode2"
+- Added lang "Mode_4.STATUS.MENU.Mode3"
+- Added lang "Mode_4.STATUS.MENU.Mode4"
 
 ### [1.0.9]
 - Fix Bug Stop On Dead Players When Change Camera
