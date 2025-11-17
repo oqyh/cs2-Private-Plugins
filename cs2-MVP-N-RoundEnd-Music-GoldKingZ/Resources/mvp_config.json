@@ -4,6 +4,7 @@
 	// "Hide_It_And_Show_Only_ForFlags": "SteamIDs:  | Flags:  | Groups: #css/vips,#css/admins" //Hide Menu/SubMenu And Only These Flags Can See It || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone See It
 	// "Only_These_Flags_Can_Access_It": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/vips,@css/admins | Groups: " //Only These Can Access Menu/SubMenu || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone Can Access It
 	// "Only_These_Flags_Can_Vol.From.0.To.20": "SteamIDs: 76561198206086993,STEAM_0:1:507335558 | Flags: @css/vips,@css/admins | Groups: " //Only These Can Access Volume From 0 To 20 || Not Used Or Empty "SteamIDs:  | Flags:  | Groups: " = Everyone Can Access It
+	// "SubMenu.STATUS.MENU.xxxxxxxxxxx:":{} //Show His Current Menu Selected
 	// "SubMenu.STATUS.MVPSELECTED.xxxxxxxxxxx:":{} //Show Client His Current MVP Selected
 	// "SubMenu.STATUS.MVPNONSELECTED.xxxxxxxxxxx:":{} //Let Client To Set None Current MVP
 	// "SubMenu.STATUS.MVPVOL.xxxxxxxxxxx:":{} //Show Client His Current MVP Volume [Note: Required Combine_MVP_RES false]  
@@ -34,6 +35,7 @@
   "SubMenu.STATUS.MVPSELECTED. Selected:": {},
   "SubMenu.STATUS.MVPNONSELECTED. None MVP": {},
   "Menu.Settings": {
+    "SubMenu.STATUS.MENU. Menu:": {},
     "SubMenu.STATUS.MVPVOL.Mvp Vol:": {
       "Toggle_In_Chat": "Console_Commands: css_mvpvol,css_volmvp | Chat_Commands: ",
       "Only_These_Flags_Can_Vol.From.0.To.20": "SteamIDs:  | Flags: @css/vips,@css/vip,@css/vips,@css/admins | Groups: "
@@ -309,5 +311,4 @@
       ]
     }
   }
-
 }
