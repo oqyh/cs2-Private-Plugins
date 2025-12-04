@@ -33,6 +33,12 @@
 			"windows": "48 83 3D ? ? ? ? ? 0F 95 C0 C3 CC CC CC CC 48 89 5C 24",
 			"linux": "48 8D 05 ? ? ? ? 48 83 38 ? 0F 95 C0 C3"
 		}
-	}
+	},
+    "IMaterialSystem_FindOrCreateMaterialFromResource": {
+        "offsets": {
+            "windows": 14,
+            "linux": 14
+        }
+    }
 }
 
