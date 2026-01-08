@@ -20,27 +20,6 @@
             "linux": "AS EL QP AS EL QO EL QP EL RZ FP ? ? ? ? QQ SS AS EL QP"
         }
     },
-    "NavAreaBuildPath": {
-        "signatures": {
-            "library": "server",
-            "windows": "AC CN QA AQ CP AC ? AC CP AC ? SS SE ST",
-            "linux": "SS AC CR OS ? ? ? ? AC CP FS AL ST AQ CR NR ? ? ? ? AL SB AL SS"
-        }
-    },
-    "NavPathCost": {
-        "signatures": {
-            "library": "server",
-            "windows": "AC CE FQ ? CN OR ? ? ? ? BS AC CN OA ZS ? ? ? ? NM ? ? ? ? AC CN OA QC CN OA OZ EP OS ? ? ? ? TG ? CO ER",
-            "linux": "SS AC CP FS AL SA SE OG NB OS ? ? ? ? AC CR LR ? ? ? ? CA QO TA ? CO ER ? ? ? ? ? TA"
-        }
-    },
-    "CSource2Server_IsValidNavMesh": {
-        "signatures": {
-            "library": "server",
-            "windows": "AC CE ER ? ? ? ? ? OG PS QO QE QQ QQ QQ QQ QZ",
-            "linux": "AC CR OS ? ? ? ? AC CE EC ? OG PS QO QE"
-        }
-    },
     "CCSPlayerController_SwitchWeaponFunc": {
         "signatures": {
             "library": "server",
@@ -56,3 +35,4 @@
         }
     }
 }
+
