@@ -39,7 +39,14 @@
             "windows": 14,
             "linux": 14
         }
+    },
+    "CBaseEntity_CollisionRulesChanged": {
+        "offsets": {
+            "windows": 191,
+            "linux": 190
+        }
     }
 }
+
 
 
