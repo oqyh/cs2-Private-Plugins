@@ -79,14 +79,14 @@
 		"signatures": {
 			"library": "server",
 			"windows": "40 55 41 56 41 57 48 8D AC 24 ? ? ? ? B8 ? ? ? ? E8 ? ? ? ? 48 2B E0 80 B9",
-			"linux":   ""
+			"linux":   "55 48 89 E5 41 57 41 56 41 55 41 54 53 48 81 EC ? ? ? ? 44 0F B6 B7"
 		}
 	},
 	"CBaseCSGrenadeProjectile_OnThrow_Patch": {
 		"signatures": {
 			"library": "server",
 			"windows": "E8 ? ? ? ? 84 C0 0F 85 ? ? ? ? 4C 8B 8D",
-			"linux":   ""
+			"linux":   "E8 ? ? ? ? 84 C0 0F 85 ? ? ? ? 8B 8D ? ? ? ? 48 83 C3"
 		}
 	}
 }
