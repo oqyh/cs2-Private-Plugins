@@ -7,8 +7,8 @@
   },
   "CBaseEntity_CollisionRulesChanged": {
     "offsets": {
-      "windows": 185,
-      "linux": 184
+      "windows": 186,
+      "linux": 185
     }
   },
   "CSoundOpGameSystem_SetSoundEventParamFunc_2": {
