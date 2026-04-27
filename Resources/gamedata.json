@@ -87,5 +87,16 @@
       "windows": "E8 ? ? ? ? 84 C0 0F 85 ? ? ? ? 4C 8B 8D",
       "linux": "E8 ? ? ? ? 84 C0 0F 85 ? ? ? ? 8B 8D ? ? ? ? 48 83 C3"
     }
+  },
+  "aaaaaaaaa": {
+    "signatures": {
+      "library": "server",
+	  "windows": "48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 41 56 48 83 EC ? 4C 8B F1 49 8B F8",
+	  "linux":   "55 48 89 E5 41 57 41 56 41 89 CE 41 55 49 89 F5 41 54 53"
+    },
+	"offsets": {
+	  "windows": 108,
+	  "linux":   143
+    }
   }
 }
