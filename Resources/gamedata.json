@@ -53,6 +53,13 @@
       "linux": "48 85 F6 0F 84 ? ? ? ? 8B 47 ? 83 F8"
     }
   },
+  "OnConVarChanged": {
+    "signatures": {
+      "library": "engine2",
+      "windows": "40 55 41 54 41 55 41 56 41 57 48 83 EC ? 48 8D 6C 24 ? 48 89 5D ? 4D 8B E1",
+      "linux": "55 48 89 E5 41 57 41 56 41 BE"
+    }
+  },
   "bbbbbbbb": {
     "signatures": {
       "library": "server",
