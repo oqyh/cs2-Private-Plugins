@@ -36,14 +36,14 @@
     "signatures": {
       "library": "engine2",
       "windows": "40 55 41 54 41 55 41 56 41 57 48 83 EC ? 48 8D 6C 24 ? 48 89 5D ? 4D 8B E1",
-      "linux": "55 48 89 E5 41 57 41 56 41 BE"
+      "linux": "55 48 89 E5 41 57 41 56 41 BE ? ? ? ? 41 55 41 54 53"
     }
   },
   "bbbbbbbb": {
     "signatures": {
       "library": "server",
       "windows": "48 89 5C 24 ? 56 48 83 EC ? 48 8B F2 48 8D 54 24",
-      "linux": "55 48 89 E5 41 56 41 55 41 54 53 48 89 F3 48 83 EC ? E8 ? ? ? ? 48 85 DB"
+      "linux": "55 48 89 E5 41 56 41 55 41 54 53 48 89 F3 48 83 EC ? E8 ? ? ? ? 48 85 DB 74"
     }
   },
   "cccccccc": {
