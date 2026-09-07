@@ -84,5 +84,14 @@
 	  "windows": 108,
 	  "linux":   143
     }
+  },
+  "StartupServer": {
+    "signatures": {
+      "library": "engine2"
+    },
+	"offsets": {
+	  "windows": 26,
+	  "linux":   27
+    }
   }
 }
